@@ -4,12 +4,12 @@ import {
   Block1,
   Block2,
   Block3,
-  Block4,
-  Block5,
-  Block6,
-  Faq,
-  Footer,
-  ContactForm,
+  // Block4,
+  // Block5,
+  // Block6,
+  // Faq,
+  // Footer,
+  // ContactForm,
 } from "../components";
 
 function Home() {
@@ -19,12 +19,12 @@ function Home() {
       <Block1 />
       <Block2 />
       <Block3 />
-      <Block4 />
+      {/* <Block4 />
       <Block5 />
-      <Block6 />
-      <ContactForm />
+      <Block6 /> */}
+      {/* <ContactForm />
       <Faq/>
-      <Footer />
+      <Footer /> */}
     </Page>
   );
 }

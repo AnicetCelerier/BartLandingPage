@@ -4,7 +4,7 @@ const Block2 = () => {
   return (
     <section className="bartlp--block-2">
       <article>
-        <h1>Bart, la cantine 2.0 en quelques clics !</h1>
+        <h1> <span className="thick">Bart, la cantine 2.0 en quelques clics !</span></h1>
         <p>
           Offrez à vos collaborateurs une expérience culinaire variée tout en
           respectant vos engagements environnementaux et sociaux avec notre

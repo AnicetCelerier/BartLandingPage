@@ -14,13 +14,13 @@ const Block3 = () => {
         <div className="bartlp--block-3-mosaic">
           <div className="bartlp--block-3-mosaic-block-1">
             <div className="bartlp--block-3-mosaic-block-1-section-1">
-              <h2>Étape 1</h2>
+              <h3>Étape 1</h3>
               <p>
                 Commandez facilement votre repas auprès de nos partenaires
                 locaux avant 11h pour une livraison à 12h30 ou avant 12h pour
                 une livraison à 13h30.
               </p>
-              <button className="submit-button">Essayez Bart Cantine</button>
+              <button id="submit-button">Essayez Bart Cantine</button>
               <div className="bartlp--block-3-mosaic-block-1-section-1-cards">
                 <ul className="bartlp--block-3-mosaic-block-1-section-1-cards-row-1">
                   <li className="bartlp--block-3-mosaic-block-1-section-1-cards-row-1-card-1">
@@ -67,13 +67,13 @@ const Block3 = () => {
             </div>
           </div>
           <div className="bartlp--block-3-mosaic-block-2">
-            <h2>Étape 2</h2>
+            <h3>Étape 2</h3>
             <p>Séléctionnez vos plats, entreés et desserts.</p>
             {/* <Image src="/assets/images/salad.png" alt="salade" height={1000} width={1000}/> */}
           </div>
           <div className="bartlp--block-3-mosaic-block-3">
             <div className="bartlp--block-3-mosaic-block-3-section-1">
-              <h2>Étape 3</h2>
+              <h3>Étape 3</h3>
               <p>Payez avec ou sans tickets restos</p>
             </div>
             <div className="bartlp--block-3-mosaic-block-3-section-2">
@@ -89,9 +89,9 @@ const Block3 = () => {
           </div>
           <div className="bartlp--block-3-mosaic-block-4">
             <div className="bartlp--block-3-mosaic-block-4-section-1">
-              <h2>Étape 4</h2>
+              <h3>Étape 4</h3>
               <p>Ding dong c’est arrivé ! Et pour tout le monde.</p>
-              <button className="submit-button">demander la cantine</button>
+              <button id="submit-button">demander la cantine</button>
             </div>
             <div className="bartlp--block-3-mosaic-block-4-section-2"></div>
           </div>

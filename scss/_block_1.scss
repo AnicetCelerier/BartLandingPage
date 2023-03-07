@@ -4,29 +4,15 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: rgb(0, 0, 0);
   height: 100%;
   article {
-    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     text-align: center;
     z-index: 1;
-    width: 778px;
-    height: 536px;
-    left: 331px;
-    top: 307px;
-    h1 {
-      font-family: "Satoshi Bold";
-      font-style: normal;
-      font-weight: 900;
-      font-size: 104px;
-      line-height: 134px;
-    }
   }
   position: relative;
   height: 100vh;
-  @media screen and (max-width: 1060px) {
-    img {
-      object-fit: cover;
-    }
-  }
 }
