@@ -42,6 +42,12 @@
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
+      &-block-1 {
+        order: 2;
+      }
+      &-block-2 {
+        order: 1;
+      }
     }
   }
 }

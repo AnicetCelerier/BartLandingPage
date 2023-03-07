@@ -28,13 +28,13 @@ const Block3 = () => {
             Pas de frais cachés ! Vous ne payez que votre plat et les frais de
             livraison à partir de 0,90€.
           </div>
-          <div className="bartlp--block-4-mosaic-block-4">Toutes les <span>25</span> Commandes au sein de votre entreprise, 5 plats sont reversés aux associations alimentaires</div>
+          <div className="bartlp--block-4-mosaic-block-4">Toutes les <span className="alteration">25</span> Commandes au sein de votre entreprise, 5 plats sont reversés aux associations alimentaires</div>
           <div className="bartlp--block-4-mosaic-block-5">
             <img src="../assets/images/pizza.png" alt=""/>
           </div>
           <div className="bartlp--block-4-mosaic-block-6">Une sélection de plats, d’entrées et de desserts exclusifs</div>
           <div className="bartlp--block-4-mosaic-block-7">
-            Livraison en circuit court
+            Livraison en <span className="alteration">circuit court</span>
             <p>et en vélo cargo par nos livreurs salariés</p>
           </div>
         </div>

@@ -4,9 +4,9 @@ import {
   Block1,
   Block2,
   Block3,
-  // Block4,
-  // Block5,
-  // Block6,
+  Block4,
+  Block5,
+  Block6,
   // Faq,
   // Footer,
   // ContactForm,
@@ -19,12 +19,12 @@ function Home() {
       <Block1 />
       <Block2 />
       <Block3 />
-      {/* <Block4 />
+      <Block4 />
       <Block5 />
-      <Block6 /> */}
-      {/* <ContactForm />
-      <Faq/>
-      <Footer /> */}
+      <Block6 />
+      {/* <ContactForm /> */}
+      {/* <Faq/> */}
+      {/* <Footer /> */}
     </Page>
   );
 }

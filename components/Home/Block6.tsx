@@ -2,7 +2,7 @@ import React from "react";
 
 const Block6 = () => {
   return (
-    <section className="bartlp--block-1">
+    <section className="bartlp--block-6">
       <article>
         <h2>La vérité sort de la bouche des clients</h2>
         <ul>

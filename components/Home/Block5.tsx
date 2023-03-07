@@ -10,20 +10,20 @@ const Block5 = () => {
           engagement, et super rapide. Livraison offerte et formules exclusives
           pour ma team. Gratuit, sans engagement, et super rapide.
         </p>
-        <div className="bartlp--block-5-container">
-          <div className="bartlp--block-5-container-block-1">
-            <img src="../assets/images/toucantoco.png" alt="" />
-          </div>
-          <div className="bartlp--block-5-container-block-2">
-            <img src="../assets/images/toucantoco.png" alt="" />
-          </div>
-          <div className="bartlp--block-5-container-block-3">
-            <img src="../assets/images/toucantoco.png" alt="" />
-          </div>
-          <div className="bartlp--block-5-container-block-4">
-            <img src="../assets/images/toucantoco.png" alt="" />
-          </div>
-        </div>
+        <ul>
+          <li>
+            <img src="../assets/images/logo-clubmed.png" alt="" />
+          </li>
+          <li>
+            <img src="../assets/images/logo-toucantoco.png" alt="" />
+          </li>
+          <li>
+            <img src="../assets/images/logo-inato.png" alt="" />
+          </li>
+          <li>
+            <img src="../assets/images/logo-actifdigital.png" alt="" />
+          </li>
+        </ul>
         <button id="submit-button">demander la cantine</button>
       </article>
     </section>

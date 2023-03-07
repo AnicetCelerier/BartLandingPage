@@ -67,9 +67,13 @@ const Block3 = () => {
             </div>
           </div>
           <div className="bartlp--block-3-mosaic-block-2">
+          <div className="bartlp--block-3-mosaic-block-2-section-1">
             <h3>Étape 2</h3>
             <p>Séléctionnez vos plats, entreés et desserts.</p>
-            {/* <Image src="/assets/images/salad.png" alt="salade" height={1000} width={1000}/> */}
+            </div>
+            <div className="bartlp--block-3-mosaic-block-2-section-2">
+            <img src="../assets/images/salad.png" alt="" />
+            </div>
           </div>
           <div className="bartlp--block-3-mosaic-block-3">
             <div className="bartlp--block-3-mosaic-block-3-section-1">
@@ -77,14 +81,18 @@ const Block3 = () => {
               <p>Payez avec ou sans tickets restos</p>
             </div>
             <div className="bartlp--block-3-mosaic-block-3-section-2">
-              <div className="">visa</div>
-              <div className="">mastercard</div>
-              <div className="">applepay</div>
-              <div className="">paypal</div>
-              <div className="">stripe</div>
-              <div className="">discover</div>
-              <div className="">skrill</div>
-              <div className="">item8</div>
+              <ul>
+                <li className=""><img src="../assets/images/logo-visa.png" alt="" /></li>
+                <li className=""><img src="../assets/images/logo-mastercard.png" alt="" /></li>
+                <li className=""><img src="../assets/images/logo-applepay.png" alt="" /></li>
+                <li className=""><img src="../assets/images/logo-paypal.png" alt="" /></li>
+                </ul>
+                <ul>
+                <li className=""><img src="../assets/images/logo-stripe.png" alt="" /></li>
+                <li className=""><img src="../assets/images/logo-discover.png" alt="" /></li>
+                <li className=""><img src="../assets/images/logo-skrill.png" alt="" /></li>
+                <li className=""><img src="../assets/images/logo-unknown.png" alt="" /></li>
+                </ul>
             </div>
           </div>
           <div className="bartlp--block-3-mosaic-block-4">
@@ -93,7 +101,9 @@ const Block3 = () => {
               <p>Ding dong c’est arrivé ! Et pour tout le monde.</p>
               <button id="submit-button">demander la cantine</button>
             </div>
-            <div className="bartlp--block-3-mosaic-block-4-section-2"></div>
+            <div className="bartlp--block-3-mosaic-block-4-section-2">
+              <img src="../assets/images/sac.png" alt="" />
+            </div>
           </div>
         </div>
       </article>

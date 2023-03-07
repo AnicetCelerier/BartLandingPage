@@ -33,14 +33,13 @@
       img {
         justify-content: center;
         align-items: center;
-      object-fit: contain;
+        margin: auto;
       }
     }
     .bartlp--header-navbar-right {
       ul {
         display: flex;
         list-style: none;
-        background-color: aqua;
         li {
           flex-grow: 1;
           margin-right: 20px;
@@ -79,7 +78,6 @@
 }
 @media screen and (max-width: 792px) {
   .bartlp--header {
-    background-color: greenyellow;
     &.active {
       background-color: var(--color-primary);
     }
