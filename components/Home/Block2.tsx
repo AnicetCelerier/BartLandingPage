@@ -4,13 +4,20 @@ const Block2 = () => {
   return (
     <section className="bartlp--block-2">
       <article>
-        <h1> <span className="thick">Bart, la cantine 2.0 en quelques clics !</span></h1>
+        <h2>
+          {" "}
+          <span className="thick">
+            Bart, la cantine 2.0 en quelques clics !
+          </span>
+        </h2>
         <p>
-          Offrez à vos collaborateurs une expérience culinaire variée tout en
-          respectant vos engagements environnementaux et sociaux avec notre
-          offre clés en main et sans engagement. Notre cantine d'entreprise 2.0
-          attractive vous permet de commander facilement des plats signatures
-          des meilleurs restaurants pour tous vos collaborateurs.
+          <span className="text-content-type-1">
+            Offrez à vos collaborateurs une expérience culinaire variée tout en
+            respectant vos engagements environnementaux et sociaux avec notre
+            offre clés en main et sans engagement. Notre cantine d'entreprise
+            2.0 attractive vous permet de commander facilement des plats
+            signatures des meilleurs restaurants pour tous vos collaborateurs.
+          </span>
         </p>
       </article>
       <div className="bartlp--block-2-container">

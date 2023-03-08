@@ -8,8 +8,10 @@ const Block3 = () => {
       <article>
         <h1>Comment fonctionne votre cantine d'entreprise 2.0 ?</h1>
         <p>
+        <span className="text-content-type-1">
           Chez Bart Cantine digitale, nous misons sur la qualité et le goût !
           Commandez ou Pré commandez vos repas de la semaine en 3 clics 😍
+          </span>
         </p>
         <div className="bartlp--block-3-mosaic">
           <div className="bartlp--block-3-mosaic-block-1">
