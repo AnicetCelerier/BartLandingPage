@@ -7,9 +7,9 @@ import {
   Block4,
   Block5,
   Block6,
-  // Faq,
-  // Footer,
-  // ContactForm,
+  Faq,
+  Footer,
+  ContactForm,
 } from "../components";
 
 function Home() {
@@ -22,9 +22,9 @@ function Home() {
       <Block4 />
       <Block5 />
       <Block6 />
-      {/* <ContactForm /> */}
-      {/* <Faq/> */}
-      {/* <Footer /> */}
+      <ContactForm />
+      <Faq/>
+      <Footer />
     </Page>
   );
 }

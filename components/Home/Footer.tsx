@@ -9,16 +9,15 @@ const Footer = () => {
         <li>à propos</li>
       </ul>
       <div>Copyright © 2023 Bartapp. Tous droits réservés.</div>
-      <div>Bart n'utilise aucun cookie</div>
       <ul>
         <li>
-          <img src="" alt="" />
+          <img src="../assets/images/logo-instagram.png" alt="" />
         </li>
         <li>
-          <img src="" alt="" />
+        <img src="../assets/images/logo-twitter.png" alt="" />
         </li>
         <li>
-          <img src="" alt="" />
+        <img src="../assets/images/logo-facebook.png" alt="" />
         </li>
       </ul>
     </footer>

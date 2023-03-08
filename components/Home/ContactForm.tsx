@@ -1,5 +1,48 @@
-import React from "react";
+import React, { useState }  from "react";
 import { useContactForm } from "../../hooks";
+import { TextInput, createStyles, rem } from "@mantine/core";
+
+const useStyles = createStyles(
+  (theme, { floating }: { floating: boolean }) => ({
+    root: {
+      position: "relative",
+    },
+
+    label: {
+      position: "absolute",
+      zIndex: 2,
+      top: rem(7),
+      left: theme.spacing.sm,
+      pointerEvents: "none",
+      color: floating
+        ? theme.colorScheme === "dark"
+          ? theme.white
+          : theme.black
+        : theme.colorScheme === "dark"
+        ? theme.colors.dark[3]
+        : theme.colors.gray[5],
+      transition:
+        "transform 150ms ease, color 150ms ease, font-size 150ms ease",
+      transform: floating
+        ? `translate(-${theme.spacing.sm}, ${rem(-28)})`
+        : "none",
+      fontSize: floating ? theme.fontSizes.xs : theme.fontSizes.sm,
+      fontWeight: floating ? 500 : 400,
+    },
+
+    required: {
+      transition: "opacity 150ms ease",
+      opacity: floating ? 1 : 0,
+    },
+
+    input: {
+      "&::placeholder": {
+        transition: "color 150ms ease",
+        color: !floating ? "transparent" : undefined,
+      },
+    },
+  })
+);
 
 const ContactForm = () => {
   const {
@@ -14,8 +57,13 @@ const ContactForm = () => {
     showAlert,
   } = useContactForm();
 
+  const [focused, setFocused] = useState(false);
+  const { classes } = useStyles({
+    floating: emailInput.trim().length !== 0 || focused,
+  });
+
   return (
-    <section className="bartlp--block-4" id="contact">
+    <section className="bartlp--contactForm" id="contact">
       <article>
         <h2>Je demande ma cantine 2.0</h2>
         <p>
@@ -23,8 +71,8 @@ const ContactForm = () => {
           engagement, et super rapide. Livraison offerte et formules exclusives
           pour ma team. Gratuit, sans engagement, et super rapide.
         </p>
-        <form id="formContact">
-          <div className="formContact-left">
+        <form id="contactForm">
+          <div className="bartlp--contactForm-left">
             {showAlert && (
               <div className="form-field alert active">
                 <div>
@@ -38,78 +86,96 @@ const ContactForm = () => {
             )}
             <button>je suis responsable de la vie de bureau</button>
             <div className="form-field">
-              <label>NOM & PRÉNOM</label>
-              <input
-                disabled={blockForm}
-                type="name"
-                id="name-input"
+              <TextInput
+                label="Nom et Prénom"
+                placeholder="Votre nom et prénom"
                 required
-                placeholder="Votre nom & prénom"
-                // value={nameInput}
+                classNames={classes}
+                value={emailInput}
+                disabled={blockForm}
+                onFocus={() => setFocused(true)}
+                onBlur={() => setFocused(false)}
                 onChange={(e) => setEmailInput(e.target.value)}
+                mt="md"
+                autoComplete="nope"
               />
             </div>
             <div className="form-field">
-              <label>TÉLÉPHONE</label>
-              <input
-                disabled={blockForm}
-                type="email"
-                id="email-input"
+              <TextInput
+                label="Téléphone"
+                placeholder="Votre numéro de téléphone"
                 required
-                placeholder="nom@domain.com"
+                classNames={classes}
                 value={emailInput}
+                disabled={blockForm}
+                onFocus={() => setFocused(true)}
+                onBlur={() => setFocused(false)}
                 onChange={(e) => setEmailInput(e.target.value)}
+                mt="md"
+                autoComplete="nope"
               />
             </div>
             <div className="form-field">
-              <label>NOMBRE D&#146EMPLOYÉS</label>
-              <input
-                disabled={blockForm}
-                type="email"
-                id="email-input"
+              <TextInput
+                label="Nombre d’employés"
+                placeholder="Nombre d’employés"
                 required
-                placeholder="Nombre d'employés"
+                classNames={classes}
                 value={emailInput}
+                disabled={blockForm}
+                onFocus={() => setFocused(true)}
+                onBlur={() => setFocused(false)}
                 onChange={(e) => setEmailInput(e.target.value)}
+                mt="md"
+                autoComplete="nope"
               />
             </div>
           </div>
-          <div className="formContact-right">
+          <div className="bartlp--ontactForm-right">
             <button>je suis employé</button>
             <div className="form-field">
-              <label>Email</label>
-              <input
-                disabled={blockForm}
-                type="email"
-                id="email-input"
-                required
+              <TextInput
+                label="Email"
                 placeholder="Votre e-mail"
+                required
+                classNames={classes}
                 value={emailInput}
+                disabled={blockForm}
+                onFocus={() => setFocused(true)}
+                onBlur={() => setFocused(false)}
                 onChange={(e) => setEmailInput(e.target.value)}
+                mt="md"
+                autoComplete="nope"
               />
             </div>
             <div className="form-field">
-              <label>ENTREPRISE</label>
-              <input
-                disabled={blockForm}
-                type="company"
-                id="company-input"
-                required
+              <TextInput
+                label="Entreprise"
                 placeholder="Nom de votre entreprise"
+                required
+                classNames={classes}
                 value={emailInput}
+                disabled={blockForm}
+                onFocus={() => setFocused(true)}
+                onBlur={() => setFocused(false)}
                 onChange={(e) => setEmailInput(e.target.value)}
+                mt="md"
+                autoComplete="nope"
               />
             </div>
             <div className="form-field">
-              <label>CODE POSTAL ENTREPRISE</label>
-              <input
-                disabled={blockForm}
-                type="zipcode"
-                id="zipcode-input"
+              <TextInput
+                label="Code postal entreprise"
+                placeholder="Code postal de votre entreprise"
                 required
-                placeholder="Code postal de votere entreprise"
+                classNames={classes}
                 value={emailInput}
+                disabled={blockForm}
+                onFocus={() => setFocused(true)}
+                onBlur={() => setFocused(false)}
                 onChange={(e) => setEmailInput(e.target.value)}
+                mt="md"
+                autoComplete="nope"
               />
             </div>
             <div className="form-field">

@@ -1,0 +1,17 @@
+.bartlp--contactForm {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  article {
+    padding: 25px;
+    text-align: center;
+    z-index: 1;
+
+    #contactForm {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+    }
+  }
+}
