@@ -14,22 +14,16 @@ const useStyles = createStyles((theme) => ({
   card: {
     height: rem(440),
     display: "flex",
-    // flexDirection: "column",
     justifyContent: "center",
-    // alignItems: "flex-end",
-    // backgroundSize: "cover",
-    // backgroundPosition: "center",
-    // backgroundColor: "#df1212",
-    // maxWidth: rem(400),
     width: "100%",
-    // height: rem(180),
-    // display: 'flex',
     alignItems: "center",
     marginLeft: "auto",
+    margin: "16px",
     marginRight: "auto",
     borderRadius: theme.radius.lg,
-  },
+    boxShadow:      "0px 0px 2px rgba(103, 110, 144, 0.1), 0px 1px 2px rgba(103, 110, 144, 0.05), 0px 2px 4px rgba(103, 110, 144, 0.08), 0px 6px 8px rgba(103, 110, 144, 0.05), 0px 16px 16px rgba(103, 110, 144, 0.04)",
 
+  },
   content: {
     fontFamily: `Greycliff CF, ${theme.fontFamily}`,
     fontWeight: 400,
@@ -38,11 +32,12 @@ const useStyles = createStyles((theme) => ({
     fontSize: rem(32),
     marginTop: theme.spacing.xs,
   },
-
   name: {
     color: theme.black,
     opacity: 0.7,
     fontWeight: 700,
+  },
+  carousel: {
   },
 }));
 
@@ -103,6 +98,7 @@ const data = [
 ];
 
 const Block6 = () => {
+  const { classes } = useStyles();
   const theme = useMantineTheme();
   const mobile = useMediaQuery(`(max-width: ${theme.breakpoints.sm})`);
   const slides = data.map((item) => (
@@ -114,15 +110,16 @@ const Block6 = () => {
   return (
     <section className="bartlp--block-6">
       <article>
-         <h2>La vérité sort de la bouche des clients</h2>
+        <h2>La vérité sort de la bouche des clients</h2>
         <Carousel
-          slideSize="50%"
+          slideSize="25%"
           breakpoints={[
             { maxWidth: "sm", slideSize: "100%", slideGap: rem(2) },
           ]}
           slideGap="xl"
-          align="start"
+          align="end"
           slidesToScroll={mobile ? 1 : 2}
+          className={classes.carousel}
         >
           {slides}
         </Carousel>

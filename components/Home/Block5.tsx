@@ -15,16 +15,9 @@ const useStyles = createStyles((theme) => ({
   card: {
     height: rem(440),
     display: "flex",
-    flexDirection: "column",
     justifyContent: "center",
-    // alignItems: "flex-start",
-    backgroundSize: "cover",
-    backgroundPosition: "center",
-    // margin: "auto",
     alignItems: "center",
     borderRadius: theme.radius.lg,
-    // marginLeft: "auto",
-    // marginRight: "auto",
     margin: "16px",
     width: "100%",
     boxShadow:
@@ -35,23 +28,11 @@ const useStyles = createStyles((theme) => ({
     display: "flex",
     justifyContent: "center",
   },
-  carousel: { paddingRight: rem(10), width: "100vw" },
+  carousel: {
+    paddingRight: rem(10),
+    width: "100vw",
+  },
 }));
-
-// li {
-//   box-sizing: border-box;
-//   width: 238px;
-//   height: 135px;
-//   border: 1px solid #a6b2d1;
-//   border-radius: 10px;
-//   margin: 4px;
-//   display: flex;
-//   justify-content: center;
-
-//   img {
-//     margin: auto;
-//   }
-// }
 
 interface CardPartnersProps {
   image: string;
