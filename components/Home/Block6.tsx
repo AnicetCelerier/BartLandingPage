@@ -9,6 +9,7 @@ import {
   useMantineTheme,
   rem,
 } from "@mantine/core";
+import { CardCustomersProps } from "@/types";
 
 const useStyles = createStyles((theme) => ({
   card: {
@@ -21,8 +22,8 @@ const useStyles = createStyles((theme) => ({
     margin: "16px",
     marginRight: "auto",
     borderRadius: theme.radius.lg,
-    boxShadow:      "0px 0px 2px rgba(103, 110, 144, 0.1), 0px 1px 2px rgba(103, 110, 144, 0.05), 0px 2px 4px rgba(103, 110, 144, 0.08), 0px 6px 8px rgba(103, 110, 144, 0.05), 0px 16px 16px rgba(103, 110, 144, 0.04)",
-
+    boxShadow:
+      "0px 0px 2px rgba(103, 110, 144, 0.1), 0px 1px 2px rgba(103, 110, 144, 0.05), 0px 2px 4px rgba(103, 110, 144, 0.08), 0px 6px 8px rgba(103, 110, 144, 0.05), 0px 16px 16px rgba(103, 110, 144, 0.04)",
   },
   content: {
     fontFamily: `Greycliff CF, ${theme.fontFamily}`,
@@ -37,14 +38,13 @@ const useStyles = createStyles((theme) => ({
     opacity: 0.7,
     fontWeight: 700,
   },
-  carousel: {
-  },
+  carousel: {},
 }));
 
-interface CardCustomersProps {
-  content: string;
-  name: string;
-}
+// interface CardCustomersProps {
+//   content: string;
+//   name: string;
+// }
 
 function Card({ name, content }: CardCustomersProps) {
   const { classes } = useStyles();

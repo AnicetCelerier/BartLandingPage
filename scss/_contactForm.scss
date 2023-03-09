@@ -7,11 +7,32 @@
     padding: 25px;
     text-align: center;
     z-index: 1;
-
+  }
     #contactForm {
       display: flex;
       flex-direction: row;
       justify-content: center;
     }
-  }
-}
+      .customer-type {
+        // display: flex;
+        border: 2px solid #36415e;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 27px 142.5px 27px 141.688px;
+        background-color: transparent;
+      }
+
+      &-left{
+        margin-left: 22px;
+        margin-right: 22px;
+      }
+      &-right{
+        margin-left: 22px;
+        margin-right: 22px;
+        
+      }
+    }
+

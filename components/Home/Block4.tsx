@@ -37,11 +37,15 @@ const Block3 = () => {
             <img src="../assets/images/pizza.png" alt="" />
           </div>
           <div className="bartlp--block-4-mosaic-block-6">
-            Une sélection de plats, d’entrées et de desserts exclusifs
+            <div className="bartlp--block-4-mosaic-block-6-section-1">
+              Une sélection de plats, d’entrées et de desserts exclusifs
+            </div>
             <img src="../assets/images/logo-partners.png" alt="" />
           </div>
           <div className="bartlp--block-4-mosaic-block-7">
-            Livraison en <span className="alteration">circuit court</span>
+            <span>
+              Livraison en <span className="alteration">circuit court</span>
+            </span>
             <p>et en vélo cargo par nos livreurs salariés</p>
           </div>
         </div>

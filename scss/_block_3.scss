@@ -35,6 +35,7 @@
     grid-template-rows: repeat(3, 1fr);
     grid-column-gap: 32px;
     grid-row-gap: 32px;
+    width: 100vw;
     &-block {
       &-1 {
         grid-area: 1 / 1 / 2 / 3;
@@ -52,7 +53,6 @@
             margin: 4px;
             display: flex;
             justify-content: center;
-            
             img {
               margin: auto;
             }

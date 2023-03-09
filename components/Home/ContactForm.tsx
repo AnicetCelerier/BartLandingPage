@@ -1,4 +1,4 @@
-import React, { useState }  from "react";
+import React, { useState } from "react";
 import { useContactForm } from "../../hooks";
 import { TextInput, createStyles, rem } from "@mantine/core";
 
@@ -80,11 +80,13 @@ const ContactForm = () => {
                 </div>
                 <p>
                   Votre message a bien été envoyé et reçu, vous aurez un retour
-                  d&#146ici peu.
+                  d'ici peu.
                 </p>
               </div>
             )}
-            <button>je suis responsable de la vie de bureau</button>
+            <button className="customer-type">
+              je suis responsable de la vie de bureau
+            </button>
             <div className="form-field">
               <TextInput
                 label="Nom et Prénom"
@@ -132,7 +134,7 @@ const ContactForm = () => {
             </div>
           </div>
           <div className="bartlp--ontactForm-right">
-            <button>je suis employé</button>
+            <button className="customer-type">je suis employé</button>
             <div className="form-field">
               <TextInput
                 label="Email"
@@ -181,7 +183,7 @@ const ContactForm = () => {
             <div className="form-field">
               <button
                 type="submit"
-                id="btn-submit"
+                id="submit-button"
                 onClick={(e) => handleSubmit(e)}
               >
                 Envoyer <i className="far fa-paper-plane"></i>

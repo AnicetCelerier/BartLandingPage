@@ -10,6 +10,7 @@ import {
   Image,
 } from "@mantine/core";
 import { ClassNames } from "@emotion/react";
+import { CardPartnersProps } from "@/types";
 
 const useStyles = createStyles((theme) => ({
   card: {
@@ -33,11 +34,6 @@ const useStyles = createStyles((theme) => ({
     width: "100vw",
   },
 }));
-
-interface CardPartnersProps {
-  image: string;
-  alt: string;
-}
 
 const Card = ({ image, alt }: CardPartnersProps) => {
   const { classes } = useStyles();
