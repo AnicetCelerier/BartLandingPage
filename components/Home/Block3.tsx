@@ -8,9 +8,9 @@ const Block3 = () => {
       <article>
         <h1>Comment fonctionne votre cantine d'entreprise 2.0 ?</h1>
         <p>
-        <span className="text-content-type-1">
-          Chez Bart Cantine digitale, nous misons sur la qualité et le goût !
-          Commandez ou Pré commandez vos repas de la semaine en 3 clics 😍
+          <span className="text-content-type-1">
+            Chez Bart Cantine digitale, nous misons sur la qualité et le goût !
+            Commandez ou Pré commandez vos repas de la semaine en 3 clics 😍
           </span>
         </p>
         <div className="bartlp--block-3-mosaic">
@@ -69,38 +69,60 @@ const Block3 = () => {
             </div>
           </div>
           <div className="bartlp--block-3-mosaic-block-2">
-          <div className="bartlp--block-3-mosaic-block-2-section-1">
-            <h3>Étape 2</h3>
-            <p>Séléctionnez vos plats, entreés et desserts.</p>
+            <div className="bartlp--block-3-mosaic-block-2-section-1">
+              <h3>Étape 2</h3>
+              <p>
+                Composez votre déjeuner en ajoutant des entrées et des desserts
+                de votre choix.
+              </p>
             </div>
             <div className="bartlp--block-3-mosaic-block-2-section-2">
-            <img src="../assets/images/salad.png" alt="" />
+              <img src="../assets/images/salad.png" alt="" />
             </div>
           </div>
           <div className="bartlp--block-3-mosaic-block-3">
             <div className="bartlp--block-3-mosaic-block-3-section-1">
               <h3>Étape 3</h3>
-              <p>Payez avec ou sans tickets restos</p>
+              <p>Payez en toute flexibilité par CB ou tickets restaurant.</p>
             </div>
             <div className="bartlp--block-3-mosaic-block-3-section-2">
               <ul>
-                <li className=""><img src="../assets/images/logo-visa.png" alt="" /></li>
-                <li className=""><img src="../assets/images/logo-mastercard.png" alt="" /></li>
-                <li className=""><img src="../assets/images/logo-applepay.png" alt="" /></li>
-                <li className=""><img src="../assets/images/logo-paypal.png" alt="" /></li>
-                </ul>
-                <ul>
-                <li className=""><img src="../assets/images/logo-stripe.png" alt="" /></li>
-                <li className=""><img src="../assets/images/logo-discover.png" alt="" /></li>
-                <li className=""><img src="../assets/images/logo-skrill.png" alt="" /></li>
-                <li className=""><img src="../assets/images/logo-unknown.png" alt="" /></li>
-                </ul>
+                <li className="">
+                  <img src="../assets/images/logo-visa.png" alt="" />
+                </li>
+                <li className="">
+                  <img src="../assets/images/logo-mastercard.png" alt="" />
+                </li>
+                <li className="">
+                  <img src="../assets/images/logo-applepay.png" alt="" />
+                </li>
+                <li className="">
+                  <img src="../assets/images/logo-paypal.png" alt="" />
+                </li>
+              </ul>
+              <ul>
+                <li className="">
+                  <img src="../assets/images/logo-stripe.png" alt="" />
+                </li>
+                <li className="">
+                  <img src="../assets/images/logo-discover.png" alt="" />
+                </li>
+                <li className="">
+                  <img src="../assets/images/logo-skrill.png" alt="" />
+                </li>
+                <li className="">
+                  <img src="../assets/images/logo-unknown.png" alt="" />
+                </li>
+              </ul>
             </div>
           </div>
           <div className="bartlp--block-3-mosaic-block-4">
             <div className="bartlp--block-3-mosaic-block-4-section-1">
               <h3>Étape 4</h3>
-              <p>Ding dong c’est arrivé ! Et pour tout le monde.</p>
+              <p>
+                Ding Dong ! Votre repas est arrivé !<br />
+                Savourez votre déjeuner en compagnie de tous vos collègues.
+              </p>
               <button id="submit-button">demander la cantine</button>
             </div>
             <div className="bartlp--block-3-mosaic-block-4-section-2">

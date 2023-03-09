@@ -16,23 +16,30 @@ const Block3 = () => {
 
         <div className="bartlp--block-4-mosaic">
           <div className="bartlp--block-4-mosaic-block-1">
-            <img src="../assets/images/iPhone-13-Pro.png" alt=""/>
+            <img src="../assets/images/iPhone-13-Pro.png" alt="" />
             Une web-app accessible depuis votre ordinateur ou smartphone !
           </div>
           <div className="bartlp--block-4-mosaic-block-2">
             De nouveaux plats toutes les semaines
-            <img src="../assets/images/pattes.png" alt=""/>
+            <img src="../assets/images/pattes.png" alt="" />
           </div>
           <div className="bartlp--block-4-mosaic-block-3">
-            <img src="../assets/images/savings.png" alt=""/>
+            <img src="../assets/images/savings.png" alt="" />
             Pas de frais cachés ! Vous ne payez que votre plat et les frais de
             livraison à partir de 0,90€.
           </div>
-          <div className="bartlp--block-4-mosaic-block-4">Toutes les <span className="alteration">25</span> Commandes au sein de votre entreprise, 5 plats sont reversés aux associations alimentaires</div>
-          <div className="bartlp--block-4-mosaic-block-5">
-            <img src="../assets/images/pizza.png" alt=""/>
+          <div className="bartlp--block-4-mosaic-block-4">
+            Toutes les <span className="alteration">25</span> Commandes au sein
+            de votre entreprise, 5 plats sont reversés aux associations
+            alimentaires
           </div>
-          <div className="bartlp--block-4-mosaic-block-6">Une sélection de plats, d’entrées et de desserts exclusifs</div>
+          <div className="bartlp--block-4-mosaic-block-5">
+            <img src="../assets/images/pizza.png" alt="" />
+          </div>
+          <div className="bartlp--block-4-mosaic-block-6">
+            Une sélection de plats, d’entrées et de desserts exclusifs
+            <img src="../assets/images/logo-partners.png" alt="" />
+          </div>
           <div className="bartlp--block-4-mosaic-block-7">
             Livraison en <span className="alteration">circuit court</span>
             <p>et en vélo cargo par nos livreurs salariés</p>
