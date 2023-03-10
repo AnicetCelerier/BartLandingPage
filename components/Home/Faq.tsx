@@ -28,7 +28,7 @@ const Faq = () => {
       <article>
         <Container size="sm" className={classes.wrapper}>
           <Title align="center" className={classes.title}>
-            FAQ
+            <h2>FAQ</h2>
           </Title>
           <Accordion variant="separated">
             <Accordion.Item className={classes.item} value="reset-password">

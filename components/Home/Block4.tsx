@@ -5,7 +5,7 @@ const Block3 = () => {
   return (
     <section className="bartlp--block-4">
       <article>
-        <h1>Les avantages de notre cantine digitale d'entreprise :</h1>
+        <h2>Les avantages de notre cantine digitale d'entreprise :</h2>
         <p>
           Faites vivre une expérience culinaire unique à vos collaborateurs avec
           les meilleurs plats de vos restaurants préférés, à prix abordables et
@@ -29,7 +29,7 @@ const Block3 = () => {
             livraison à partir de 0,90€.
           </div>
           <div className="bartlp--block-4-mosaic-block-4">
-            Toutes les <span className="alteration">25</span> Commandes au sein
+            Toutes les<span id="alteration1"><br/>25<br/></span>Commandes au sein
             de votre entreprise, 5 plats sont reversés aux associations
             alimentaires
           </div>
@@ -43,8 +43,8 @@ const Block3 = () => {
             <img src="../assets/images/logo-partners.png" alt="" />
           </div>
           <div className="bartlp--block-4-mosaic-block-7">
-            <span>
-              Livraison en <span className="alteration">circuit court</span>
+            <span id="alteration2">
+              Livraison en <span id="alteration3">circuit court</span>
             </span>
             <p>et en vélo cargo par nos livreurs salariés</p>
           </div>

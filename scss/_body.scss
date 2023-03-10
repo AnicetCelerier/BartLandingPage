@@ -169,12 +169,10 @@ main {
 }
 
 h1 {
-  .thick {
-    font-family: var(--font-black-satoshi);
-    font-weight: 900;
-    font-size: 90px;
-    line-height: 122px;
-  }
+  font-family: var(--font-black-satoshi);
+  font-weight: 900;
+  font-size: 90px;
+  line-height: 122px;
   .medium {
     font-family: var(--font-medium-satoshi);
     font-weight: 500;
@@ -185,6 +183,7 @@ h1 {
 
 h2 {
   font-family: var(--font-black-satoshi);
+  font-weight: 900;
   font-size: 64px;
   line-height: 86px;
 }

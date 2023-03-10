@@ -6,7 +6,7 @@ const Block3 = () => {
   return (
     <section className="bartlp--block-3">
       <article>
-        <h1>Comment fonctionne votre cantine d'entreprise 2.0 ?</h1>
+        <h2>Comment fonctionne votre cantine d'entreprise 2.0 ?</h2>
         <p>
           <span className="text-content-type-1">
             Chez Bart Cantine digitale, nous misons sur la qualité et le goût !

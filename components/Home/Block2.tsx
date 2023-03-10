@@ -5,10 +5,7 @@ const Block2 = () => {
     <section className="bartlp--block-2">
       <article>
         <h2>
-          {" "}
-          <span className="thick">
             Bart, la cantine 2.0 en quelques clics !
-          </span>
         </h2>
         <p>
           <span className="text-content-type-1">
