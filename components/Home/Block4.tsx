@@ -16,37 +16,55 @@ const Block3 = () => {
 
         <div className="bartlp--block-4-mosaic">
           <div className="bartlp--block-4-mosaic-block-1">
+          <div className="bartlp--block-4-mosaic-block-1-container-1">
             <img src="../assets/images/iPhone-13-Pro.png" alt="" />
-            Une web-app accessible depuis votre ordinateur ou smartphone !
+            </div>
+            <div className="bartlp--block-4-mosaic-block-1-container-2">
+            <p>Une web-app accessible depuis votre ordinateur ou smartphone !</p>
+            </div>
           </div>
           <div className="bartlp--block-4-mosaic-block-2">
-            De nouveaux plats toutes les semaines
+          <div className="bartlp--block-4-mosaic-block-2-container-1">
+            <p>De nouveaux plats <br/> toutes les semaines</p>
+            </div>
+            <div className="bartlp--block-4-mosaic-block-2-container-2">
             <img src="../assets/images/pattes.png" alt="" />
+            </div>
           </div>
           <div className="bartlp--block-4-mosaic-block-3">
+          <div className="bartlp--block-4-mosaic-block-3-container-1">
             <img src="../assets/images/savings.png" alt="" />
-            Pas de frais cachés ! Vous ne payez que votre plat et les frais de
-            livraison à partir de 0,90€.
+            </div>
+            <div className="bartlp--block-4-mosaic-block-3-container-2">
+            <p>Pas de frais cachés ! Vous ne payez que votre plat et les frais de
+            livraison à partir de 0,90€.</p>
+            </div>
           </div>
           <div className="bartlp--block-4-mosaic-block-4">
-            Toutes les<span id="alteration1"><br/>25<br/></span>Commandes au sein
+            <p>Toutes les<span id="alteration1"><br/>25<br/></span>Commandes au sein
             de votre entreprise, 5 plats sont reversés aux associations
-            alimentaires
+            alimentaires.</p>
           </div>
           <div className="bartlp--block-4-mosaic-block-5">
             <img src="../assets/images/pizza.png" alt="" />
           </div>
           <div className="bartlp--block-4-mosaic-block-6">
-            <div className="bartlp--block-4-mosaic-block-6-section-1">
-              Une sélection de plats, d’entrées et de desserts exclusifs
+            <div className="bartlp--block-4-mosaic-block-6-container-1">
+              <p>Une sélection de plats, d’entrées et de desserts exclusifs</p>
             </div>
+            <div className="bartlp--block-4-mosaic-block-6-container-2">
             <img src="../assets/images/logo-partners.png" alt="" />
+            </div>
           </div>
           <div className="bartlp--block-4-mosaic-block-7">
-            <span id="alteration2">
+          <div className="bartlp--block-4-mosaic-block-7-container-1">
+            <p><span id="alteration2">
               Livraison en <span id="alteration3">circuit court</span>
-            </span>
+            </span></p>
+            </div>
+            <div className="bartlp--block-4-mosaic-block-7-container-2">
             <p>et en vélo cargo par nos livreurs salariés</p>
+            </div>
           </div>
         </div>
       </article>
