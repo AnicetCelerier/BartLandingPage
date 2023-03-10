@@ -72,7 +72,8 @@ const ContactForm = () => {
           pour ma team. Gratuit, sans engagement, et super rapide.
         </p>
         <form id="contactForm">
-          <div className="bartlp--contactForm-left">
+        <div className="bartlp--contactForm-fields">
+          <div className="bartlp--contactForm-fields-left">
             {showAlert && (
               <div className="form-field alert active">
                 <div>
@@ -133,7 +134,8 @@ const ContactForm = () => {
               />
             </div>
           </div>
-          <div className="bartlp--ontactForm-right">
+
+          <div className="bartlp--contactForm-fields-right">
             <button className="customer-type">je suis employé</button>
             <div className="form-field">
               <TextInput
@@ -181,15 +183,16 @@ const ContactForm = () => {
               />
             </div>
             <div className="form-field">
-              <button
+            </div>
+          </div>
+          </div>
+          <button
                 type="submit"
                 id="submit-button"
                 onClick={(e) => handleSubmit(e)}
               >
                 Envoyer <i className="far fa-paper-plane"></i>
               </button>
-            </div>
-          </div>
         </form>
       </article>
     </section>
