@@ -27,8 +27,8 @@ const Faq = () => {
     <section className="bartlp--faq">
       <article>
         <Container size="sm" className={classes.wrapper}>
-          <Title align="center" className={classes.title}>
-            <h2>FAQ</h2>
+          <Title align="center" order={2} className={classes.title}>
+            FAQ
           </Title>
           <Accordion variant="separated">
             <Accordion.Item className={classes.item} value="reset-password">

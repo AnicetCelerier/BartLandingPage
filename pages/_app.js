@@ -1,7 +1,6 @@
 import "../index.scss";
 import localFont from "@next/font/local";
-import { MantineProvider } from "@mantine/core";
-
+import { MantineProvider, Global } from "@mantine/core";
 // const myFont = localFont({ src: "../assets/fonts/Satoshi-Regular.ttf" });
 
 const myFont = localFont({
@@ -33,12 +32,44 @@ const myFont = localFont({
   ],
 });
 
+// const myFont2 = localFont({
+//   src: "../assets/fonts/Satoshi-Black.ttf",
+// });
+
+// console.log(myFont2, "<<<<<<<<<<<<<<<");
+// const mantineCustomFonts = () => {
+//   return (
+//     <Global
+//       styles={[
+//         {
+//           "@font-face": {
+//             fontFamily: "Satoshi Black",
+//             src: "../assets/fonts/Satoshi-Black.ttf",
+//             fontWeight: 900,
+//             fontStyle: "normal",
+//           },
+//         },
+//         {
+//           "@font-face": {
+//             fontFamily: "Satochi Medium",
+//             src: "../assets/fonts/Satoshi-Medium.ttf",
+//             fontWeight: 500,
+//             fontStyle: "normal",
+//           },
+//         },
+//       ]}
+//     />
+//   );
+// };
+
 // This default export is required in a new `pages/_app.js` file.
 export default function MyApp({ Component, pageProps }) {
   return (
-      <main className={myFont.className}>
-        <Component {...pageProps} />
-      </main>
+    <MantineProvider theme={{ fontFamily: "Satoshi, sans-serif"}}>
+    <main className={myFont.className}>
+      <Component {...pageProps} />
+    </main>
+    </MantineProvider>
   );
 }
 

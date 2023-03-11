@@ -1,12 +1,11 @@
 import HeadNext from "next/head";
-import { useEffect } from "react";
 
 
 const Head = () => {
 
   return (
     <HeadNext>
-      <title>Bart</title>
+      {/* <title>Bart</title>
       <meta
         name="description"
         content=""
@@ -61,6 +60,8 @@ const Head = () => {
         crossOrigin="anonymous"
         referrerPolicy="no-referrer"
       />
+      <link href="https://fonts.cdnfonts.com/css/satoshi" rel="stylesheet"/> */}
+
     </HeadNext>
   );
 };

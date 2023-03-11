@@ -26,7 +26,7 @@ const useStyles = createStyles((theme) => ({
       "0px 0px 2px rgba(103, 110, 144, 0.1), 0px 1px 2px rgba(103, 110, 144, 0.05), 0px 2px 4px rgba(103, 110, 144, 0.08), 0px 6px 8px rgba(103, 110, 144, 0.05), 0px 16px 16px rgba(103, 110, 144, 0.04)",
   },
   content: {
-    fontFamily: `Greycliff CF, ${theme.fontFamily}`,
+    // fontFamily: `Greycliff CF, ${theme.fontFamily}`,
     fontWeight: 400,
     color: theme.black,
     lineHeight: 1.2,
