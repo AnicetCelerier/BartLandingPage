@@ -14,21 +14,35 @@ import { CardCustomersProps } from "@/types";
 
 const useStyles = createStyles((theme) => ({
   card: {
-    height: "300px",
-    width: "315px",
+    height: rem(250),
+    // height: "300px",
+    // width: "315px",
     display: "flex",
     flexDirection: "column",
     alignItems: "flex-start",
     alignContent: "flex-start",
     marginLeft: "auto",
     // margin: "16px",
-    marginRight: "auto",
+    // marginRight: "auto",
     borderRadius: theme.radius.lg,
     boxShadow: "none",
-    img: {
-      paddingTop: rem(30),
-      paddingBottom: rem(20),
+    margin: rem(8),
+    padding: rem(100),
+    [`@media (max-width: ${"835px"})`]: {
+      // backgroundColor: theme.colors.orange[6],
+      width: "366px",
+      height: "286px",
     },
+    [`@media (max-width: ${"350px"})`]: {
+      // backgroundColor: theme.colors.green[6],
+      width: "304px",
+      height: "313px",
+      margin: rem(23),
+    },
+  },
+  img: {
+    paddingTop: rem(10),
+    paddingBottom: rem(20),
   },
 
   content: {
@@ -48,6 +62,9 @@ const useStyles = createStyles((theme) => ({
     fontWeight: 700,
     paddingBottom: rem(40),
     fontSize: "16px",
+    [`@media (max-width: ${"350px"})`]: {
+      paddingBottom: rem(20),
+    },
   },
   carousel: {},
 }));
@@ -72,7 +89,7 @@ function Card({ name, content }: CardCustomersProps) {
         src={"../assets/images/quotationmark.png"}
         alt={"quotation mark"}
         width={70}
-        // className={classes.img}
+        className={classes.img}
       />
       <div>
         <Text className={classes.content} size="xs">
@@ -131,8 +148,8 @@ const Block6 = () => {
         </div>
         <Carousel
           slideSize="25%"
-          breakpoints={[{ maxWidth: "sm", slideSize: "80%", slideGap: "2%" }]}
-          slideGap="xl"
+          breakpoints={[{ maxWidth: "sm", slideSize: "100%", slideGap: "0%" }]}
+          slideGap="0%"
           align="end"
           slidesToScroll={mobile ? 1 : 2}
           className={classes.carousel}

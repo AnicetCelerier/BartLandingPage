@@ -15,9 +15,22 @@ const useStyles = createStyles((theme) => ({
   item: {
     borderRadius: theme.radius.md,
     marginBottom: theme.spacing.lg,
-    border: `${rem(1)} solid ${
-      theme.colorScheme === "dark" ? theme.colors.dark[4] : theme.colors.gray[3]
-    }`,
+    // border: `${rem(1)} solid ${
+    //   theme.colorScheme === "dark" ? theme.colors.dark[4] : theme.colors.gray[3]
+    // }`,
+    border: `${rem(1)} solid ${theme.colors.customBlue[0]}`,
+  },
+  question: {
+    fontWeight: 400,
+    lineHeight: 1.2,
+    fontSize: "20px",
+    color: theme.colors.customBlue[0],
+  },
+  answer: {
+    fontWeight: 400,
+    lineHeight: "30px",
+    fontSize: "18px",
+    color: theme.colors.customBlue[1],
   },
 }));
 
@@ -32,8 +45,10 @@ const Faq = () => {
           </Title>
           <Accordion variant="separated">
             <Accordion.Item className={classes.item} value="reset-password">
-              <Accordion.Control>Comment passer commande ?</Accordion.Control>
-              <Accordion.Panel>
+              <Accordion.Control className={classes.question}>
+                Comment passer commande ?
+              </Accordion.Control>
+              <Accordion.Panel className={classes.answer}>
                 1 - Sélectionnez votre plat parmi une offre variée 🐟🌯🥗 <br />{" "}
                 2- Complétez votre panier avec les entrées et desserts proposés
                 par le restaurant choisi <br />
@@ -50,10 +65,10 @@ const Faq = () => {
             </Accordion.Item>
 
             <Accordion.Item className={classes.item} value="another-account">
-              <Accordion.Control>
+              <Accordion.Control className={classes.question}>
                 Suis-je obligé de commander uniquement un plat ?
               </Accordion.Control>
-              <Accordion.Panel>
+              <Accordion.Panel className={classes.answer}>
                 Non! Une fois votre plat sélectionné, vous pouvez completer
                 votre commande avec des entrées et des desserts du restaurant
                 proposant votre plat.
@@ -61,10 +76,10 @@ const Faq = () => {
             </Accordion.Item>
 
             <Accordion.Item className={classes.item} value="newsletter">
-              <Accordion.Control>
+              <Accordion.Control className={classes.question}>
                 Quels sont les moyens de paiement acceptés ?
               </Accordion.Control>
-              <Accordion.Panel>
+              <Accordion.Panel className={classes.answer}>
                 Chez Bart, vous pouvez payer par CB ou en Ticket restaurant.
                 Nous acceptons la majorité des cartes TR: Swile, Edenred, Bimpl,
                 Appetiz. Lors de votre commande, assurez vous que le restaurant
@@ -75,10 +90,10 @@ const Faq = () => {
             </Accordion.Item>
 
             <Accordion.Item className={classes.item} value="credit-card">
-              <Accordion.Control>
+              <Accordion.Control className={classes.question}>
                 A combien s'élèvent les frais de livraison ?
               </Accordion.Control>
-              <Accordion.Panel>
+              <Accordion.Panel className={classes.answer}>
                 Les frais de livraison s’affichent dès 0,90€ pour toutes
                 pre-commandes. Si vous commandez pour une livraison le jour même
                 la livraison est à 1,90€
@@ -86,20 +101,20 @@ const Faq = () => {
             </Accordion.Item>
 
             <Accordion.Item className={classes.item} value="payment">
-              <Accordion.Control>
+              <Accordion.Control className={classes.question}>
                 Comment suis-je prévenu de l’arrivée du livreur ?
               </Accordion.Control>
-              <Accordion.Panel>
+              <Accordion.Panel className={classes.answer}>
                 Pas de panique ! Vous recevrez un email lorsque vos commandes
                 ont été déposé à l’accueil de vos bureaux.
               </Accordion.Panel>
             </Accordion.Item>
 
             <Accordion.Item className={classes.item} value="teub">
-              <Accordion.Control>
+              <Accordion.Control className={classes.question}>
                 Quels sont vos créneaux de livraison ?
               </Accordion.Control>
-              <Accordion.Panel>
+              <Accordion.Panel className={classes.answer}>
                 Pour toutes commandes effectuées avant 11h, vous serez livré à
                 12h30. Pour les commandes effectuées avant 12h, vous serez livré
                 à 13h30.
@@ -107,11 +122,11 @@ const Faq = () => {
             </Accordion.Item>
 
             <Accordion.Item className={classes.item} value="teub2">
-              <Accordion.Control>
+              <Accordion.Control className={classes.question}>
                 Je souhaite modifier ma commande (créneau horaire, produits
                 commandés), comment faire ?
               </Accordion.Control>
-              <Accordion.Panel>
+              <Accordion.Panel className={classes.answer}>
                 Pour cela, il vous suffit d’annuler votre commande et de passer
                 votre nouvelle commande. Les annulations de commande peuvent se
                 faire jusqu’à la veille du jour de livraison (jour ouvré, avant
@@ -120,20 +135,20 @@ const Faq = () => {
             </Accordion.Item>
 
             <Accordion.Item className={classes.item} value="teub3">
-              <Accordion.Control>
+              <Accordion.Control className={classes.question}>
                 Existe-t-il un montant minimum de commande ?
               </Accordion.Control>
-              <Accordion.Panel>
+              <Accordion.Panel className={classes.answer}>
                 Pas de minimum de commande! Chez Bart, on sert tous les
                 gourmands!
               </Accordion.Panel>
             </Accordion.Item>
 
             <Accordion.Item className={classes.item} value="teub4">
-              <Accordion.Control>
+              <Accordion.Control className={classes.question}>
                 Comment recevoir ma facture ?
               </Accordion.Control>
-              <Accordion.Panel>
+              <Accordion.Panel className={classes.answer}>
                 Votre reçu de paiement vous est envoyée par mail lors de votre
                 commande. Il est également disponible, sur votre compte client
                 dans “Commandes”.

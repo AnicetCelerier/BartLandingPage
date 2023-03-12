@@ -65,10 +65,17 @@ const myFont = localFont({
 // This default export is required in a new `pages/_app.js` file.
 export default function MyApp({ Component, pageProps }) {
   return (
-    <MantineProvider theme={{ fontFamily: "Satoshi, sans-serif"}}>
-    <main className={myFont.className}>
-      <Component {...pageProps} />
-    </main>
+    <MantineProvider
+      theme={{
+        fontFamily: "Satoshi, sans-serif",
+        colors: {
+          customBlue: ["#170F49", "#6F6C90"],
+        },
+      }}
+    >
+      <main className={myFont.className}>
+        <Component {...pageProps} />
+      </main>
     </MantineProvider>
   );
 }
