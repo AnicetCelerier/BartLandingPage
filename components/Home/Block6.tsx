@@ -8,39 +8,48 @@ import {
   Title,
   useMantineTheme,
   rem,
+  Image,
 } from "@mantine/core";
 import { CardCustomersProps } from "@/types";
 
 const useStyles = createStyles((theme) => ({
   card: {
-    height: rem(440),
+    height: "300px",
+    width: "315px",
     display: "flex",
-    justifyContent: "center",
-    width: "100%",
-    alignItems: "center",
+    flexDirection: "column",
+    alignItems: "flex-start",
+    alignContent: "flex-start",
     marginLeft: "auto",
-    margin: "16px",
+    // margin: "16px",
     marginRight: "auto",
-    padding: "0",
     borderRadius: theme.radius.lg,
-    boxShadow:
-      "0px 0px 2px rgba(103, 110, 144, 0.1), 0px 1px 2px rgba(103, 110, 144, 0.05), 0px 2px 4px rgba(103, 110, 144, 0.08), 0px 6px 8px rgba(103, 110, 144, 0.05), 0px 16px 16px rgba(103, 110, 144, 0.04)",
+    boxShadow: "none",
+    img: {
+      paddingTop: rem(30),
+      paddingBottom: rem(20),
+    },
   },
+
   content: {
     // fontFamily: `Greycliff CF, ${theme.fontFamily}`,
     fontWeight: 400,
     color: theme.black,
     lineHeight: 1.2,
-    fontSize: rem(32),
-    marginTop: theme.spacing.xs,
+    fontSize: "20px",
+    // marginTop: theme.spacing.xs,
+    // marginTop:rem(10),
+    // paddingBottom:rem(10),
+    paddingBottom: rem(30),
   },
   name: {
     color: theme.black,
     opacity: 0.7,
     fontWeight: 700,
+    paddingBottom: rem(40),
+    fontSize: "16px",
   },
-  carousel: {
-  },
+  carousel: {},
 }));
 
 // interface CardCustomersProps {
@@ -59,6 +68,12 @@ function Card({ name, content }: CardCustomersProps) {
       // sx={{ backgroundImage: `url(${image})` }}
       className={classes.card}
     >
+      <Image
+        src={"../assets/images/quotationmark.png"}
+        alt={"quotation mark"}
+        width={70}
+        // className={classes.img}
+      />
       <div>
         <Text className={classes.content} size="xs">
           {content}
@@ -73,8 +88,7 @@ function Card({ name, content }: CardCustomersProps) {
 
 const data = [
   {
-    content:
-      "1Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos natus voluptatem vero quod possimus.",
+    content: "1Lorem ipsum dolor sit amet consectetur adipisicing elit.",
     name: "Alexandrus Kasmus",
   },
   {
@@ -112,12 +126,12 @@ const Block6 = () => {
   return (
     <section className="bartlp--block-6">
       <article>
-        <h2>La vérité sort de la bouche des clients</h2>
+        <div className="bartlp--block-6-wrapper">
+          <h2>La vérité sort de la bouche des clients</h2>
+        </div>
         <Carousel
           slideSize="25%"
-          breakpoints={[
-            { maxWidth: "sm", slideSize: "100%", slideGap: rem(2) },
-          ]}
+          breakpoints={[{ maxWidth: "sm", slideSize: "80%", slideGap: "2%" }]}
           slideGap="xl"
           align="end"
           slidesToScroll={mobile ? 1 : 2}
@@ -125,7 +139,9 @@ const Block6 = () => {
         >
           {slides}
         </Carousel>
-        <button id="submit-button">Essayer Bart Cantine</button>
+        <div className="bartlp--block-6-wrapper">
+          <button id="submit-button">Essayer Bart Cantine</button>
+        </div>
       </article>
     </section>
   );

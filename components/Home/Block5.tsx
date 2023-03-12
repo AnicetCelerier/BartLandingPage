@@ -14,14 +14,17 @@ import { CardPartnersProps } from "@/types";
 
 const useStyles = createStyles((theme) => ({
   card: {
-    height: rem(440),
+    // height: rem(250),
+    // width: "100%",
+    height: "300px",
+    width: "315px",
     display: "flex",
     justifyContent: "center",
     alignItems: "center",
     borderRadius: theme.radius.lg,
-    padding: "0",
-    margin: "16px",
-    width: "100%",
+    // padding: "0",
+    margin: "8px",
+    paddingRight: "0px",
     boxShadow:
       "0px 0px 2px rgba(103, 110, 144, 0.1), 0px 1px 2px rgba(103, 110, 144, 0.05), 0px 2px 4px rgba(103, 110, 144, 0.08), 0px 6px 8px rgba(103, 110, 144, 0.05), 0px 16px 16px rgba(103, 110, 144, 0.04)",
   },
@@ -31,7 +34,7 @@ const useStyles = createStyles((theme) => ({
     justifyContent: "center",
   },
   carousel: {
-    paddingRight: rem(0),
+    paddingRight: "0px",
     width: "100vw",
     
   },
@@ -90,7 +93,7 @@ const Block5 = () => {
         <Carousel
           slideSize="25%"
           breakpoints={[
-            { maxWidth: "sm", slideSize: "100%", slideGap: rem(2) },
+            { maxWidth: "sm", slideSize: "100%", slideGap: "2%" },
           ]}
           slideGap="xl"
           align="end"
