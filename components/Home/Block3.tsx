@@ -26,73 +26,72 @@ const Block3 = () => {
             </div>
             <div className="bartlp--block-3-mosaic-block-1-container-2">
               <ul className="bartlp--block-3-mosaic-block-1-container-2-row-1">
-                <li className="bartlp--block-3-mosaic-block-1-container-2-row-1-card-1">
+                <li className="bartlp--block-3-mosaic-block-1-container-2-row-1-card">
                   <img src="../assets/images/logo-mojo.png" alt="" />
                 </li>
-                <li className="bartlp--block-3-mosaic-block-1-container-2-row-1-card-2">
+                <li className="bartlp--block-3-mosaic-block-1-container-2-row-1-card">
                   <img src="../assets/images/logo-napoligang.png" alt="" />
                 </li>
-                <li className="bartlp--block-3-mosaic-block-1-container-2-row-1-card-3">
+                <li className="bartlp--block-3-mosaic-block-1-container-2-row-1-card">
                   <img src="../assets/images/logo-encoreburger.png" alt="" />
                 </li>
-                <li className="bartlp--block-3-mosaic-block-1-container-2-row-1-card-4">
+                <li className="bartlp--block-3-mosaic-block-1-container-2-row-1-card">
                   <img src="../assets/images/logo-mersea.png" alt="" />
                 </li>
-                <li className="bartlp--block-3-mosaic-block-1-container-2-row-1-card-5">
+                <li className="bartlp--block-3-mosaic-block-1-container-2-row-1-card">
                   <img src="../assets/images/logo-whatthefoc.png" alt="" />
                 </li>
-                <li className="bartlp--block-3-mosaic-block-1-container-2-row-1-card-6">
+                <li className="bartlp--block-3-mosaic-block-1-container-2-row-1-card">
                   <img src="../assets/images/logo-comokitchen.png" alt="" />
                 </li>
-                <li className="bartlp--block-3-mosaic-block-1-container-2-row-1-card-7">
+                <li className="bartlp--block-3-mosaic-block-1-container-2-row-1-card">
                   <img src="../assets/images/logo-pichpich.png" alt="" />
                 </li>
-                <li className="bartlp--block-3-mosaic-block-1-container-2-row-1-card-8">
+                <li className="bartlp--block-3-mosaic-block-1-container-2-row-1-card">
                   <img src="../assets/images/logo-mamanissa.png" alt="" />
                 </li>
-                <li className="bartlp--block-3-mosaic-block-1-container-2-row-1-card-9">
+                <li className="bartlp--block-3-mosaic-block-1-container-2-row-1-card">
                   <img src="../assets/images/logo-monthai.png" alt="" />
                 </li>
-                <li className="bartlp--block-3-mosaic-block-1-container-2-row-1-card-10">
+                <li className="bartlp--block-3-mosaic-block-1-container-2-row-1-card">
                   <img src="../assets/images/logo-willsdeli.png" alt="" />
                 </li>
-                <li className="bartlp--block-3-mosaic-block-1-container-2-row-1-card-11">
+                <li className="bartlp--block-3-mosaic-block-1-container-2-row-1-card">
                   <img src="../assets/images/logo-coquillettes.png" alt="" />
                 </li>
               </ul>
               <ul className="bartlp--block-3-mosaic-block-1-container-2-row-2">
-                <li className="bartlp--block-3-mosaic-block-1-container-2-row-2-card-1">
+                <li className="bartlp--block-3-mosaic-block-1-container-2-row-2-card">
                   <img src="../assets/images/logo-comokitchen.png" alt="" />
                 </li>
-                <li className="bartlp--block-3-mosaic-block-1-container-2-row-2-card-2">
+                <li className="bartlp--block-3-mosaic-block-1-container-2-row-2-card">
                   <img src="../assets/images/logo-pichpich.png" alt="" />
                 </li>
-                <li className="bartlp--block-3-mosaic-block-1-container-2-row-2-card-3">
+                <li className="bartlp--block-3-mosaic-block-1-container-2-row-2-card">
                   <img src="../assets/images/logo-mamanissa.png" alt="" />
                 </li>
-                <li className="bartlp--block-3-mosaic-block-1-container-2-row-2-card-4">
+                <li className="bartlp--block-3-mosaic-block-1-container-2-row-2-card">
                   <img src="../assets/images/logo-monthai.png" alt="" />
                 </li>
-                <li className="bartlp--block-3-mosaic-block-1-container-2-row-2-card-5">
+                <li className="bartlp--block-3-mosaic-block-1-container-2-row-2-card">
                   <img src="../assets/images/logo-willsdeli.png" alt="" />
                 </li>
-                <li className="bartlp--block-3-mosaic-block-1-container-2-row-2-card-6">
+                <li className="bartlp--block-3-mosaic-block-1-container-2-row-2-card">
                   <img src="../assets/images/logo-coquillettes.png" alt="" />
                 </li>
-
-                <li className="bartlp--block-3-mosaic-block-1-container-2-row-2-card-7">
+                <li className="bartlp--block-3-mosaic-block-1-container-2-row-2-card">
                   <img src="../assets/images/logo-mojo.png" alt="" />
                 </li>
-                <li className="bartlp--block-3-mosaic-block-1-container-2-row-2-card-8">
+                <li className="bartlp--block-3-mosaic-block-1-container-2-row-2-card">
                   <img src="../assets/images/logo-napoligang.png" alt="" />
                 </li>
-                <li className="bartlp--block-3-mosaic-block-1-container-2-row-2-card-9">
+                <li className="bartlp--block-3-mosaic-block-1-container-2-row-2-card">
                   <img src="../assets/images/logo-encoreburger.png" alt="" />
                 </li>
-                <li className="bartlp--block-3-mosaic-block-1-container-2-row-2-card-10">
+                <li className="bartlp--block-3-mosaic-block-1-container-2-row-2-card">
                   <img src="../assets/images/logo-mersea.png" alt="" />
                 </li>
-                <li className="bartlp--block-3-mosaic-block-1-container-2-row-2-card-11">
+                <li className="bartlp--block-3-mosaic-block-1-container-2-row-2-card">
                   <img src="../assets/images/logo-whatthefoc.png" alt="" />
                 </li>
               </ul>
