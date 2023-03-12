@@ -288,6 +288,19 @@ img {
   max-height: 100%;
 }
 
+.head-container{
+  padding-bottom: 5%;
+  h2{
+    padding-left: 13%;
+    padding-right: 13%;
+    margin-bottom: 0;
+  }
+  p{
+    padding-left: 14.5%;
+    padding-right: 14.5%;
+  }
+}
+
 #submit-button {
   background: var(--color-primary);
   height: 40.72877502441406px;

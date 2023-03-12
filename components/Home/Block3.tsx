@@ -6,13 +6,13 @@ const Block3 = () => {
   return (
     <section className="bartlp--block-3">
       <article>
+        <div className="head-container">
         <h2>Comment fonctionne votre cantine d'entreprise 2.0 ?</h2>
         <p>
-          <span className="text-content-type-1">
             Chez Bart Cantine digitale, nous misons sur la qualité et le goût !
             Commandez ou Pré commandez vos repas de la semaine en 3 clics 😍
-          </span>
         </p>
+        </div>
         <div className="bartlp--block-3-mosaic">
           <div className="bartlp--block-3-mosaic-block-1">
             <div className="bartlp--block-3-mosaic-block-1-container-1">

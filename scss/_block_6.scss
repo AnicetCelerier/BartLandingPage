@@ -5,10 +5,11 @@
     justify-content: center;
     align-items: center;
     background-color: #F2F4F8;
+
     article {
-      padding: 25px;
       text-align: center;
       z-index: 1;
+      width: 100vw;
       ul {
         list-style-type: none;
         display: flex;

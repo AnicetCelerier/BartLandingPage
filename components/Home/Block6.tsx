@@ -21,6 +21,7 @@ const useStyles = createStyles((theme) => ({
     marginLeft: "auto",
     margin: "16px",
     marginRight: "auto",
+    padding: "0",
     borderRadius: theme.radius.lg,
     boxShadow:
       "0px 0px 2px rgba(103, 110, 144, 0.1), 0px 1px 2px rgba(103, 110, 144, 0.05), 0px 2px 4px rgba(103, 110, 144, 0.08), 0px 6px 8px rgba(103, 110, 144, 0.05), 0px 16px 16px rgba(103, 110, 144, 0.04)",
@@ -38,7 +39,8 @@ const useStyles = createStyles((theme) => ({
     opacity: 0.7,
     fontWeight: 700,
   },
-  carousel: {},
+  carousel: {
+  },
 }));
 
 // interface CardCustomersProps {
@@ -72,27 +74,27 @@ function Card({ name, content }: CardCustomersProps) {
 const data = [
   {
     content:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos natus voluptatem vero quod possimus.",
+      "1Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos natus voluptatem vero quod possimus.",
     name: "Alexandrus Kasmus",
   },
   {
     content:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos natus voluptatem vero quod possimus.",
+      "2Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos natus voluptatem vero quod possimus.",
     name: "Alexandrus Kasmus",
   },
   {
     content:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos natus voluptatem vero quod possimus.",
+      "3Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos natus voluptatem vero quod possimus.",
     name: "Alexandrus Kasmus",
   },
   {
     content:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos natus voluptatem vero quod possimus.",
+      "4Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos natus voluptatem vero quod possimus.",
     name: "Alexandrus Kasmus",
   },
   {
     content:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos natus voluptatem vero quod possimus.",
+      "5Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos natus voluptatem vero quod possimus.",
     name: "Sergio Pendejo",
   },
 ];

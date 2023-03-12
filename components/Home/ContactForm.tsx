@@ -65,128 +65,132 @@ const ContactForm = () => {
   return (
     <section className="bartlp--contactForm" id="contact">
       <article>
-        <h2>Je demande ma cantine 2.0</h2>
-        <p>
-          Livraison offerte et formules exclusives pour ma team. Gratuit, sans
-          engagement, et super rapide. Livraison offerte et formules exclusives
-          pour ma team. Gratuit, sans engagement, et super rapide.
-        </p>
+        <div className="head-container">
+          <h2>Je demande ma cantine 2.0</h2>
+          <p>
+            Livraison offerte et formules exclusives pour ma team. Gratuit, sans
+            engagement, et super rapide. Livraison offerte et formules
+            exclusives pour ma team. Gratuit, sans engagement, et super rapide.
+          </p>
+        </div>
         <form>
           <div className="bartlp--contactForm-fields">
-          <div className="bartlp--contactForm-fields-container-1">
-            <button className="bartlp--contactForm-fields-container-1-customer-1">
-              je suis responsable de la vie de bureau
-            </button>
-            <button className="bartlp--contactForm-fields-container-1-customer-2">je suis employé</button>
+            <div className="bartlp--contactForm-fields-container-1">
+              <button className="bartlp--contactForm-fields-container-1-customer-1">
+                je suis responsable de la vie de bureau
+              </button>
+              <button className="bartlp--contactForm-fields-container-1-customer-2">
+                je suis employé
+              </button>
             </div>
             <div className="bartlp--contactForm-fields-container-2">
-            <div className="bartlp--contactForm-fields-container-2-left">
-              {showAlert && (
-                <div className="form-field alert active">
-                  <div>
-                    <i className="fas fa-check"></i>
+              <div className="bartlp--contactForm-fields-container-2-left">
+                {showAlert && (
+                  <div className="form-field alert active">
+                    <div>
+                      <i className="fas fa-check"></i>
+                    </div>
+                    <p>
+                      Votre message a bien été envoyé et reçu, vous aurez un
+                      retour d'ici peu.
+                    </p>
                   </div>
-                  <p>
-                    Votre message a bien été envoyé et reçu, vous aurez un
-                    retour d'ici peu.
-                  </p>
+                )}
+                <div className="form-field">
+                  <TextInput
+                    label="Nom et Prénom"
+                    placeholder="Votre nom et prénom"
+                    required
+                    classNames={classes}
+                    value={emailInput}
+                    disabled={blockForm}
+                    onFocus={() => setFocused(true)}
+                    onBlur={() => setFocused(false)}
+                    onChange={(e) => setEmailInput(e.target.value)}
+                    mt="md"
+                    autoComplete="nope"
+                  />
                 </div>
-              )}
-              <div className="form-field">
-                <TextInput
-                  label="Nom et Prénom"
-                  placeholder="Votre nom et prénom"
-                  required
-                  classNames={classes}
-                  value={emailInput}
-                  disabled={blockForm}
-                  onFocus={() => setFocused(true)}
-                  onBlur={() => setFocused(false)}
-                  onChange={(e) => setEmailInput(e.target.value)}
-                  mt="md"
-                  autoComplete="nope"
-                />
+                <div className="form-field">
+                  <TextInput
+                    label="Téléphone"
+                    placeholder="Votre numéro de téléphone"
+                    required
+                    classNames={classes}
+                    value={emailInput}
+                    disabled={blockForm}
+                    onFocus={() => setFocused(true)}
+                    onBlur={() => setFocused(false)}
+                    onChange={(e) => setEmailInput(e.target.value)}
+                    mt="md"
+                    autoComplete="nope"
+                  />
+                </div>
+                <div className="form-field">
+                  <TextInput
+                    label="Nombre d’employés"
+                    placeholder="Nombre d’employés"
+                    required
+                    classNames={classes}
+                    value={emailInput}
+                    disabled={blockForm}
+                    onFocus={() => setFocused(true)}
+                    onBlur={() => setFocused(false)}
+                    onChange={(e) => setEmailInput(e.target.value)}
+                    mt="md"
+                    autoComplete="nope"
+                  />
+                </div>
               </div>
-              <div className="form-field">
-                <TextInput
-                  label="Téléphone"
-                  placeholder="Votre numéro de téléphone"
-                  required
-                  classNames={classes}
-                  value={emailInput}
-                  disabled={blockForm}
-                  onFocus={() => setFocused(true)}
-                  onBlur={() => setFocused(false)}
-                  onChange={(e) => setEmailInput(e.target.value)}
-                  mt="md"
-                  autoComplete="nope"
-                />
-              </div>
-              <div className="form-field">
-                <TextInput
-                  label="Nombre d’employés"
-                  placeholder="Nombre d’employés"
-                  required
-                  classNames={classes}
-                  value={emailInput}
-                  disabled={blockForm}
-                  onFocus={() => setFocused(true)}
-                  onBlur={() => setFocused(false)}
-                  onChange={(e) => setEmailInput(e.target.value)}
-                  mt="md"
-                  autoComplete="nope"
-                />
-              </div>
-            </div>
 
-            <div className="bartlp--contactForm-fields-container-2-right">
-              <div className="form-field">
-                <TextInput
-                  label="Email"
-                  placeholder="Votre e-mail"
-                  required
-                  classNames={classes}
-                  value={emailInput}
-                  disabled={blockForm}
-                  onFocus={() => setFocused(true)}
-                  onBlur={() => setFocused(false)}
-                  onChange={(e) => setEmailInput(e.target.value)}
-                  mt="md"
-                  autoComplete="nope"
-                />
+              <div className="bartlp--contactForm-fields-container-2-right">
+                <div className="form-field">
+                  <TextInput
+                    label="Email"
+                    placeholder="Votre e-mail"
+                    required
+                    classNames={classes}
+                    value={emailInput}
+                    disabled={blockForm}
+                    onFocus={() => setFocused(true)}
+                    onBlur={() => setFocused(false)}
+                    onChange={(e) => setEmailInput(e.target.value)}
+                    mt="md"
+                    autoComplete="nope"
+                  />
+                </div>
+                <div className="form-field">
+                  <TextInput
+                    label="Entreprise"
+                    placeholder="Nom de votre entreprise"
+                    required
+                    classNames={classes}
+                    value={emailInput}
+                    disabled={blockForm}
+                    onFocus={() => setFocused(true)}
+                    onBlur={() => setFocused(false)}
+                    onChange={(e) => setEmailInput(e.target.value)}
+                    mt="md"
+                    autoComplete="nope"
+                  />
+                </div>
+                <div className="form-field">
+                  <TextInput
+                    label="Code postal entreprise"
+                    placeholder="Code postal de votre entreprise"
+                    required
+                    classNames={classes}
+                    value={emailInput}
+                    disabled={blockForm}
+                    onFocus={() => setFocused(true)}
+                    onBlur={() => setFocused(false)}
+                    onChange={(e) => setEmailInput(e.target.value)}
+                    mt="md"
+                    autoComplete="nope"
+                  />
+                </div>
+                <div className="form-field"></div>
               </div>
-              <div className="form-field">
-                <TextInput
-                  label="Entreprise"
-                  placeholder="Nom de votre entreprise"
-                  required
-                  classNames={classes}
-                  value={emailInput}
-                  disabled={blockForm}
-                  onFocus={() => setFocused(true)}
-                  onBlur={() => setFocused(false)}
-                  onChange={(e) => setEmailInput(e.target.value)}
-                  mt="md"
-                  autoComplete="nope"
-                />
-              </div>
-              <div className="form-field">
-                <TextInput
-                  label="Code postal entreprise"
-                  placeholder="Code postal de votre entreprise"
-                  required
-                  classNames={classes}
-                  value={emailInput}
-                  disabled={blockForm}
-                  onFocus={() => setFocused(true)}
-                  onBlur={() => setFocused(false)}
-                  onChange={(e) => setEmailInput(e.target.value)}
-                  mt="md"
-                  autoComplete="nope"
-                />
-              </div>
-              <div className="form-field"></div>
-            </div>
             </div>
           </div>
           <button

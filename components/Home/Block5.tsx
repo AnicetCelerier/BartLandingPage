@@ -19,6 +19,7 @@ const useStyles = createStyles((theme) => ({
     justifyContent: "center",
     alignItems: "center",
     borderRadius: theme.radius.lg,
+    padding: "0",
     margin: "16px",
     width: "100%",
     boxShadow:
@@ -30,8 +31,9 @@ const useStyles = createStyles((theme) => ({
     justifyContent: "center",
   },
   carousel: {
-    paddingRight: rem(10),
+    paddingRight: rem(0),
     width: "100vw",
+    
   },
 }));
 
@@ -77,12 +79,14 @@ const Block5 = () => {
   return (
     <section className="bartlp--block-5">
       <article>
+      <div className="head-container">
         <h2>Ils nous font confiance</h2>
         <p>
           Livraison offerte et formules exclusives pour ma team. Gratuit, sans
           engagement, et super rapide. Livraison offerte et formules exclusives
           pour ma team. Gratuit, sans engagement, et super rapide.
         </p>
+        </div>
         <Carousel
           slideSize="25%"
           breakpoints={[

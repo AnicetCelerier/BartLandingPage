@@ -5,7 +5,6 @@
   align-items: center;
 
   article {
-    padding: 25px;
     text-align: center;
     z-index: 1;
   }
@@ -16,9 +15,9 @@
     grid-template-rows: repeat(3, 1fr);
     grid-column-gap: 32px;
     grid-row-gap: 32px;
-    // width: 100vw;
-    margin-right: 2.08%;
-    margin-left: 2.08%;
+    width: 100vw;
+    // padding-right: 2.08%;
+    // padding-left: 2.08%;
     &-block {
       &-1 {
         grid-area: 1 / 1 / 2 / 3;
