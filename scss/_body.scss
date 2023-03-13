@@ -301,7 +301,7 @@ img {
   }
 }
 
-#submit-button {
+.submit-button {
   background: var(--color-primary);
   height: 40.72877502441406px;
   width: 194px;
@@ -317,7 +317,12 @@ img {
   }
 }
 
-#access-button {
+.button-wrapper{
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+
+.access-button {
   background: var(--color-secondary);
   height: 40.72877502441406px;
   width: 194px;

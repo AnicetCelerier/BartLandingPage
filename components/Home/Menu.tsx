@@ -9,8 +9,8 @@ const Menu = () => {
         </div>
         <div className="bartlp--header-navbar-right">
           <ul id="bartlp--header-navbar-right-links">
-            <li data-target="cta"><button id="access-button">Accéder à la cantine</button></li>
-            <li data-target="contact"><button id="submit-button">Demander la cantine</button></li>
+            <li data-target="cta"><button className="access-button">Accéder à la cantine</button></li>
+            <li data-target="contact"><button className="submit-button">Demander la cantine</button></li>
           </ul>
           <div className="bartlp--header-navbar-right-menu">
             <i className="fa-solid fa-bars icon-default"></i>

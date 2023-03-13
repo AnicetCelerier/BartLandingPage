@@ -193,13 +193,15 @@ const ContactForm = () => {
               </div>
             </div>
           </div>
+          <div className="button-wrapper">
           <button
             type="submit"
-            id="submit-button"
+            className="submit-button"
             onClick={(e) => handleSubmit(e)}
           >
             Envoyer <i className="far fa-paper-plane"></i>
           </button>
+          </div>
         </form>
       </article>
     </section>

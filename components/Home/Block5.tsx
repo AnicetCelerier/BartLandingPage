@@ -93,11 +93,7 @@ const Block5 = () => {
       <article>
         <div className="head-container">
           <h2>Ils nous font confiance</h2>
-          <p>
-            Livraison offerte et formules exclusives pour ma team. Gratuit, sans
-            engagement, et super rapide. Livraison offerte et formules
-            exclusives pour ma team. Gratuit, sans engagement, et super rapide.
-          </p>
+          <p>Choisissez une cantine digitale d'entreprise 2.0 engagée !</p>
         </div>
         <Carousel
           slideSize="25%"
@@ -109,7 +105,9 @@ const Block5 = () => {
         >
           {slides}
         </Carousel>
-        <button id="submit-button">demander la cantine</button>
+        <div className="button-wrapper">
+          <button className="submit-button">demander la cantine</button>
+        </div>
       </article>
     </section>
   );

@@ -11,7 +11,7 @@ const block1 = () => {
           <br />
           <span className="medium"> pour une pause déj savoureuse.</span>
         </h1>
-        <button id="submit-button">Essayer Bart Cantine</button>
+        <button className="submit-button">Essayer Bart Cantine</button>
         <span>mouse element</span>
       </article>
     </section>

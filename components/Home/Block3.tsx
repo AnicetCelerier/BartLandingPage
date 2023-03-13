@@ -22,7 +22,7 @@ const Block3 = () => {
                 locaux avant 11h pour une livraison à 12h30 ou avant 12h pour
                 une livraison à 13h30.
               </p>
-              <button id="submit-button">Essayez Bart Cantine</button>
+              <button className="submit-button">Essayez Bart Cantine</button>
             </div>
             <div className="bartlp--block-3-mosaic-block-1-container-2">
               <div className="bartlp--block-3-mosaic-block-1-container-2-row-1">
@@ -152,7 +152,7 @@ const Block3 = () => {
                 Ding Dong ! Votre repas est arrivé !<br />
                 Savourez votre déjeuner en compagnie de tous vos collègues.
               </p>
-              <button id="submit-button">demander la cantine</button>
+              <button className="submit-button">demander la cantine</button>
             </div>
             <div className="bartlp--block-3-mosaic-block-4-container-2">
               <img src="../assets/images/sac.png" alt="" />

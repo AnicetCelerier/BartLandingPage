@@ -157,7 +157,9 @@ const Block6 = () => {
           {slides}
         </Carousel>
         <div className="bartlp--block-6-wrapper">
-          <button id="submit-button">Essayer Bart Cantine</button>
+        <div className="button-wrapper">
+          <button className="submit-button">Essayer Bart Cantine</button>
+          </div>
         </div>
       </article>
     </section>

@@ -84,7 +84,9 @@ const Block3 = () => {
           </div>
         </div>
       </article>
-      <button id="submit-button">Essayez Bart Cantine</button>
+      <div className="button-wrapper">
+        <button className="submit-button">Essayez Bart Cantine</button>
+      </div>
     </section>
   );
 };

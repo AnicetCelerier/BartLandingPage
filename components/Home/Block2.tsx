@@ -24,7 +24,9 @@ const Block2 = () => {
           <img src="../assets/images/iPhone-14-pro.png" alt="iphone" />
         </div>
       </div>
-      <button id="submit-button">demander la cantine</button>
+      <div className="button-wrapper">
+      <button className="submit-button">demander la cantine</button>
+      </div>
       </article>
     </section>
   );
