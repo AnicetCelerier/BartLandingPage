@@ -7,11 +7,11 @@ const Block3 = () => {
     <section className="bartlp--block-3">
       <article>
         <div className="head-container">
-        <h2>Comment fonctionne votre cantine d'entreprise 2.0 ?</h2>
-        <p>
+          <h2>Comment fonctionne votre cantine d'entreprise 2.0 ?</h2>
+          <p>
             Chez Bart Cantine digitale, nous misons sur la qualité et le goût !
             Commandez ou Pré commandez vos repas de la semaine en 3 clics 😍
-        </p>
+          </p>
         </div>
         <div className="bartlp--block-3-mosaic">
           <div className="bartlp--block-3-mosaic-block-1">
@@ -25,76 +25,76 @@ const Block3 = () => {
               <button id="submit-button">Essayez Bart Cantine</button>
             </div>
             <div className="bartlp--block-3-mosaic-block-1-container-2">
-              <ul className="bartlp--block-3-mosaic-block-1-container-2-row-1">
-                <li className="bartlp--block-3-mosaic-block-1-container-2-row-1-card">
+              <div className="bartlp--block-3-mosaic-block-1-container-2-row-1">
+                <div className="bartlp--block-3-mosaic-block-1-container-2-row-1-card">
                   <img src="../assets/images/logo-mojo.png" alt="" />
-                </li>
-                <li className="bartlp--block-3-mosaic-block-1-container-2-row-1-card">
+                </div>
+                <div className="bartlp--block-3-mosaic-block-1-container-2-row-1-card">
                   <img src="../assets/images/logo-napoligang.png" alt="" />
-                </li>
-                <li className="bartlp--block-3-mosaic-block-1-container-2-row-1-card">
+                </div>
+                <div className="bartlp--block-3-mosaic-block-1-container-2-row-1-card">
                   <img src="../assets/images/logo-encoreburger.png" alt="" />
-                </li>
-                <li className="bartlp--block-3-mosaic-block-1-container-2-row-1-card">
+                </div>
+                <div className="bartlp--block-3-mosaic-block-1-container-2-row-1-card">
                   <img src="../assets/images/logo-mersea.png" alt="" />
-                </li>
-                <li className="bartlp--block-3-mosaic-block-1-container-2-row-1-card">
+                </div>
+                <div className="bartlp--block-3-mosaic-block-1-container-2-row-1-card">
                   <img src="../assets/images/logo-whatthefoc.png" alt="" />
-                </li>
-                <li className="bartlp--block-3-mosaic-block-1-container-2-row-1-card">
+                </div>
+                <div className="bartlp--block-3-mosaic-block-1-container-2-row-1-card">
                   <img src="../assets/images/logo-comokitchen.png" alt="" />
-                </li>
-                <li className="bartlp--block-3-mosaic-block-1-container-2-row-1-card">
+                </div>
+                <div className="bartlp--block-3-mosaic-block-1-container-2-row-1-card">
                   <img src="../assets/images/logo-pichpich.png" alt="" />
-                </li>
-                <li className="bartlp--block-3-mosaic-block-1-container-2-row-1-card">
+                </div>
+                <div className="bartlp--block-3-mosaic-block-1-container-2-row-1-card">
                   <img src="../assets/images/logo-mamanissa.png" alt="" />
-                </li>
-                <li className="bartlp--block-3-mosaic-block-1-container-2-row-1-card">
+                </div>
+                <div className="bartlp--block-3-mosaic-block-1-container-2-row-1-card">
                   <img src="../assets/images/logo-monthai.png" alt="" />
-                </li>
-                <li className="bartlp--block-3-mosaic-block-1-container-2-row-1-card">
+                </div>
+                <div className="bartlp--block-3-mosaic-block-1-container-2-row-1-card">
                   <img src="../assets/images/logo-willsdeli.png" alt="" />
-                </li>
-                <li className="bartlp--block-3-mosaic-block-1-container-2-row-1-card">
+                </div>
+                <div className="bartlp--block-3-mosaic-block-1-container-2-row-1-card">
                   <img src="../assets/images/logo-coquillettes.png" alt="" />
-                </li>
-              </ul>
-              <ul className="bartlp--block-3-mosaic-block-1-container-2-row-2">
-                <li className="bartlp--block-3-mosaic-block-1-container-2-row-2-card">
+                </div>
+              </div>
+              <div className="bartlp--block-3-mosaic-block-1-container-2-row-2">
+                <div className="bartlp--block-3-mosaic-block-1-container-2-row-2-card">
                   <img src="../assets/images/logo-comokitchen.png" alt="" />
-                </li>
-                <li className="bartlp--block-3-mosaic-block-1-container-2-row-2-card">
+                </div>
+                <div className="bartlp--block-3-mosaic-block-1-container-2-row-2-card">
                   <img src="../assets/images/logo-pichpich.png" alt="" />
-                </li>
-                <li className="bartlp--block-3-mosaic-block-1-container-2-row-2-card">
+                </div>
+                <div className="bartlp--block-3-mosaic-block-1-container-2-row-2-card">
                   <img src="../assets/images/logo-mamanissa.png" alt="" />
-                </li>
-                <li className="bartlp--block-3-mosaic-block-1-container-2-row-2-card">
+                </div>
+                <div className="bartlp--block-3-mosaic-block-1-container-2-row-2-card">
                   <img src="../assets/images/logo-monthai.png" alt="" />
-                </li>
-                <li className="bartlp--block-3-mosaic-block-1-container-2-row-2-card">
+                </div>
+                <div className="bartlp--block-3-mosaic-block-1-container-2-row-2-card">
                   <img src="../assets/images/logo-willsdeli.png" alt="" />
-                </li>
-                <li className="bartlp--block-3-mosaic-block-1-container-2-row-2-card">
+                </div>
+                <div className="bartlp--block-3-mosaic-block-1-container-2-row-2-card">
                   <img src="../assets/images/logo-coquillettes.png" alt="" />
-                </li>
-                <li className="bartlp--block-3-mosaic-block-1-container-2-row-2-card">
+                </div>
+                <div className="bartlp--block-3-mosaic-block-1-container-2-row-2-card">
                   <img src="../assets/images/logo-mojo.png" alt="" />
-                </li>
-                <li className="bartlp--block-3-mosaic-block-1-container-2-row-2-card">
+                </div>
+                <div className="bartlp--block-3-mosaic-block-1-container-2-row-2-card">
                   <img src="../assets/images/logo-napoligang.png" alt="" />
-                </li>
-                <li className="bartlp--block-3-mosaic-block-1-container-2-row-2-card">
+                </div>
+                <div className="bartlp--block-3-mosaic-block-1-container-2-row-2-card">
                   <img src="../assets/images/logo-encoreburger.png" alt="" />
-                </li>
-                <li className="bartlp--block-3-mosaic-block-1-container-2-row-2-card">
+                </div>
+                <div className="bartlp--block-3-mosaic-block-1-container-2-row-2-card">
                   <img src="../assets/images/logo-mersea.png" alt="" />
-                </li>
-                <li className="bartlp--block-3-mosaic-block-1-container-2-row-2-card">
+                </div>
+                <div className="bartlp--block-3-mosaic-block-1-container-2-row-2-card">
                   <img src="../assets/images/logo-whatthefoc.png" alt="" />
-                </li>
-              </ul>
+                </div>
+              </div>
             </div>
           </div>
           <div className="bartlp--block-3-mosaic-block-2">

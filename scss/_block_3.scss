@@ -87,36 +87,50 @@
             //     }
             //   }
             // }
-
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              align-items: center;
+              overflow: hidden;
             &-row {
               &-1 {
                 display: grid;
                 grid-template-columns: repeat(11, 1fr);
-                grid-column-gap: 0px;
-                grid-row-gap: 0px;
-                align-items:flex-start;
-                &-card{
+                grid-column-gap: 10px;
+                padding-bottom: 10px;
+                &-card {
                   width: 238px;
                   height: 135px;
                   box-sizing: border-box;
                   // width: 238px;
                   border: 1px solid #a6b2d1;
+                  border-radius: 10px;
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  img {
+                    margin: auto;
+                  }
                 }
-
               }
               &-2 {
                 display: grid;
                 grid-template-columns: repeat(11, 1fr);
-                grid-column-gap: 0px;
-                grid-row-gap: 0px;
-                &-card{
+                grid-column-gap: 10px;
+                padding-bottom: 10px;
+                &-card {
                   width: 238px;
                   height: 135px;
                   box-sizing: border-box;
                   // width: 238px;
                   border: 1px solid #a6b2d1;
+                  border-radius: 10px;
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  img {
+                  }
                 }
-
               }
             }
           }
@@ -130,7 +144,6 @@
         flex-direction: column;
         justify-content: space-between;
         margin-left: 4%;
-        background-color: pink;
         // margin-right: 2%;
         &-container {
           &-1 {
