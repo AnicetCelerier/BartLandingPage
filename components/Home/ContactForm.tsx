@@ -77,10 +77,10 @@ const ContactForm = () => {
           <div className="bartlp--contactForm-fields">
             <div className="bartlp--contactForm-fields-container-1">
               <button className="bartlp--contactForm-fields-container-1-customer-1">
-                je suis responsable de la vie de bureau
+                JE SUIS RESPONSABLE DE LA VIE DE BUREAU
               </button>
               <button className="bartlp--contactForm-fields-container-1-customer-2">
-                je suis employé
+                JE SUIS EMPLOYÉ
               </button>
             </div>
             <div className="bartlp--contactForm-fields-container-2">
