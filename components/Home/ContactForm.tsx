@@ -49,10 +49,18 @@ const ContactForm = () => {
     handleSubmit,
     setEmailInput,
     emailInput,
-    setSubjectInput,
-    subjectInput,
-    setInformationInput,
-    informationInput,
+    setCompanyInput,
+    companyInput,
+    setCustomerTypeInput,
+    customerTypeInput,
+    setEmployeesInput,
+    employeesInput,
+    setNameInput,
+    nameInput,
+    setPhoneInput,
+    phoneInput,
+    setZipCodeInput,
+    zipCodeInput,
     blockForm,
     showAlert,
   } = useContactForm();
@@ -76,10 +84,16 @@ const ContactForm = () => {
         <form>
           <div className="bartlp--contactForm-fields">
             <div className="bartlp--contactForm-fields-container-1">
-              <button className="bartlp--contactForm-fields-container-1-customer-1">
+              <button
+                className="bartlp--contactForm-fields-container-1-customer-1"
+                onChange={(e) => setCustomerTypeInput(e.target.value)}
+              >
                 JE SUIS RESPONSABLE DE LA VIE DE BUREAU
               </button>
-              <button className="bartlp--contactForm-fields-container-1-customer-2">
+              <button
+                className="bartlp--contactForm-fields-container-1-customer-2"
+                onChange={(e) => setCustomerTypeInput(e.target.value)}
+              >
                 JE SUIS EMPLOYÉ
               </button>
             </div>
@@ -102,11 +116,11 @@ const ContactForm = () => {
                     placeholder="Votre nom et prénom"
                     required
                     classNames={classes}
-                    value={emailInput}
+                    value={nameInput}
                     disabled={blockForm}
                     onFocus={() => setFocused(true)}
                     onBlur={() => setFocused(false)}
-                    onChange={(e) => setEmailInput(e.target.value)}
+                    onChange={(e) => setNameInput(e.target.value)}
                     mt="md"
                     autoComplete="nope"
                   />
@@ -117,11 +131,11 @@ const ContactForm = () => {
                     placeholder="Votre numéro de téléphone"
                     required
                     classNames={classes}
-                    value={emailInput}
+                    value={phoneInput}
                     disabled={blockForm}
                     onFocus={() => setFocused(true)}
                     onBlur={() => setFocused(false)}
-                    onChange={(e) => setEmailInput(e.target.value)}
+                    onChange={(e) => setPhoneInput(e.target.value)}
                     mt="md"
                     autoComplete="nope"
                   />
@@ -132,11 +146,11 @@ const ContactForm = () => {
                     placeholder="Nombre d’employés"
                     required
                     classNames={classes}
-                    value={emailInput}
+                    value={employeesInput}
                     disabled={blockForm}
                     onFocus={() => setFocused(true)}
                     onBlur={() => setFocused(false)}
-                    onChange={(e) => setEmailInput(e.target.value)}
+                    onChange={(e) => setEmployeesInput(e.target.value)}
                     mt="md"
                     autoComplete="nope"
                   />
@@ -165,11 +179,11 @@ const ContactForm = () => {
                     placeholder="Nom de votre entreprise"
                     required
                     classNames={classes}
-                    value={emailInput}
+                    value={companyInput}
                     disabled={blockForm}
                     onFocus={() => setFocused(true)}
                     onBlur={() => setFocused(false)}
-                    onChange={(e) => setEmailInput(e.target.value)}
+                    onChange={(e) => setCompanyInput(e.target.value)}
                     mt="md"
                     autoComplete="nope"
                   />
@@ -180,11 +194,11 @@ const ContactForm = () => {
                     placeholder="Code postal de votre entreprise"
                     required
                     classNames={classes}
-                    value={emailInput}
+                    value={zipCodeInput}
                     disabled={blockForm}
                     onFocus={() => setFocused(true)}
                     onBlur={() => setFocused(false)}
-                    onChange={(e) => setEmailInput(e.target.value)}
+                    onChange={(e) => setZipCodeInput(e.target.value)}
                     mt="md"
                     autoComplete="nope"
                   />
@@ -194,13 +208,13 @@ const ContactForm = () => {
             </div>
           </div>
           <div className="button-wrapper">
-          <button
-            type="submit"
-            className="submit-button"
-            onClick={(e) => handleSubmit(e)}
-          >
-            Envoyer <i className="far fa-paper-plane"></i>
-          </button>
+            <button
+              type="submit"
+              className="submit-button"
+              onClick={(e) => handleSubmit(e)}
+            >
+              Envoyer <i className="far fa-paper-plane"></i>
+            </button>
           </div>
         </form>
       </article>
