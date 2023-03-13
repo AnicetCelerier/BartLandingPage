@@ -5,8 +5,8 @@ const block1 = () => {
   return (
     <section className="bartlp--block-1">
       <article>
-        <img src="../assets/images/top-illustrations.png" alt="fruits" />
-        <h1 className="animate__animated animate__rubberBand">
+        <img src="../assets/images/top-illustrations.png" alt="fruits" className="animate__animated animate__bounceInDown" />
+        <h1>
           Cantine digitale
           <br />
           <span className="medium"> pour une pause déj savoureuse.</span>

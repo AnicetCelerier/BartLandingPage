@@ -103,6 +103,7 @@
                 grid-template-columns: repeat(11, 1fr);
                 grid-column-gap: 10px;
                 padding-bottom: 10px;
+                // animation: 3s linear 1s infinite alternate none running slidein;
                 &-card {
                   width: 238px;
                   height: 135px;

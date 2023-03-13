@@ -28,7 +28,18 @@
       border: none;
       box-shadow: none;
     }
+    h1 {
+    }
   }
   position: relative;
   height: 100vh;
+
+  @media screen and (max-width: 835px) {
+    h1 {
+      font-size: 54px;
+      line-height: 72.9px;
+      padding-left: 2%;
+      padding-right: 2%;
+    }
+  }
 }
