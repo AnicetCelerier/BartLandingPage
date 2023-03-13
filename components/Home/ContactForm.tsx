@@ -76,9 +76,11 @@ const ContactForm = () => {
         <div className="head-container">
           <h2>Je demande ma cantine 2.0</h2>
           <p>
-            Livraison offerte et formules exclusives pour ma team. Gratuit, sans
-            engagement, et super rapide. Livraison offerte et formules
-            exclusives pour ma team. Gratuit, sans engagement, et super rapide.
+            Chez Bart Cantine digitale, nous souhaitons rendre la livraison de
+            repas en entreprise plus équitable pour tout le monde :
+            restaurateurs, utilisateurs et livreurs. Pour cela, nous avons créé
+            une cantine d'entreprise 2.0 respectueuse de l'environnement, avec
+            une offre clé en main attractive.
           </p>
         </div>
         <form>

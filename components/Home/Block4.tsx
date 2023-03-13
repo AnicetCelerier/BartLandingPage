@@ -5,7 +5,12 @@ const Block3 = () => {
   return (
     <section className="bartlp--block-4">
       <article>
-        <div className="head-container">
+        <div
+          className="head-container"
+          data-aos="fade-down"
+          // data-aos-easing="linear"
+          data-aos-duration="1500"
+        >
           <h2>Les avantages de notre cantine digitale d'entreprise :</h2>
           <p>
             Faites vivre une expérience culinaire unique à vos collaborateurs
@@ -18,7 +23,7 @@ const Block3 = () => {
         <div className="bartlp--block-4-mosaic">
           <div className="bartlp--block-4-mosaic-block-1">
             <div className="bartlp--block-4-mosaic-block-1-container-1">
-              <img src="../assets/images/iPhone-13-Pro.png" alt="" />
+              <img src="../assets/images/iPhone-13-Pro.png" alt="iphone" />
             </div>
             <div className="bartlp--block-4-mosaic-block-1-container-2">
               <p>
@@ -33,12 +38,12 @@ const Block3 = () => {
               </p>
             </div>
             <div className="bartlp--block-4-mosaic-block-2-container-2">
-              <img src="../assets/images/pattes.png" alt="" />
+              <img src="../assets/images/pattes.png" alt="pattes" />
             </div>
           </div>
           <div className="bartlp--block-4-mosaic-block-3">
             <div className="bartlp--block-4-mosaic-block-3-container-1">
-              <img src="../assets/images/savings.png" alt="" />
+              <img src="../assets/images/savings.png" alt="tirelire" />
             </div>
             <div className="bartlp--block-4-mosaic-block-3-container-2">
               <p>
@@ -60,14 +65,17 @@ const Block3 = () => {
             </p>
           </div>
           <div className="bartlp--block-4-mosaic-block-5">
-            <img src="../assets/images/pizza.png" alt="" />
+            <img src="../assets/images/pizza.png" alt="pizza" />
           </div>
           <div className="bartlp--block-4-mosaic-block-6">
             <div className="bartlp--block-4-mosaic-block-6-container-1">
               <p>Une sélection de plats, d’entrées et de desserts exclusifs</p>
             </div>
             <div className="bartlp--block-4-mosaic-block-6-container-2">
-              <img src="../assets/images/logo-partners.png" alt="" />
+              <img
+                src="../assets/images/logo-partners.png"
+                alt="logo partenaires"
+              />
             </div>
           </div>
           <div className="bartlp--block-4-mosaic-block-7">

@@ -298,7 +298,13 @@ img {
   p{
     padding-left: 14.5%;
     padding-right: 14.5%;
+    color: #616161;
   }
+}
+
+.button-wrapper{
+  padding-top: 2%;
+  padding-bottom: 2%;
 }
 
 .submit-button {
@@ -315,11 +321,6 @@ img {
   &:hover {
     background: var(--color-primary-shade);
   }
-}
-
-.button-wrapper{
-  padding-top: 2%;
-  padding-bottom: 2%;
 }
 
 .access-button {

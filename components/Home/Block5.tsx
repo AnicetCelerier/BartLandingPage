@@ -91,7 +91,12 @@ const Block5 = () => {
   return (
     <section className="bartlp--block-5">
       <article>
-        <div className="head-container">
+        <div
+          className="head-container"
+          data-aos="fade-down"
+          // data-aos-easing="linear"
+          data-aos-duration="1500"
+        >
           <h2>Ils nous font confiance</h2>
           <p>Choisissez une cantine digitale d'entreprise 2.0 engagée !</p>
         </div>
