@@ -139,8 +139,6 @@
       flex-wrap: wrap;
       width: 100%;
       justify-content: flex-end;
-      position: fixed;
-      top: 0;
       .bartlp--header-navbar-left {
         cursor: pointer;
         width: 100px;
@@ -214,7 +212,7 @@
         }
       }
       .bartlp--header-navbar-right {
-        &-button-1 {
+        &-button-1{
           padding-right: 5%;
         }
         .access-button {

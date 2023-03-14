@@ -258,6 +258,14 @@ p {
 }
 
 @media screen and (max-width: 390px) {
+  header {
+    position: static;
+    left: 0;
+    right: 0;
+  }
+  main {
+    height: 100%;
+  }
   h1 {
     .thick {
       font-family: var(--font-black-satoshi);
