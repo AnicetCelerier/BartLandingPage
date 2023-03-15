@@ -204,7 +204,6 @@
         padding-right: 0%;
         margin: auto;
         display: flex;
-
         img {
           justify-content: center;
           align-items: center;
@@ -212,6 +211,11 @@
         }
       }
       .bartlp--header-navbar-right {
+        // width: 100%;
+        //!   pblm !!!!!!!!!!!!!!
+        // position: fixed;
+        // background-color: #d21f1f;
+        // z-index: 999;
         &-button-1{
           padding-right: 5%;
         }
