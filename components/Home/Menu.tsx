@@ -27,10 +27,6 @@ const Menu = () => {
               <button className="submit-button">Demander la cantine</button>
             </li>
           </ul>
-          <div className="bartlp--header-navbar-right-menu">
-            <i className="fa-solid fa-bars icon-default"></i>
-            <i className="fa-solid fa-xmark icon-hover"></i>
-          </div>
         </div>
       </nav>
     </header>
