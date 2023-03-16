@@ -3,6 +3,10 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  padding-bottom: 10%;
+  .button-wrapper{
+    padding-top: 0%;
+  }
   article {
     text-align: center;
     z-index: 1;

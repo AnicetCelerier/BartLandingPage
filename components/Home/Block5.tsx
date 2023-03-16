@@ -104,7 +104,7 @@ const Block5 = () => {
           slideSize="25%"
           breakpoints={[{ maxWidth: "sm", slideSize: "100%", slideGap: "0%" }]}
           slideGap="0%"
-          align="end"
+          align="start"
           slidesToScroll={mobile ? 1 : 2}
           className={classes.carousel}
         >

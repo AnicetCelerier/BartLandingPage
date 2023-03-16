@@ -134,28 +134,28 @@ body {
     cursor: pointer;
     position: relative;
 
-    &::before {
-      content: "";
-      position: absolute;
-      width: 100%;
-      height: 2px;
-      bottom: 0;
-      left: 0;
-      background-color: white;
-      visibility: hidden;
-      -webkit-transform: scaleX(0);
-      transform: scaleX(0);
-      -webkit-transition: all 0.3s ease-in-out 0s;
-      transition: all 0.3s ease-in-out 0s;
-    }
+    // &::before {
+    //   content: "";
+    //   position: absolute;
+    //   width: 100%;
+    //   height: 2px;
+    //   bottom: 0;
+    //   left: 0;
+    //   background-color: white;
+    //   visibility: hidden;
+    //   -webkit-transform: scaleX(0);
+    //   transform: scaleX(0);
+    //   -webkit-transition: all 0.3s ease-in-out 0s;
+    //   transition: all 0.3s ease-in-out 0s;
+    // }
 
-    &:hover {
-      &::before {
-        visibility: visible;
-        -webkit-transform: scaleX(1);
-        transform: scaleX(1);
-      }
-    }
+    // &:hover {
+    //   &::before {
+    //     visibility: visible;
+    //     -webkit-transform: scaleX(1);
+    //     transform: scaleX(1);
+    //   }
+    // }
   }
 }
 
@@ -296,23 +296,18 @@ img {
   max-height: 100%;
 }
 
-.head-container{
-  // padding-bottom: 5%; //!ajzdjajzdjazdjajzd
-  h2{
+.head-container {
+  padding-bottom: 5%; //!ajzdjajzdjazdjajzd
+  h2 {
     padding-left: 13%;
     padding-right: 13%;
     margin-bottom: 0;
   }
-  p{
+  p {
     padding-left: 14.5%;
     padding-right: 14.5%;
     color: #616161;
   }
-}
-
-.button-wrapper{
-  padding-top: 2%;
-  padding-bottom: 2%;
 }
 
 .submit-button {

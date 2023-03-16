@@ -4,10 +4,13 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
+  padding-bottom: 15%;
   article {
     text-align: center;
     z-index: 1;
+  }
+  .button-wrapper {
+    padding-top: 5%;
   }
 
   .bartlp--block-4-mosaic {
@@ -28,7 +31,6 @@
       padding-left: 10%;
       padding-top: 2%;
       padding-bottom: 2%;
-      // padding: 2%;
       margin: 0%;
     }
     &-block {
@@ -45,12 +47,16 @@
             justify-content: center;
             margin-left: 10%;
             margin-right: 10%;
+            padding-bottom: 7%;
             // height: 75%;
             img {
-              object-fit: cover;
+              // object-fit: cover;
               max-width: 100%;
               height: auto;
               align-self: center;
+            }
+            &-container-2{
+
             }
           }
           &-2 {
@@ -81,21 +87,8 @@
             display: flex;
             flex-direction: column;
             height: 50%;
-            // margin-left: 5%;
-            // margin-right: 5%;
-            // background-color: #0b9e46;
             justify-content: flex-end;
             img {
-              // padding-left: 5%;
-              // padding-right: 5%;
-              // margin: auto;
-              // height: 90%;
-              // width: 90%;
-              // width: 100%;
-              // object-fit: cover;
-              // max-width: 100%;
-              // height: auto;
-              // background-color: #0b9e46;
               align-self: center;
             }
           }
@@ -110,42 +103,16 @@
         justify-content: space-around;
         &-container {
           &-1 {
-            // display: flex;
-            // height: 50%;
-            // justify-content: center;
-            // align-items: flex-end;
-            // img {
-            //   object-fit: none;
-            // }
             display: flex;
             flex-direction: column;
             height: 50%;
-            // margin-left: 5%;
-            // margin-right: 5%;
-            // background-color: #0b9e46;
             justify-content: center;
             img {
-              // padding-left: 5%;
-              // padding-right: 5%;
-              // margin: auto;
-              // height: 90%;
-              // width: 90%;
-              // width: 100%;
-              // object-fit: cover;
-              // max-width: 100%;
-              // height: auto;
-              // background-color: #0b9e46;
               align-self: center;
             }
           }
           &-2 {
-            // display: flex;
-            // justify-content: center;
-            // align-items: center;
-            // height: 50%;
-            // margin: 0%;
             display: flex;
-            // justify-content: center;
             flex-direction: column;
             align-items: center;
             height: 50%;
@@ -159,8 +126,8 @@
         border-radius: 20px;
         display: flex;
         justify-content: center;
+        flex-direction: column;
         align-items: center;
-
       }
       &-5 {
         grid-area: 2 / 3 / 3 / 4;
@@ -233,6 +200,8 @@
       font-weight: 700;
       line-height: 45px;
       display: flex;
+      padding-top: 7%;
+      padding-bottom: 7%;
     }
     #alteration2 {
       color: #1d1d1f;
@@ -302,21 +271,15 @@
           grid-area: 1 / 1 / 2 / 2;
           &-container {
             &-1 {
-              // background-color: #0b9e46;
-              // padding-top: 20%;
               margin-left: 0%;
               margin-right: 0%;
               margin-top: 10%;
               height: 75%;
               img {
-                // height:80%;
                 margin: 0%;
                 padding: 0%;
-
                 object-fit: cover;
-                // max-width: 100%;
                 height: auto;
-                // align-self: center;
               }
             }
             &-2 {
@@ -325,8 +288,7 @@
         }
         &-2 {
           grid-area: 2 / 1 / 3 / 2;
-          img{
-            // object-fit: contain;
+          img {
           }
         }
         &-3 {

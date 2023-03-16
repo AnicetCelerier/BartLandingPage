@@ -10,7 +10,7 @@ const Menu = () => {
         <div className="bartlp--header-navbar-right">
           <ul id="bartlp--header-navbar-right-links">
             <li
-              data-target="cta"
+              // data-target="cta"
               className="bartlp--header-navbar-right-button-1"
             >
               <button className="access-button">
@@ -21,7 +21,7 @@ const Menu = () => {
               </button>
             </li>
             <li
-              data-target="contact"
+              // data-target="contact"
               className="bartlp--header-navbar-right-button-2"
             >
               <button className="submit-button">Demander la cantine</button>

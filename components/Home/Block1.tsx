@@ -1,5 +1,7 @@
 import React from "react";
 import "animate.css";
+import { Player, Controls } from "@lottiefiles/react-lottie-player";
+import * as LottieScroll from "assets/mouse-scroll.json"
 
 const block1 = () => {
   return (
@@ -22,7 +24,18 @@ const block1 = () => {
           </h1>
         </div>
         <button className="submit-button">Essayer Bart Cantine</button>
-        <span>mouse element</span>
+          <Player
+            autoplay
+            loop
+            src={LottieScroll}
+            style={{ height: "68px", width: "68px" }}
+            className="lottie-element"
+          >
+            <Controls
+              visible={false}
+              buttons={["play", "repeat", "frame", "debug"]}
+            />
+          </Player>
       </article>
     </section>
   );

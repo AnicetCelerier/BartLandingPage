@@ -23,7 +23,11 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
+  padding-top: 10%;
+  .button-wrapper{
+    padding-top: 10%;
+    padding-bottom: 10%;
+  }
   article {
     display: flex;
     flex-direction: column;

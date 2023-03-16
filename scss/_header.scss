@@ -4,6 +4,9 @@
   padding: 0 0px 0 0px;
   transition: background-color 0.3s ease-in-out;
   z-index: 999;
+  &.active {
+    background-color: #ffffff;
+  }
   .bartlp--header-navbar {
     display: flex;
     align-items: center;

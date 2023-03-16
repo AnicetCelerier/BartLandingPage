@@ -1,6 +1,17 @@
 import HeadNext from "next/head";
+import { useEffect } from "react";
+// import { useHeader, useScroll } from "../scripts";
+import Script from "next/script";
 
 const Head = () => {
+  // const initHeader = useHeader();
+  // const initScroll = useScroll();
+
+  // useEffect(() => {
+  //   initHeader();
+  //   initScroll();
+  // }, [initHeader, initScroll]);
+
   return (
     <HeadNext>
       <title>Bart</title>
@@ -25,6 +36,8 @@ const Head = () => {
         content="viewport-fit=cover, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"
       />
       <meta name="theme-color" content="#34495e" />
+
+      <Script src="https://firebasestorage.googleapis.com/v0/b/joazco-1fd73.appspot.com/o/jquery-3.6.0.min.js?alt=media&token=4300d217-bc88-46f5-a036-0ce7328fab83"></Script>
     </HeadNext>
   );
 };

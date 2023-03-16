@@ -53,13 +53,9 @@ const Block3 = () => {
             </div>
           </div>
           <div className="bartlp--block-4-mosaic-block-4">
+            <p>Toutes les</p>
+            <span id="alteration1">25</span>
             <p>
-              Toutes les
-              <span id="alteration1">
-                <br />
-                25
-                <br />
-              </span>
               Commandes au sein de votre entreprise, 5 plats sont reversés aux
               associations alimentaires.
             </p>
