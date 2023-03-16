@@ -5,6 +5,7 @@ export default function Document() {
     <Html>
       <Head>
       <link href="https://fonts.cdnfonts.com/css/satoshi" rel="stylesheet"/>
+      
       </Head>
       <body>
         <Main />

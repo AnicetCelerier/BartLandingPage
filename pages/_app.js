@@ -2,6 +2,17 @@ import "../index.scss";
 import localFont from "@next/font/local";
 import { MantineProvider, Global } from "@mantine/core";
 // const myFont = localFont({ src: "../assets/fonts/Satoshi-Regular.ttf" });
+// import Black from "../assets/fonts/Satoshi-Black.ttf";
+// import Medium from "../assets/fonts/Satoshi-Medium.ttf";
+// import Bold from "../assets/fonts/Satoshi-Medium.ttf";
+// import Regular from "../assets/fonts/Satoshi-Medium.ttf";
+
+// @font-face': {
+//   fontFamily: 'Greycliff CF',
+//   src: `url('${bold}') format("woff2")`,
+//   fontWeight: 700,
+//   fontStyle: 'normal',
+// },
 
 const myFont = localFont({
   src: [
@@ -73,6 +84,42 @@ export default function MyApp({ Component, pageProps }) {
         },
       }}
     >
+      {/* <Global
+        styles={[
+          {
+            "@font-face": {
+              fontFamily: "Black",
+              src: `url('${Black}') format("ttf")`,
+              fontWeight: 900,
+              fontStyle: "normal",
+            },
+          },
+          {
+            "@font-face": {
+              fontFamily: "Medium",
+              src: `url('${Medium}') format("ttf")`,
+              fontWeight: 500,
+              fontStyle: "normal",
+            },
+          },
+          {
+            "@font-face": {
+              fontFamily: "Bold",
+              src: `url('${Bold}') format("ttf")`,
+              fontWeight: 700,
+              fontStyle: "normal",
+            },
+          },
+          {
+            "@font-face": {
+              fontFamily: "Regular",
+              src: `url('${Regular}') format("ttf")`,
+              fontWeight: 400,
+              fontStyle: "normal",
+            },
+          },
+        ]}
+      /> */}
       <main className={myFont.className}>
         <Component {...pageProps} />
       </main>

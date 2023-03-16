@@ -18,7 +18,7 @@ const block1 = () => {
           data-aos-duration="1500"
         >
           <h1>
-            Cantine digitale
+            Cantine Digitale
             <br />
             <span className="medium"> pour une pause déj savoureuse.</span>
           </h1>

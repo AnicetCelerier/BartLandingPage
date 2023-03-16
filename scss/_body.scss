@@ -1,3 +1,4 @@
+
 :root {
   --color-primary: #ff4500;
   --color-primary-shade: #ce3800;
@@ -19,10 +20,11 @@
 }
 
 // @font-face {
-//   font-family: "black 90 satoshi";
-//   src: var(--font-black-satoshi);
+//   font-family: "Black";
+//   src: "../assets/Satoshi-Regular.ttf";
 //   font-size: 90px;
 //   line-height: 122px;
+// }
 
 //   font-family: "black 74 satoshi";
 //   src: url("../assets/fonts/Satoshi-Black.ttf");
@@ -172,12 +174,12 @@ h1 {
   font-family: var(--font-black-satoshi);
   font-weight: 900;
   font-size: 90px;
-  line-height: 122px;
+  line-height: 121.5px;
   .medium {
     font-family: var(--font-medium-satoshi);
     font-weight: 500;
     font-size: 90px;
-    line-height: 122px;
+    line-height: 121.5px;
   }
 }
 
@@ -185,12 +187,13 @@ h2 {
   font-family: var(--font-black-satoshi);
   font-weight: 900;
   font-size: 64px;
-  line-height: 86px;
+  line-height: 86.4px;
 }
 h3 {
   font-family: var(--font-black-satoshi);
+  font-weight: 900;
   font-size: 34px;
-  line-height: 46px;
+  line-height: 45.9px;
 }
 
 p {
@@ -211,7 +214,7 @@ p {
     &-type-3 {
       font-family: var(--font-regular-satoshi);
       font-size: 24px;
-      line-height: 32px;
+      line-height: 32.4px;
     }
     &-type-4 {
       font-family: var(--font-regular-satoshi);
@@ -226,34 +229,34 @@ p {
     &-type-6 {
       font-family: var(--font-bold-satoshi);
       font-size: 16px;
-      line-height: 22px;
+      line-height: 21.6px;
     }
   }
 }
 
 @media screen and (max-width: 835px) {
   h1 {
-    .thick {
+
       font-family: var(--font-black-satoshi);
       font-size: 74px;
-      line-height: 100px;
-    }
+      line-height: 99.9px;
+
     .medium {
       font-family: var(--font-medium-satoshi);
       font-size: 74px;
-      line-height: 100px;
+      line-height: 99.9px;
     }
   }
 
   h2 {
     font-family: var(--font-black-satoshi);
     font-size: 64px;
-    line-height: 86px;
+    line-height: 86.4px;
   }
   h3 {
     font-family: var(--font-black-satoshi);
     font-size: 34px;
-    line-height: 46px;
+    line-height: 45.9px;
   }
 }
 
@@ -267,15 +270,15 @@ p {
     height: 100%;
   }
   h1 {
-    .thick {
+
       font-family: var(--font-black-satoshi);
       font-size: 54px;
-      line-height: 73px;
-    }
+      line-height: 72.9px;
+
     .medium {
       font-family: var(--font-medium-satoshi);
       font-size: 54px;
-      line-height: 73px;
+      line-height: 72.9px;
     }
   }
 
@@ -287,7 +290,7 @@ p {
   h3 {
     font-family: var(--font-black-satoshi);
     font-size: 34px;
-    line-height: 46px;
+    line-height: 45.9px;
   }
 }
 

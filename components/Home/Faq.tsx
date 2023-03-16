@@ -10,14 +10,18 @@ const useStyles = createStyles((theme) => ({
 
   title: {
     marginBottom: `calc(${theme.spacing.xl} * 1.5)`,
+    fontSize:"90px",
+    [`@media (max-width: ${"835px"})`]: {
+      fontSize:"64px",
+    },
+    [`@media (max-width: ${"350px"})`]: {
+      fontSize:"54px",
+    },
   },
 
   item: {
     borderRadius: theme.radius.md,
     marginBottom: theme.spacing.lg,
-    // border: `${rem(1)} solid ${
-    //   theme.colorScheme === "dark" ? theme.colors.dark[4] : theme.colors.gray[3]
-    // }`,
     border: `${rem(1)} solid ${theme.colors.customBlue[0]}`,
   },
   question: {
