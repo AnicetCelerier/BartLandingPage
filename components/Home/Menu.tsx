@@ -14,7 +14,6 @@ const Menu = () => {
         <div className="bartlp--header-navbar-right">
           <ul id="bartlp--header-navbar-right-links">
             <li
-              // data-target="cta"
               className="bartlp--header-navbar-right-button-1"
             >
               <a href="https://cantine.bartapp.club/">
