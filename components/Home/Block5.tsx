@@ -111,7 +111,9 @@ const Block5 = () => {
           {slides}
         </Carousel>
         <div className="button-wrapper">
-          <button className="submit-button">demander la cantine</button>
+          <a href="#form">
+            <button className="submit-button">Essayez Bart Cantine</button>
+          </a>
         </div>
       </article>
     </section>

@@ -28,7 +28,9 @@ const Block3 = () => {
                 locaux avant 11h pour une livraison à 12h30 ou avant 12h pour
                 une livraison à 13h30.
               </p>
+              <a href="#form">
               <button className="submit-button">Essayez Bart Cantine</button>
+              </a>
             </div>
             <div className="bartlp--block-3-mosaic-block-1-container-2">
               <InfiniteLooper speed={100} direction={"left"}>
@@ -240,7 +242,9 @@ const Block3 = () => {
                 Ding Dong ! Votre repas est arrivé !<br />
                 Savourez votre déjeuner en compagnie de tous vos collègues.
               </p>
-              <button className="submit-button">Demander la cantine</button>
+              <a href="#form">
+              <button className="submit-button">Essayez Bart Cantine</button>
+              </a>
             </div>
             <div className="bartlp--block-3-mosaic-block-4-container-2">
               <img src="../assets/images/sac.png" alt="sac" />

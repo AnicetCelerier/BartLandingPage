@@ -36,7 +36,9 @@ const Block2 = () => {
           </div>
         </div>
         <div className="button-wrapper">
-          <button className="submit-button">Essayer Bart Cantine</button>
+          <a href="#form">
+            <button className="submit-button">Essayez Bart Cantine</button>
+          </a>
         </div>
       </article>
     </section>

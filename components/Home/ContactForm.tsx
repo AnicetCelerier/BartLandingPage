@@ -72,7 +72,7 @@ const ContactForm = () => {
 
   return (
     <section className="bartlp--contactForm" id="contact">
-      <article>
+      <article id="form">
         <div className="head-container">
           <h2>Je demande ma cantine 2.0</h2>
           <p>
@@ -215,7 +215,7 @@ const ContactForm = () => {
               className="submit-button"
               onClick={(e) => handleSubmit(e)}
             >
-              Envoyer <i className="far fa-paper-plane"></i>
+              Rejoignez le mouvement ! <i className="far fa-paper-plane"></i>
             </button>
           </div>
         </form>

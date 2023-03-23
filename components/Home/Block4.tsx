@@ -89,7 +89,9 @@ const Block3 = () => {
         </div>
       </article>
       <div className="button-wrapper">
-        <button className="submit-button">Essayez Bart Cantine</button>
+        <a href="#form">
+          <button className="submit-button">Essayez Bart Cantine</button>
+        </a>
       </div>
     </section>
   );
