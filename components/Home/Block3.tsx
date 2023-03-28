@@ -29,7 +29,7 @@ const Block3 = () => {
                 une livraison à 13h30.
               </p>
               <a href="#form">
-              <button className="submit-button">Essayez Bart Cantine</button>
+                <button className="submit-button">Essayez Bart Cantine</button>
               </a>
             </div>
             <div className="bartlp--block-3-mosaic-block-1-container-2">
@@ -62,40 +62,28 @@ const Block3 = () => {
                       alt="logo whatthefoc"
                     />
                   </div>
-                  <div className="bartlp--block-3-mosaic-block-1-container-2-row-1-card">
+                  <div className="bartlp--block-3-mosaic-block-1-container-2-row-2-card">
                     <img
-                      src="../assets/images/logo-comokitchen.png"
-                      alt="logo comokitchen"
+                      src="../assets/images/logo-pereetfish.png"
+                      alt="logo père et fish"
                     />
                   </div>
-                  <div className="bartlp--block-3-mosaic-block-1-container-2-row-1-card">
+                  <div className="bartlp--block-3-mosaic-block-1-container-2-row-2-card">
                     <img
-                      src="../assets/images/logo-pichpich.png"
-                      alt="logo pichpich"
+                      src="../assets/images/logo-frairie.png"
+                      alt="logo la frairie"
                     />
                   </div>
-                  <div className="bartlp--block-3-mosaic-block-1-container-2-row-1-card">
+                  <div className="bartlp--block-3-mosaic-block-1-container-2-row-2-card">
                     <img
-                      src="../assets/images/logo-mamanissa.png"
-                      alt="logo mamanissa"
+                      src="../assets/images/logo-soumsoum.png"
+                      alt="logo soumsoum"
                     />
                   </div>
-                  <div className="bartlp--block-3-mosaic-block-1-container-2-row-1-card">
+                  <div className="bartlp--block-3-mosaic-block-1-container-2-row-2-card">
                     <img
-                      src="../assets/images/logo-monthai.png"
-                      alt="logo monthai"
-                    />
-                  </div>
-                  <div className="bartlp--block-3-mosaic-block-1-container-2-row-1-card">
-                    <img
-                      src="../assets/images/logo-willsdeli.png"
-                      alt="logo willsdeli"
-                    />
-                  </div>
-                  <div className="bartlp--block-3-mosaic-block-1-container-2-row-1-card">
-                    <img
-                      src="../assets/images/logo-coquillettes.png"
-                      alt="logo coquillettes"
+                      src="../assets/images/logo-walida.png"
+                      alt="logo walida"
                     />
                   </div>
                 </div>
@@ -139,30 +127,24 @@ const Block3 = () => {
                     />
                   </div>
                   <div className="bartlp--block-3-mosaic-block-1-container-2-row-2-card">
-                    <img src="../assets/images/logo-mojo.png" alt="logo mojo" />
-                  </div>
-                  <div className="bartlp--block-3-mosaic-block-1-container-2-row-2-card">
                     <img
-                      src="../assets/images/logo-napoligang.png"
-                      alt="logo napoligang"
+                      src="../assets/images/logo-tgp.png"
+                      alt="logo the good place"
                     />
                   </div>
                   <div className="bartlp--block-3-mosaic-block-1-container-2-row-2-card">
                     <img
-                      src="../assets/images/logo-encoreburger.png"
-                      alt="logo encoreburger"
+                      src="../assets/images/logo-medeat.png"
+                      alt="logo medeat"
                     />
                   </div>
                   <div className="bartlp--block-3-mosaic-block-1-container-2-row-2-card">
-                    <img
-                      src="../assets/images/logo-mersea.png"
-                      alt="logo mersea"
-                    />
+                    <img src="../assets/images/logo-spok.png" alt="logo spok" />
                   </div>
                   <div className="bartlp--block-3-mosaic-block-1-container-2-row-2-card">
                     <img
-                      src="../assets/images/logo-whatthefoc.png"
-                      alt="logo whatthefoc"
+                      src="../assets/images/logo-mezzencore.png"
+                      alt="logo mezzencore"
                     />
                   </div>
                 </div>
@@ -188,49 +170,49 @@ const Block3 = () => {
             </div>
             <div className="bartlp--block-3-mosaic-block-3-container-2">
               <ul>
-                <li className="">
+                <li>
                   <img src="../assets/images/logo-visa.png" alt="logo visa" />
                 </li>
-                <li className="">
+                <li>
                   <img
                     src="../assets/images/logo-mastercard.png"
                     alt="logo mastercard"
                   />
                 </li>
-                <li className="">
+                <li>
                   <img
-                    src="../assets/images/logo-applepay.png"
-                    alt="logo applepay"
+                    src="../assets/images/logo-edenred.png"
+                    alt="logo endenred"
                   />
                 </li>
-                <li className="">
-                  <img
-                    src="../assets/images/logo-paypal.png"
-                    alt="logo paypal"
-                  />
+                <li>
+                  <img src="../assets/images/logo-swile.png" alt="logo swile" />
                 </li>
               </ul>
               <ul>
-                <li className="">
+                <li>
                   <img
-                    src="../assets/images/logo-stripe.png"
-                    alt="logo stripe"
+                    src="../assets/images/logo-bimpli.png"
+                    alt="logo bimpli"
                   />
                 </li>
-                <li className="">
+                <li>
                   <img
-                    src="../assets/images/logo-discover.png"
-                    alt="logo discover"
+                    src="../assets/images/logo-passrestaurant.png"
+                    alt="logo pass restaurant"
                   />
                 </li>
-                <li className="">
+                <li>
                   <img
-                    src="../assets/images/logo-skrill.png"
-                    alt="logo skrill"
+                    src="../assets/images/logo-updejeuner.png"
+                    alt="logo updéjeuner"
                   />
                 </li>
-                <li className="">
-                  <img src="../assets/images/logo-unknown.png" alt="" />
+                <li>
+                  <img
+                    src="../assets/images/logo-restoflash.png"
+                    alt="logo restoflash"
+                  />
                 </li>
               </ul>
             </div>
@@ -243,7 +225,7 @@ const Block3 = () => {
                 Savourez votre déjeuner en compagnie de tous vos collègues.
               </p>
               <a href="#form">
-              <button className="submit-button">Essayez Bart Cantine</button>
+                <button className="submit-button">Essayez Bart Cantine</button>
               </a>
             </div>
             <div className="bartlp--block-3-mosaic-block-4-container-2">

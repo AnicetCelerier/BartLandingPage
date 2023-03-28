@@ -31,8 +31,8 @@ const Footer = () => {
             </a>
           </li>
           <li>
-            <a href=""></a>
-            <img src="../assets/images/logo-twitter.png" alt="logo twitter" />
+            <a href="https://www.linkedin.com/company/bartapp/"></a>
+            <img src="../assets/images/logo-linkedin.png" alt="logo linkedin" />
           </li>
           <li>
             <a href="https://www.facebook.com/Bartappfr">
