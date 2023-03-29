@@ -25,13 +25,26 @@ const useContactForm = () => {
       companyInput &&
       zipCodeInput &&
       customerTypeInput
-    ) {
-      fetch(
-        `https://us-central1-sprint-1bda4.cloudfunctions.net/sendMail?email=${emailInput}&subject=${subjectInput}&information=${informationInput}`
-      ).then((response) => response.json());
-      localStorage.setItem(
-        "inputs",
-        JSON.stringify({
+    ) 
+    // {
+    //   fetch(
+    //     `https://us-central1-sprint-1bda4.cloudfunctions.net/sendMail?email=${emailInput}&subject=${subjectInput}&information=${informationInput}`
+    //   ).then((response) => response.json());
+    //   localStorage.setItem(
+    //     "inputs",
+    //     JSON.stringify({
+    //       emailInput,
+    //       nameInput,
+    //       phoneInput,
+    //       employeesInput,
+    //       companyInput,
+    //       zipCodeInput,
+    //       customerTypeInput,
+    //     })
+    //   );
+    //   setBlockForm(true);
+    // }
+    {console.log(
           emailInput,
           nameInput,
           phoneInput,
@@ -39,10 +52,7 @@ const useContactForm = () => {
           companyInput,
           zipCodeInput,
           customerTypeInput,
-        })
-      );
-      setBlockForm(true);
-    }
+    )}
   };
 
   useEffect(() => {

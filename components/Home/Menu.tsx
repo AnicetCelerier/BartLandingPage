@@ -1,5 +1,8 @@
 import React from "react";
 import useHeader from "@/hooks/useHead";
+import Image from "next/image";
+import logoBart from "public/assets/images/logo-bart.png"
+
 
 const Menu = () => {
   const { scrollPos } = useHeader();
@@ -9,7 +12,8 @@ const Menu = () => {
     <header className={`bartlp--header ${scrollPos}`}>
       <nav className="bartlp--header-navbar">
         <div className={`bartlp--header-navbar-left ${scrollPos}`}>
-          <img src="../assets/images/logo-bart.png" alt="logo bart" />
+          {/* <img src="../assets/images/logo-bart.png" alt="logo bart" /> */}
+          <Image src={logoBart} alt="logo bart"/>
         </div>
         <div className="bartlp--header-navbar-right">
           <ul id="bartlp--header-navbar-right-links">

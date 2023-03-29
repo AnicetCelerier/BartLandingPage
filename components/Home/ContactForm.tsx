@@ -88,13 +88,17 @@ const ContactForm = () => {
             <div className="bartlp--contactForm-fields-container-1">
               <button
                 className="bartlp--contactForm-fields-container-1-customer-1"
-                onChange={(e) => setCustomerTypeInput(e.target.value)}
+                value="Responsable de la vie de bureau"
+                onClick={() =>
+                  setCustomerTypeInput("Responsable de la vie de bureau")
+                }
               >
                 JE SUIS RESPONSABLE DE LA VIE DE BUREAU
               </button>
               <button
                 className="bartlp--contactForm-fields-container-1-customer-2"
-                onChange={(e) => setCustomerTypeInput(e.target.value)}
+                value="Employé"
+                onClick={() => setCustomerTypeInput("Employé")}
               >
                 JE SUIS EMPLOYÉ
               </button>
