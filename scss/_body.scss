@@ -1,4 +1,3 @@
-
 :root {
   --color-primary: #ff4500;
   --color-primary-shade: #ce3800;
@@ -18,105 +17,9 @@
 
   --color-font-tertiary: #0b9e46;
 }
-
-// @font-face {
-//   font-family: "Black";
-//   src: "../assets/Satoshi-Regular.ttf";
-//   font-size: 90px;
-//   line-height: 122px;
-// }
-
-//   font-family: "black 74 satoshi";
-//   src: url("../assets/fonts/Satoshi-Black.ttf");
-//   font-style: normal;
-//   font-weight: 900;
-//   font-size: 74px;
-//   line-height: 100px;
-
-//   font-family: "black 64 satoshi";
-//   src: url("../assets/fonts/Satoshi-Black.ttf");
-//   font-style: normal;
-//   font-weight: 900;
-//   font-size: 64px;
-//   line-height: 86px;
-
-//   font-family: "black 40 satoshi";
-//   src: url("../assets/fonts/Satoshi-Black.ttf");
-//   font-style: normal;
-//   font-weight: 900;
-//   font-size: 40px;
-//   line-height: 54px;
-
-//   font-family: "black 34 satoshi";
-//   src: url("../assets/fonts/Satoshi-Black.ttf");
-//   font-style: normal;
-//   font-weight: 900;
-//   font-size: 34px;
-//   line-height: 46px;
-
-//   font-family: "medium 90 satoshi";
-//   src: url("../assets/fonts/Satoshi-Medium.ttf");
-//   font-style: normal;
-//   font-weight: 500;
-//   font-size: 90px;
-//   line-height: 122px;
-
-//   font-family: "medium 74 satoshi";
-//   src: url("../assets/fonts/Satoshi-Medium.ttf");
-//   font-style: normal;
-//   font-weight: 500;
-//   font-size: 74px;
-//   line-height: 100px;
-
-//   font-family: "medium 54 satoshi";
-//   src: url("../assets/fonts/Satoshi-Medium.ttf");
-//   font-style: normal;
-//   font-weight: 500;
-//   font-size: 54px;
-//   line-height: 73px;
-
-//   font-family: "bold 24 satoshi";
-//   src: url("../assets/fonts/Satoshi-Bold.ttf");
-//   font-style: normal;
-//   font-weight: 700;
-//   font-size: 24px;
-//   line-height: 32px;
-
-//   font-family: "bold 20 satoshi";
-//   src: url("../assets/fonts/Satoshi-Bold.ttf");
-//   font-style: normal;
-//   font-weight: 700;
-//   font-size: 20px;
-//   line-height: 27px;
-
-//   font-family: "bold 16 satoshi";
-//   src: url("../assets/fonts/Satoshi-Bold.ttf");
-//   font-style: normal;
-//   font-weight: 700;
-//   font-size: 16px;
-//   line-height: 22px;
-
-//   font-family: "regular 24 satoshi";
-//   src: url("../assets/fonts/Satoshi-Regular.ttf");
-//   font-style: normal;
-//   font-weight: 400;
-//   font-size: 24px;
-//   line-height: 32px;
-
-//   font-family: "regular 20 satoshi";
-//   src: url("../assets/fonts/Satoshi-Regular.ttf");
-//   font-style: normal;
-//   font-weight: 400;
-//   font-size: 20px;
-//   line-height: 29px;
-
-//   font-family: "regular 18 satoshi";
-//   src: url("../assets/fonts/Satoshi-Regular.ttf");
-//   font-style: normal;
-//   font-weight: 400;
-//   font-size: 18px;
-//   line-height: 30px;
-// }
+html {
+  scroll-behavior: smooth;
+}
 
 body {
   margin: 0;
@@ -135,29 +38,6 @@ body {
     transition: all 0.35s ease;
     cursor: pointer;
     position: relative;
-
-    // &::before {
-    //   content: "";
-    //   position: absolute;
-    //   width: 100%;
-    //   height: 2px;
-    //   bottom: 0;
-    //   left: 0;
-    //   background-color: white;
-    //   visibility: hidden;
-    //   -webkit-transform: scaleX(0);
-    //   transform: scaleX(0);
-    //   -webkit-transition: all 0.3s ease-in-out 0s;
-    //   transition: all 0.3s ease-in-out 0s;
-    // }
-
-    // &:hover {
-    //   &::before {
-    //     visibility: visible;
-    //     -webkit-transform: scaleX(1);
-    //     transform: scaleX(1);
-    //   }
-    // }
   }
 }
 
@@ -236,10 +116,9 @@ p {
 
 @media screen and (max-width: 835px) {
   h1 {
-
-      font-family: var(--font-black-satoshi);
-      font-size: 74px;
-      line-height: 99.9px;
+    font-family: var(--font-black-satoshi);
+    font-size: 74px;
+    line-height: 99.9px;
 
     .medium {
       font-family: var(--font-medium-satoshi);
@@ -262,7 +141,7 @@ p {
 
 @media screen and (max-width: 390px) {
   header {
-    position: static;
+    // position: static;
     left: 0;
     right: 0;
   }
@@ -270,10 +149,9 @@ p {
     height: 100%;
   }
   h1 {
-
-      font-family: var(--font-black-satoshi);
-      font-size: 54px;
-      line-height: 72.9px;
+    font-family: var(--font-black-satoshi);
+    font-size: 54px;
+    line-height: 72.9px;
 
     .medium {
       font-family: var(--font-medium-satoshi);

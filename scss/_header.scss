@@ -1,6 +1,5 @@
 .bartlp--header {
   color: #ffffff;
-  font-size: 1.1rem;
   padding: 0 0px 0 0px;
   transition: background-color 0.3s ease-in-out;
   z-index: 999;
@@ -96,15 +95,18 @@
       flex-wrap: wrap;
       width: 100%;
       justify-content: center;
-      height: 200px;
+      height: 100px;
       // position: sticky;
       // top: 0;
       // height: 100px;
+      // position: static;
       .bartlp--header-navbar-left {
         cursor: pointer;
         width: 100px;
         height: 100px;
-        position: relative;
+        // position: relative;
+        // position: fixed;
+        position: static;
         top: 0;
         bottom: 0;
         left: 0;
@@ -112,6 +114,9 @@
         padding-right: 0%;
         margin: auto;
         display: flex;
+        &.active {
+          display: none;
+        }
         img {
           justify-content: center;
           align-items: center;
@@ -121,11 +126,12 @@
       .bartlp--header-navbar-right {
         display: flex;
         //!   pblm !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-        position: -webkit-sticky;
-        position: sticky;
+        // position: -webkit-sticky;
+        // position: sticky;
         top: 0;
         width: 100vh;
         justify-content: center;
+        background-color: rgb(255, 255, 255);
         &-button-1 {
           padding-right: 5%;
         }

@@ -8,7 +8,7 @@ const Menu = () => {
   return (
     <header className={`bartlp--header ${scrollPos}`}>
       <nav className="bartlp--header-navbar">
-        <div className="bartlp--header-navbar-left">
+        <div className={`bartlp--header-navbar-left ${scrollPos}`}>
           <img src="../assets/images/logo-bart.png" alt="logo bart" />
         </div>
         <div className="bartlp--header-navbar-right">
