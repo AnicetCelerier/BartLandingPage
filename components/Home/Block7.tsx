@@ -9,6 +9,7 @@ import {
   Image,
 } from "@mantine/core";
 import { CardPartnersProps } from "@/types";
+import useBlock7 from "@/hooks/useBlock7";
 
 const useStyles = createStyles((theme) => ({
   card: {
@@ -54,25 +55,22 @@ const Card = ({ image, alt }: CardPartnersProps) => {
 
 const data = [
   {
-    image: "../assets/images/logo-clubmed.png",
-    alt: "Club Med",
+    image: "../assets/images/logo-bfmbusiness.png",
+    alt: "BFM Business",
   },
   {
-    image: "../assets/images/logo-toucantoco.png",
-    alt: "Toucan Toco",
+    image: "../assets/images/logo-larevuedescomptoirs.png",
+    alt: "La Revue des Comptoirs",
   },
   {
-    image: "../assets/images/logo-inato.png",
-    alt: "Inato",
-  },
-  {
-    image: "../assets/images/logo-actifdigital.png",
-    alt: "Actif Digital",
+    image: "../assets/images/logo-bsmart.png",
+    alt: "B Smart",
   },
 ];
 
 const Block5 = () => {
   const { classes } = useStyles();
+  const { customCarousel } = useBlock7();
   const theme = useMantineTheme();
   const mobile = useMediaQuery(`(max-width: ${theme.breakpoints.sm})`);
   const slides = data.map((item) => (
@@ -82,23 +80,25 @@ const Block5 = () => {
   ));
 
   return (
-    <section className="bartlp--block-5">
+    <section className="bartlp--block-7">
       <article>
         <div
           className="head-container"
           data-aos="fade-down"
           data-aos-duration="1500"
         >
-          <h2>Ils nous font confiance</h2>
-          <p>Choisissez une cantine digitale d'entreprise 2.0 engagée !</p>
+          <h2>...Mais pas que</h2>
+          <p>Ils parlent de nous</p>
         </div>
         <Carousel
           slideSize="25%"
           breakpoints={[{ maxWidth: "sm", slideSize: "100%", slideGap: "0%" }]}
           slideGap="0%"
-          align="start"
+          align={customCarousel.alignement}
           slidesToScroll={mobile ? 1 : 2}
           className={classes.carousel}
+          withControls={customCarousel.fix}
+          draggable={customCarousel.fix}
         >
           {slides}
         </Carousel>

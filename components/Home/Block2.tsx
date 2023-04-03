@@ -7,7 +7,6 @@ const Block2 = () => {
         <div
           className="head-container"
           data-aos="fade-down"
-          // data-aos-easing="linear"
           data-aos-duration="1500"
         >
           <h2>Bart, la cantine 2.0 en quelques clics !</h2>

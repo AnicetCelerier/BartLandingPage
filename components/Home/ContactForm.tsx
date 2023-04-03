@@ -63,6 +63,8 @@ const ContactForm = () => {
     zipCodeInput,
     blockForm,
     showAlert,
+    setCustomerTypeInputStyle,
+    customerTypeInputStyle,
   } = useContactForm();
 
   const [focused, setFocused] = useState(false);
@@ -87,7 +89,7 @@ const ContactForm = () => {
           <div className="bartlp--contactForm-fields">
             <div className="bartlp--contactForm-fields-container-1">
               <button
-                className="bartlp--contactForm-fields-container-1-customer-1"
+                className={`bartlp--contactForm-fields-container-1-customer-1 ${customerTypeInputStyle}`}
                 value="Responsable de la vie de bureau"
                 onClick={() =>
                   setCustomerTypeInput("Responsable de la vie de bureau")
@@ -96,7 +98,7 @@ const ContactForm = () => {
                 JE SUIS RESPONSABLE DE LA VIE DE BUREAU
               </button>
               <button
-                className="bartlp--contactForm-fields-container-1-customer-2"
+                className={`bartlp--contactForm-fields-container-1-customer-2 ${customerTypeInputStyle}`}
                 value="Employé"
                 onClick={() => setCustomerTypeInput("Employé")}
               >
@@ -106,10 +108,7 @@ const ContactForm = () => {
             <div className="bartlp--contactForm-fields-container-2">
               <div className="bartlp--contactForm-fields-container-2-left">
                 {showAlert && (
-                  <div className="form-field alert active">
-                    <div>
-                      <i className="fas fa-check"></i>
-                    </div>
+                  <div className="form-field alert">
                     <p>
                       Votre message a bien été envoyé et reçu, vous aurez un
                       retour d'ici peu.
@@ -219,7 +218,7 @@ const ContactForm = () => {
               className="submit-button"
               onClick={(e) => handleSubmit(e)}
             >
-              Rejoignez le mouvement ! <i className="far fa-paper-plane"></i>
+              Rejoignez le mouvement !
             </button>
           </div>
         </form>

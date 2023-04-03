@@ -1,16 +1,6 @@
 import HeadNext from "next/head";
-import { useEffect } from "react";
-// import { useHeader, useScroll } from "../scripts";
 
 const Head = () => {
-  // const initHeader = useHeader();
-  // const initScroll = useScroll();
-
-  // useEffect(() => {
-  //   initHeader();
-  //   initScroll();
-  // }, [initHeader, initScroll]);
-
   return (
     <HeadNext>
       <title>Bart</title>
@@ -23,7 +13,10 @@ const Head = () => {
       <meta property="og:url" content="" />
       <meta property="og:description" content="" />
       <meta name="robots" content="all" />
-      <meta name="copyright" content="Copyright © " />
+      <meta
+        name="copyright"
+        content="Copyright © 2023 Bartapp. Tous droits réservés."
+      />
       <meta property="og:image" content="" />
 
       <link rel="icon" href="" />
@@ -34,8 +27,7 @@ const Head = () => {
         name="viewport"
         content="viewport-fit=cover, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"
       />
-      <meta name="theme-color" content="#34495e" />
-
+      <meta name="theme-color" content="#FFFFFF" />
     </HeadNext>
   );
 };

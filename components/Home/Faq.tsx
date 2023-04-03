@@ -10,12 +10,12 @@ const useStyles = createStyles((theme) => ({
 
   title: {
     marginBottom: `calc(${theme.spacing.xl} * 1.5)`,
-    fontSize:"90px",
+    fontSize: "90px",
     [`@media (max-width: ${"835px"})`]: {
-      fontSize:"64px",
+      fontSize: "64px",
     },
     [`@media (max-width: ${"350px"})`]: {
-      fontSize:"54px",
+      fontSize: "54px",
     },
   },
 

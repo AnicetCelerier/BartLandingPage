@@ -4,7 +4,7 @@
   justify-content: center;
   align-items: center;
   padding-bottom: 10%;
-  .button-wrapper{
+  .button-wrapper {
     padding-top: 0%;
   }
   article {
@@ -18,58 +18,49 @@
     align-items: center;
     width: 100vw;
   }
-  // #contactForm {
-  //   display: flex;
-  //   flex-direction: row;
-  //   justify-content: center;
-  // }
-
-  // .customer-type {
-  .form-field{
+  .form-field {
     padding: 2%;
   }
-
-  // }
   &-fields {
     display: flex;
     flex-direction: column;
     justify-content: center;
     width: 75vw;
     &-container-1 {
-      // display: flex;
       display: flex;
-      // justify-content: center;
-      // align-items: center;
-      // padding: 27px 142.5px 27px 141.688px;
-      // background-color: transparent;
-      // display: flex;
-
       &-customer-1 {
-        border: 2px solid #36415e;
+        border: 1px solid #00000040;
         background-color: transparent;
         border-radius: 20px;
-        // min-height: 25%;
-        // min-width: 25%;``
         width: 50%;
         margin-right: 2%;
         margin-left: 2%;
         padding: 3%;
+        &:hover {
+          border: 2px solid #36415e;
+        }
+        &.active1 {
+          border: 2px solid #36415e;
+        }
       }
       &-customer-2 {
-        border: 2px solid #36415e;
+        border: 1px solid #00000040;
         background-color: transparent;
         border-radius: 20px;
-        // min-height: 25%;
-        // min-width: 25%;
         width: 50%;
         margin-left: 2%;
         margin-right: 2%;
         padding: 3%;
+        &:hover {
+          border: 2px solid #36415e;
+        }
+        &.active2 {
+          border: 2px solid #36415e;
+        }
       }
     }
     &-container-2 {
       display: flex;
-      // gap:10vh
       &-left {
         width: 50%;
         padding: 2%;
@@ -88,23 +79,13 @@
       justify-content: center;
       width: 100vw;
       &-container-1 {
-        // display: flex;
-
         display: flex;
         flex-direction: column;
         align-items: center;
-        // justify-content: center;
-        // align-items: center;
-        // padding: 27px 142.5px 27px 141.688px;
-        // background-color: transparent;
-        // display: flex;
-
         &-customer-1 {
           border: 2px solid #36415e;
           background-color: transparent;
           border-radius: 20px;
-          // min-height: 25%;
-          // min-width: 25%;``
           width: 50%;
           height: 50%;
           margin-bottom: 2%;
@@ -115,8 +96,6 @@
           border: 2px solid #36415e;
           background-color: transparent;
           border-radius: 20px;
-          // min-height: 25%;
-          // min-width: 25%;
           width: 50%;
           height: 50%;
           margin-bottom: 2%;
@@ -129,7 +108,6 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        // gap:10vh
         &-left {
           width: 50%;
           padding: 0%;
@@ -149,23 +127,13 @@
       justify-content: center;
       width: 100vw;
       &-container-1 {
-        // display: flex;
-
         display: flex;
         flex-direction: column;
         align-items: center;
-        // justify-content: center;
-        // align-items: center;
-        // padding: 27px 142.5px 27px 141.688px;
-        // background-color: transparent;
-        // display: flex;
-
         &-customer-1 {
           border: 2px solid #36415e;
           background-color: transparent;
           border-radius: 20px;
-          // min-height: 25%;
-          // min-width: 25%;``
           width: 90%;
           height: 50%;
           margin-bottom: 2%;
@@ -176,8 +144,6 @@
           border: 2px solid #36415e;
           background-color: transparent;
           border-radius: 20px;
-          // min-height: 25%;
-          // min-width: 25%;
           width: 90%;
           height: 50%;
           margin-bottom: 2%;
@@ -190,7 +156,6 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        // gap:10vh
         &-left {
           width: 90%;
           padding: 0%;

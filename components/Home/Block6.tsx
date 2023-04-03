@@ -14,22 +14,19 @@ import { CardCustomersProps } from "@/types";
 
 const useStyles = createStyles((theme) => ({
   card: {
-    // height: rem(250),
-
     height: "286px",
     width: "366px",
     display: "flex",
     flexDirection: "column",
     alignItems: "flex-start",
     alignContent: "flex-start",
-    justifyContent:"space-between",
+    justifyContent: "space-between",
     marginLeft: "none",
     borderRadius: theme.radius.lg,
     boxShadow: "none",
-    paddingRight:"2px",
+    paddingRight: "2px",
     margin: rem(8),
-    // padding: rem(100),
-    boxSizing:"content-box",
+    boxSizing: "content-box",
     [`@media (max-width: ${"835px"})`]: {
       width: "366px",
       height: "286px",
@@ -44,19 +41,16 @@ const useStyles = createStyles((theme) => ({
     paddingTop: rem(10),
     paddingBottom: rem(20),
   },
-
   content: {
     fontWeight: 400,
     color: theme.black,
     lineHeight: 1.2,
     fontSize: "20px",
-    // paddingBottom: rem(15),
   },
   name: {
     color: theme.black,
     opacity: 0.7,
     fontWeight: 700,
-    // paddingBottom: rem(40),
     fontSize: "16px",
     [`@media (max-width: ${"390px"})`]: {
       paddingBottom: rem(20),
@@ -80,8 +74,8 @@ function Card({ name, content }: CardCustomersProps) {
         <Text className={classes.content} size="xs">
           {content}
         </Text>
-        </div>
-        <div>
+      </div>
+      <div>
         <Title order={3} className={classes.name}>
           {name}
         </Title>

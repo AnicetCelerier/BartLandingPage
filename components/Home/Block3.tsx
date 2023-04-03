@@ -1,7 +1,5 @@
 import React from "react";
-import Image from "next/image";
 import InfiniteLooper from "./InfiniteLooper";
-// import salad from "assets/images/salad.png"
 
 const Block3 = () => {
   return (
@@ -10,7 +8,6 @@ const Block3 = () => {
         <div
           className="head-container"
           data-aos="fade-down"
-          // data-aos-easing="linear"
           data-aos-duration="1500"
         >
           <h2>Comment fonctionne votre cantine d'entreprise 2.0 ?</h2>

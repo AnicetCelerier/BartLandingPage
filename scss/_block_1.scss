@@ -47,31 +47,32 @@
 
 @media screen and (max-width: 835px) {
   .bartlp--block-1 {
-  article {
-    img {
-      position: relative;
-      top:100px;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      margin: 0;
-      padding: 0;
-      width: 100%;
-      max-width: none;
-      max-height: none;
-      object-fit: fill;
-      outline: none;
-      border: none;
-      box-shadow: none;
-    }
-    h1 {
-      padding-top: 0%;
-      padding-left: 0%;
-      padding-right: 0%;
-      .medium {
+    article {
+      img {
+        position: relative;
+        top: 100px;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        max-width: none;
+        max-height: none;
+        object-fit: fill;
+        outline: none;
+        border: none;
+        box-shadow: none;
+      }
+      h1 {
+        padding-top: 0%;
+        padding-left: 0%;
+        padding-right: 0%;
+        .medium {
+        }
       }
     }
-  }}
+  }
 }
 @media screen and (max-width: 390px) {
   .bartlp--block-1 {

@@ -1,8 +1,7 @@
-import React, {useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 
 const useHeader = () => {
-  //   const scrollPosition = useRef(window.pageYOffset);
-  const [scrollPos, setScrollPos] = useState("");
+  const [scrollPos, setScrollPos] = useState<string>("");
 
   useEffect(() => {
     if (typeof window !== "undefined") {
@@ -15,7 +14,6 @@ const useHeader = () => {
       });
     }
   }, []);
-
 
   return { setScrollPos, scrollPos };
 };

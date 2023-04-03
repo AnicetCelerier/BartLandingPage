@@ -2,7 +2,6 @@ import React from "react";
 
 import Head from "./Head";
 
-
 type PageProps = {
   children: React.ReactNode;
 };

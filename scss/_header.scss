@@ -23,7 +23,6 @@
       right: 0;
       margin: auto;
       display: flex;
-
       img {
         justify-content: center;
         align-items: center;
@@ -96,16 +95,10 @@
       width: 100%;
       justify-content: center;
       height: 100px;
-      // position: sticky;
-      // top: 0;
-      // height: 100px;
-      // position: static;
       .bartlp--header-navbar-left {
         cursor: pointer;
         width: 100px;
         height: 100px;
-        // position: relative;
-        // position: fixed;
         position: static;
         top: 0;
         bottom: 0;
@@ -125,9 +118,6 @@
       }
       .bartlp--header-navbar-right {
         display: flex;
-        //!   pblm !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-        // position: -webkit-sticky;
-        // position: sticky;
         top: 0;
         width: 100vh;
         justify-content: center;
@@ -169,12 +159,4 @@
       }
     }
   }
-  
 }
-
-
-
-
-
-
-  

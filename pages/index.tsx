@@ -8,6 +8,7 @@ import {
   Block4,
   Block5,
   Block6,
+  Block7,
   Faq,
   Footer,
   ContactForm,
@@ -29,6 +30,7 @@ function Home() {
       <Block4 />
       <Block5 />
       <Block6 />
+      <Block7 />
       <ContactForm />
       <Faq />
       <Footer />

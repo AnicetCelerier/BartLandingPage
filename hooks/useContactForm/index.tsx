@@ -1,8 +1,7 @@
-import { useState, FormEvent, useEffect, useMemo } from "react";
+import React, { useState, FormEvent, useEffect, useMemo } from "react";
+import { Customer } from "@/types";
 
 const useContactForm = () => {
-  // const [subjectInput, setSubjectInput] = useState<string>("Projet web");
-  // const [informationInput, setInformationInput] = useState<string>("");
   const [blockForm, setBlockForm] = useState<boolean>(false);
   const [nameInput, setNameInput] = useState<string>("");
   const [phoneInput, setPhoneInput] = useState<string>("");
@@ -10,7 +9,9 @@ const useContactForm = () => {
   const [emailInput, setEmailInput] = useState<string>("");
   const [companyInput, setCompanyInput] = useState<string>("");
   const [zipCodeInput, setZipCodeInput] = useState<string>("");
-  const [customerTypeInput, setCustomerTypeInput] = useState<string>("");
+  const [customerTypeInput, setCustomerTypeInput] = useState<Customer>("null");
+  const [customerTypeInputStyle, setCustomerTypeInputStyle] = useState("");
+
   const showAlert = useMemo(() => {
     return blockForm;
   }, [blockForm]);
@@ -25,35 +26,37 @@ const useContactForm = () => {
       companyInput &&
       zipCodeInput &&
       customerTypeInput
-    ) 
-    // {
-    //   fetch(
-    //     `https://us-central1-sprint-1bda4.cloudfunctions.net/sendMail?email=${emailInput}&subject=${subjectInput}&information=${informationInput}`
-    //   ).then((response) => response.json());
-    //   localStorage.setItem(
-    //     "inputs",
-    //     JSON.stringify({
-    //       emailInput,
-    //       nameInput,
-    //       phoneInput,
-    //       employeesInput,
-    //       companyInput,
-    //       zipCodeInput,
-    //       customerTypeInput,
-    //     })
-    //   );
-    //   setBlockForm(true);
-    // }
-    {console.log(
-          emailInput,
-          nameInput,
-          phoneInput,
-          employeesInput,
-          companyInput,
-          zipCodeInput,
-          customerTypeInput,
-    )}
+    ) {
+      {
+        fetch(
+          //! à remplacer !
+          `https://us-central1-sprint-1bda4.cloudfunctions.net/sendMail?email=${emailInput}&subject=${subjectInput}&information=${informationInput}`
+        ).then((response) => response.json());
+        localStorage.setItem(
+          "inputs",
+          JSON.stringify({
+            emailInput,
+            nameInput,
+            phoneInput,
+            employeesInput,
+            companyInput,
+            zipCodeInput,
+            customerTypeInput,
+          })
+        );
+        setBlockForm(true);
+      }
+    }
   };
+
+  useEffect(() => {
+    if (customerTypeInput === "Responsable de la vie de bureau") {
+      setCustomerTypeInputStyle("active1");
+    }
+    if (customerTypeInput === "Employé") {
+      setCustomerTypeInputStyle("active2");
+    }
+  }, [customerTypeInput]);
 
   useEffect(() => {
     const data = localStorage.getItem("inputs");
@@ -74,7 +77,7 @@ const useContactForm = () => {
       setEmployeesInput("");
       setCompanyInput("");
       setZipCodeInput("");
-      setCustomerTypeInput("");
+      setCustomerTypeInput("null");
     }
   }, []);
 
@@ -96,6 +99,8 @@ const useContactForm = () => {
     handleSubmit,
     blockForm,
     showAlert,
+    setCustomerTypeInputStyle,
+    customerTypeInputStyle,
   };
 };
 

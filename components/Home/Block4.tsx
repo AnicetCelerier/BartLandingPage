@@ -1,4 +1,3 @@
-import Image from "next/image";
 import React from "react";
 
 const Block3 = () => {
@@ -8,7 +7,6 @@ const Block3 = () => {
         <div
           className="head-container"
           data-aos="fade-down"
-          // data-aos-easing="linear"
           data-aos-duration="1500"
         >
           <h2>Les avantages de notre cantine digitale d'entreprise :</h2>
