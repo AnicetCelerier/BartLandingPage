@@ -4,14 +4,14 @@ const Head = () => {
   return (
     <HeadNext>
       <title>Bart</title>
-      <meta name="description" content="" />
+      <meta name="description" content="Bart, la cantine 2.0 en quelques clics ! Notre cantine d'entreprise 2.0 attractive vous permet de commander facilement des plats signatures des meilleurs restaurants pour tous vos collaborateurs." />
       <meta name="keywords" content="" />
       <meta name="author" content="" />
 
       <meta property="og:title" content="Bart" />
       <meta property="og:type" content="website" />
       <meta property="og:url" content="" />
-      <meta property="og:description" content="" />
+      <meta property="og:description" content="Bart, la cantine 2.0 en quelques clics ! Notre cantine d'entreprise 2.0 attractive vous permet de commander facilement des plats signatures des meilleurs restaurants pour tous vos collaborateurs." />
       <meta name="robots" content="all" />
       <meta
         name="copyright"

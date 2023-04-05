@@ -127,7 +127,7 @@ const data = [
   },
 ];
 
-const Block6 = () => {
+const Block6Testimony = () => {
   const { classes } = useStyles();
   const theme = useMantineTheme();
   const mobile = useMediaQuery(`(max-width: ${theme.breakpoints.sm})`);
@@ -165,4 +165,4 @@ const Block6 = () => {
   );
 };
 
-export default Block6;
+export default Block6Testimony;

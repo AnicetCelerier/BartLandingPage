@@ -3,7 +3,7 @@ import "animate.css";
 import { Player, Controls } from "@lottiefiles/react-lottie-player";
 import * as LottieScroll from "assets/mouse-scroll.json";
 
-const block1 = () => {
+const Block1Welcome = () => {
   return (
     <section className="bartlp--block-1">
       <article>
@@ -43,4 +43,4 @@ const block1 = () => {
   );
 };
 
-export default block1;
+export default Block1Welcome;

@@ -1,7 +1,7 @@
 import React from "react";
 import InfiniteLooper from "./InfiniteLooper";
 
-const Block3 = () => {
+const Block3Explanation = () => {
   return (
     <section className="bartlp--block-3">
       <article>
@@ -235,4 +235,4 @@ const Block3 = () => {
   );
 };
 
-export default Block3;
+export default Block3Explanation;

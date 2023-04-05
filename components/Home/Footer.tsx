@@ -5,13 +5,9 @@ const Footer = () => {
     <footer className="bartlp--footer">
       <ul className="bartlp--footer-block-1">
         <li>
-          <a>Contact</a>
-        </li>
-        <li>
-          <a>Mentions légales</a>
-        </li>
-        <li>
-          <a>À propos</a>
+          <a href="https://mcusercontent.com/69e3f71a03232ebb521a625c1/files/73f97774-23cd-343f-7a70-c96e906cdd57/Bart_Cantine_CGUCGVMention_Le_gales.pdf">
+            Conditions générales d’utilisation
+          </a>
         </li>
       </ul>
       <div className="bartlp--footer-block-2">
@@ -31,8 +27,12 @@ const Footer = () => {
             </a>
           </li>
           <li>
-            <a href="https://www.linkedin.com/company/bartapp/"></a>
-            <img src="../assets/images/logo-linkedin.png" alt="logo linkedin" />
+            <a href="https://www.linkedin.com/company/bartapp/">
+              <img
+                src="../assets/images/logo-linkedin.png"
+                alt="logo linkedin"
+              />
+            </a>
           </li>
           <li>
             <a href="https://www.facebook.com/Bartappfr">

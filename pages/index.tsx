@@ -2,13 +2,13 @@ import { useEffect } from "react";
 import {
   Page,
   Menu,
-  Block1,
-  Block2,
-  Block3,
-  Block4,
-  Block5,
-  Block6,
-  Block7,
+  Block1Welcome,
+  Block2Presentation,
+  Block3Explanation,
+  Block4Benefits,
+  Block5Partners,
+  Block6Testimony,
+  Block7Media,
   Faq,
   Footer,
   ContactForm,
@@ -24,13 +24,13 @@ function Home() {
   return (
     <Page>
       <Menu />
-      <Block1 />
-      <Block2 />
-      <Block3 />
-      <Block4 />
-      <Block5 />
-      <Block6 />
-      <Block7 />
+      <Block1Welcome />
+      <Block2Presentation />
+      <Block3Explanation />
+      <Block4Benefits />
+      <Block5Partners />
+      <Block6Testimony />
+      <Block7Media />
       <ContactForm />
       <Faq />
       <Footer />

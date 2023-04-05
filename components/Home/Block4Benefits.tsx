@@ -1,6 +1,6 @@
 import React from "react";
 
-const Block3 = () => {
+const Block4Benefits = () => {
   return (
     <section className="bartlp--block-4">
       <article>
@@ -95,4 +95,4 @@ const Block3 = () => {
   );
 };
 
-export default Block3;
+export default Block4Benefits;
