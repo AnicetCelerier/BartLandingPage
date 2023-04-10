@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 
-const useBlock7 = () => {
+const useBlock7Media = () => {
   const [customCarousel, setcustomCarousel] = useState<{
     fix: boolean;
     alignement: number | "end";
@@ -17,4 +17,4 @@ const useBlock7 = () => {
   };
 };
 
-export default useBlock7;
+export default useBlock7Media;

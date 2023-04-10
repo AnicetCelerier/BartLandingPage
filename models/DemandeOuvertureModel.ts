@@ -1,9 +1,12 @@
+import { Customer } from "@/types";
+
 export interface DemandeOuvertureModel {
-    type: string,
+    type: Customer,
     nom: string,
     entreprise: string,
     codePostal: string,
     email: string,
     telephone: string,
-    nbEmployes: string,
+    nbEmployes: number,
+
 }

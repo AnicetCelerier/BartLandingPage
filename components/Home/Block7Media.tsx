@@ -9,7 +9,7 @@ import {
   Image,
 } from "@mantine/core";
 import { CardPartnersProps } from "@/types";
-import useBlock7 from "@/hooks/useBlock7";
+import useBlock7 from "@/hooks/useBlock7Media";
 
 const useStyles = createStyles((theme) => ({
   card: {

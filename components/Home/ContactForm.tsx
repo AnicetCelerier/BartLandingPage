@@ -65,11 +65,21 @@ const ContactForm = () => {
     showAlert,
     setCustomerTypeInputStyle,
     customerTypeInputStyle,
+    formErrors,
   } = useContactForm();
 
   const [focused, setFocused] = useState(false);
+
   const { classes } = useStyles({
-    floating: emailInput.trim().length !== 0 || focused,
+    floating:
+      (nameInput.trim().length &&
+        phoneInput.trim().length &&
+        employeesInput &&
+        emailInput.trim().length &&
+        companyInput.trim().length &&
+        zipCodeInput.trim().length &&
+        customerTypeInput.trim().length !== 0) ||
+      focused,
   });
 
   return (
@@ -88,33 +98,36 @@ const ContactForm = () => {
         <form>
           <div className="bartlp--contactForm-fields">
             <div className="bartlp--contactForm-fields-container-1">
-              <button
-                className={`bartlp--contactForm-fields-container-1-customer-1 ${customerTypeInputStyle}`}
-                value="Responsable de la vie de bureau"
-                onClick={() =>
-                  setCustomerTypeInput("Responsable de la vie de bureau")
-                }
-              >
-                JE SUIS RESPONSABLE DE LA VIE DE BUREAU
-              </button>
-              <button
-                className={`bartlp--contactForm-fields-container-1-customer-2 ${customerTypeInputStyle}`}
-                value="Employé"
-                onClick={() => setCustomerTypeInput("Employé")}
-              >
-                JE SUIS EMPLOYÉ
-              </button>
+              <div className="bartlp--contactForm-fields-container-1-block-1">
+                <button
+                  className={`bartlp--contactForm-fields-container-1-block-1-customer-1 ${customerTypeInputStyle}`}
+                  value="Responsable de la vie de bureau"
+                  type="button"
+                  disabled={blockForm}
+                  onClick={() =>
+                    setCustomerTypeInput("Responsable de la vie de bureau")
+                  }
+                >
+                  JE SUIS RESPONSABLE DE LA VIE DE BUREAU
+                </button>
+                <button
+                  className={`bartlp--contactForm-fields-container-1-block-1-customer-2 ${customerTypeInputStyle}`}
+                  value="Employé"
+                  type="button"
+                  disabled={blockForm}
+                  onClick={() => setCustomerTypeInput("Employé")}
+                >
+                  JE SUIS EMPLOYÉ
+                </button>
+              </div>
+              <div className="bartlp--contactForm-fields-container-1-block-2">
+                {formErrors.type && (
+                  <p className="text-danger">{formErrors.type}</p>
+                )}
+              </div>
             </div>
             <div className="bartlp--contactForm-fields-container-2">
               <div className="bartlp--contactForm-fields-container-2-left">
-                {showAlert && (
-                  <div className="form-field alert">
-                    <p>
-                      Votre message a bien été envoyé et reçu, vous aurez un
-                      retour d'ici peu.
-                    </p>
-                  </div>
-                )}
                 <div className="form-field">
                   <TextInput
                     label="Nom et Prénom"
@@ -129,7 +142,11 @@ const ContactForm = () => {
                     mt="md"
                     autoComplete="nope"
                   />
+                  {formErrors.nom && (
+                    <p className="text-danger">{formErrors.nom}</p>
+                  )}
                 </div>
+
                 <div className="form-field">
                   <TextInput
                     label="Téléphone"
@@ -144,6 +161,9 @@ const ContactForm = () => {
                     mt="md"
                     autoComplete="nope"
                   />
+                  {formErrors.telephone && (
+                    <p className="text-danger">{formErrors.telephone}</p>
+                  )}
                 </div>
                 <div className="form-field">
                   <TextInput
@@ -159,6 +179,9 @@ const ContactForm = () => {
                     mt="md"
                     autoComplete="nope"
                   />
+                  {formErrors.nbEmployes && (
+                    <p className="text-danger">{formErrors.nbEmployes}</p>
+                  )}
                 </div>
               </div>
 
@@ -177,6 +200,9 @@ const ContactForm = () => {
                     mt="md"
                     autoComplete="nope"
                   />
+                  {formErrors.email && (
+                    <p className="text-danger">{formErrors.email}</p>
+                  )}
                 </div>
                 <div className="form-field">
                   <TextInput
@@ -192,6 +218,9 @@ const ContactForm = () => {
                     mt="md"
                     autoComplete="nope"
                   />
+                  {formErrors.entreprise && (
+                    <p className="text-danger">{formErrors.entreprise}</p>
+                  )}
                 </div>
                 <div className="form-field">
                   <TextInput
@@ -207,6 +236,9 @@ const ContactForm = () => {
                     mt="md"
                     autoComplete="nope"
                   />
+                  {formErrors.codePostal && (
+                    <p className="text-danger">{formErrors.codePostal}</p>
+                  )}
                 </div>
                 <div className="form-field"></div>
               </div>
@@ -216,10 +248,19 @@ const ContactForm = () => {
             <button
               type="submit"
               className="submit-button"
+              disabled={blockForm}
               onClick={(e) => handleSubmit(e)}
             >
               Rejoignez le mouvement !
             </button>
+            {showAlert && (
+              <div className="text-valid">
+                <p>
+                  Votre message a bien été envoyé, vous aurez une réponse d'ici
+                  peu. 👍
+                </p>
+              </div>
+            )}
           </div>
         </form>
       </article>
