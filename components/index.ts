@@ -1,0 +1,13 @@
+export { default as Page } from "./Page";
+export { default as Head } from "./Head";
+export { default as Menu } from "./Home/Menu";
+export { default as Block1Welcome } from "./Home/Block1Welcome";
+export { default as Block2Presentation } from "./Home/Block2Presentation";
+export { default as Block3Explanation } from "./Home/Block3Explanation";
+export { default as Block4Benefits } from "./Home/Block4Benefits";
+export { default as Block5Partners } from "./Home/Block5Partners";
+export { default as Block6Testimony } from "./Home/Block6Testimony";
+export { default as Block7Media } from "./Home/Block7Media";
+export { default as ContactForm } from "./Home/ContactForm";
+export { default as Faq } from "./Home/Faq";
+export { default as Footer } from "./Home/Footer";
