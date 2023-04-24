@@ -140,14 +140,18 @@ const Block6Testimony = () => {
   return (
     <section className="bartlp--block-6">
       <article>
-        <div className="bartlp--block-6-wrapper">
+        <div
+          className="bartlp--block-6-wrapper"
+          data-aos="fade-down"
+          data-aos-duration="1500"
+        >
           <h2>La vérité sort de la bouche des clients</h2>
         </div>
         <Carousel
           slideSize="25%"
           breakpoints={[{ maxWidth: "sm", slideSize: "100%", slideGap: "0%" }]}
           slideGap="0%"
-          align="start"
+          align="center"
           slidesToScroll={mobile ? 1 : 2}
           className={classes.carousel}
         >

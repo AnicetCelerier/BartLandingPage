@@ -9,7 +9,7 @@ const Block4Benefits = () => {
           data-aos="fade-down"
           data-aos-duration="1500"
         >
-          <h2>Les avantages de notre cantine digitale d'entreprise :</h2>
+          <h2>Les avantages de notre cantine digitale d'entreprise&nbsp;:</h2>
           <p>
             Faites vivre une expérience culinaire unique à vos collaborateurs
             avec les meilleurs plats de vos restaurants préférés, à prix

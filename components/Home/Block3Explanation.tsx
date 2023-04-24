@@ -10,10 +10,11 @@ const Block3Explanation = () => {
           data-aos="fade-down"
           data-aos-duration="1500"
         >
-          <h2>Comment fonctionne votre cantine d'entreprise 2.0 ?</h2>
+          <h2>Comment fonctionne votre cantine d'entreprise 2.0&nbsp;?</h2>
           <p>
             Chez Bart Cantine digitale, nous misons sur la qualité et le goût !
-            Commandez ou Pré commandez vos repas de la semaine en 3 clics 😍
+            Commandez ou Pré commandez vos repas de la semaine en 3
+            clics&nbsp;😍
           </p>
         </div>
         <div className="bartlp--block-3-mosaic">
