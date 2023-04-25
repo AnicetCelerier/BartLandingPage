@@ -85,7 +85,11 @@ const ContactForm = () => {
   return (
     <section className="bartlp--contactForm" id="contact">
       <article id="form">
-        <div className="head-container">
+        <div
+          className="head-container"
+          data-aos="fade-down"
+          data-aos-duration="1500"
+        >
           <h2>Je demande ma cantine 2.0</h2>
           <p>
             Chez Bart Cantine digitale, nous souhaitons rendre la livraison de

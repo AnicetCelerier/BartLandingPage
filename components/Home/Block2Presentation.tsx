@@ -9,7 +9,7 @@ const Block2Presentation = () => {
           data-aos="fade-down"
           data-aos-duration="1500"
         >
-          <h2>Bart, la cantine 2.0 en quelques clics !</h2>
+          <h2>Bart, la cantine 2.0 en quelques clics&nbsp;!</h2>
           <p>
             Offrez à vos collaborateurs une expérience culinaire variée tout en
             respectant vos engagements environnementaux et sociaux avec notre

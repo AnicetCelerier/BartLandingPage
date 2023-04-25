@@ -1,6 +1,6 @@
 import "../index.scss";
 import localFont from "@next/font/local";
-import { MantineProvider, Global } from "@mantine/core";
+import { MantineProvider } from "@mantine/core";
 
 const myFont = localFont({
   src: [

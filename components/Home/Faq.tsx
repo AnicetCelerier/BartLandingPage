@@ -3,7 +3,7 @@ import { Container, Title, Accordion, createStyles, rem } from "@mantine/core";
 
 const useStyles = createStyles((theme) => ({
   wrapper: {
-    paddingTop: `calc(${theme.spacing.xl} * 2)`,
+    paddingTop: `calc(${theme.spacing.xl} * 3)`,
     paddingBottom: `calc(${theme.spacing.xl} * 2)`,
     minHeight: 650,
   },
@@ -44,7 +44,13 @@ const Faq = () => {
     <section className="bartlp--faq">
       <article>
         <Container size="sm" className={classes.wrapper}>
-          <Title align="center" order={2} className={classes.title}>
+          <Title
+            align="center"
+            order={2}
+            className={classes.title}
+            data-aos="fade-down"
+            data-aos-duration="1500"
+          >
             FAQ
           </Title>
           <Accordion variant="separated">
