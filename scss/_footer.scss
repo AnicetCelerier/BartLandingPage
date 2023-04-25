@@ -1,5 +1,5 @@
 .bartlp--footer {
-  padding: 20px;
+  padding: 40px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -11,16 +11,29 @@
     padding: 0;
     li {
       padding-left: 2%;
-
       a {
         text-decoration: none;
-        color : var(--color-font-primary)
+        color: var(--color-font-primary);
       }
     }
   }
 
   &-block-1 {
     display: flex;
+    &-cgu {
+      font-family: var(--font-bold-satoshi);
+      font-size: 20px;
+      line-height: 27px;
+      font-weight: 700;
+      color: #0b2817;
+      padding-bottom: 40px;
+      text-align: center;
+      text-decoration: none;
+      &:hover {
+        text-decoration: underline;
+        color: #36415e;
+      }
+    }
   }
   &-block-2 {
     display: flex;
@@ -31,16 +44,23 @@
       display: flex;
       flex-wrap: nowrap;
       align-items: center;
-      white-space: nowrap;
-      img {
-        margin: auto;
+
+      a {
+        flex-shrink: 0;
+      }
+      &-copyright {
+        padding-left: 8%;
+
+        white-space: nowrap;
       }
       div {
-        padding-left: 2%;
       }
     }
     &-section-2 {
       padding-left: 2%;
+      svg:hover {
+        fill: #36415e;
+      }
     }
     ul {
       display: flex;
@@ -70,13 +90,20 @@
       justify-content: space-between;
 
       &-section-1 {
+        a {
+          padding-bottom: 25px;
+        }
         flex-direction: column;
-
+        &-copyright {
+          padding-bottom: 25px;
+          white-space: normal;
+        }
         img {
           padding-bottom: 2%;
         }
         div {
           padding-left: 0%;
+          text-align: center;
         }
       }
     }
@@ -85,6 +112,8 @@
 
 @media screen and (max-width: 390px) {
   .bartlp--footer {
+    padding-left: 2%;
+    padding-right: 2%;
     ul {
       display: flex;
       flex-direction: column;

@@ -9,7 +9,7 @@ const Block1Welcome = () => {
       <article>
         <img
           src="../assets/images/top-illustrations.png"
-          alt="fruits"
+          alt="légumes"
           className="animate__animated animate__bounceInDown animate__slow	"
         />
         <div

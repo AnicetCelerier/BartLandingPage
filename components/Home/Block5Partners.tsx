@@ -90,13 +90,13 @@ const Block5Partners = () => {
           data-aos-duration="1500"
         >
           <h2>Ils nous font confiance</h2>
-          <p>Choisissez une cantine digitale d'entreprise 2.0 engagée !</p>
+          <p>Choisissez une cantine digitale d'entreprise 2.0 engagée&nbsp;!</p>
         </div>
         <Carousel
           slideSize="25%"
           breakpoints={[{ maxWidth: "sm", slideSize: "100%", slideGap: "0%" }]}
           slideGap="0%"
-          align="start"
+          align="center"
           slidesToScroll={mobile ? 1 : 2}
           className={classes.carousel}
         >
