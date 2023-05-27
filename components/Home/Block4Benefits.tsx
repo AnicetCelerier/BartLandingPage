@@ -88,7 +88,7 @@ const Block4Benefits = () => {
       </article>
       <div className="button-wrapper">
         <a href="#form">
-          <button className="submit-button">Essayez Bart Cantine</button>
+          <button className="submit-button">Une démo ?</button>
         </a>
       </div>
     </section>

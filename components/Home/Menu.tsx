@@ -8,26 +8,17 @@ const Menu = () => {
     <header className={`bartlp--header ${scrollPos}`}>
       <nav className="bartlp--header-navbar">
         <div className={`bartlp--header-navbar-left ${scrollPos}`}>
+        <a href="#top">
           <img src="../assets/images/logo-bart.png" alt="logo bart" />
+          <img src="../assets/images/logo-bart-hover.png" alt="logo bart hover" />  
+          </a>
         </div>
         <div className="bartlp--header-navbar-right">
-          <ul id="bartlp--header-navbar-right-links">
-            <li className="bartlp--header-navbar-right-button-1">
-              <a href="https://cantine.bartapp.club/">
+              <a href="#form">
                 <button className="access-button">
-                  <span className="access-button-wrapper-l">
-                    Accéder à la cantine
-                  </span>
-                  <span className="access-button-wrapper-s">La cantine</span>
+                    Commander
                 </button>
               </a>
-            </li>
-            <li className="bartlp--header-navbar-right-button-2">
-              <a href="#form">
-                <button className="submit-button">Essayez Bart Cantine</button>
-              </a>
-            </li>
-          </ul>
         </div>
       </nav>
     </header>

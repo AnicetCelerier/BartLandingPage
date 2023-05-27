@@ -1,70 +1,133 @@
 .bartlp--block-1 {
-  align-self: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
+  // align-self: center;
+  // display: flex;
+  // flex-direction: column;
+  // justify-content: center;
+  // align-items: center;
+  // height: 100%;
+  transition: all 0.5s linear;
+  position: relative;
+  height: 100vh;
+  z-index: 1;
   article {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    text-align: center;
-    z-index: 1;
+    // align-items: flex-start;
+    text-align: start;
+
+    // padding-top: 12%;
+    padding-left: 10%;
+    padding-right: 10%;
     img {
       position: absolute;
-      top: 0;
-      left: 0;
+      // top: 0;
+      // left: 0;
       right: 0;
       bottom: 0;
-      margin: 0;
-      padding: 0;
-      width: 100%;
+      // z-index: 0;
+
+      // margin: 0;
+      // padding: 0;
+      // width: 100%;
+      // height: 100%;
+      // max-width: none;
+      // max-height: none;
+      // object-fit: contain;
+      // max-width: 100%;
       max-width: none;
-      max-height: none;
-      object-fit: fill;
+      // max-height: 100vh;
+      // height: auto;
       outline: none;
       border: none;
       box-shadow: none;
+      transition: all 0.5s linear;
+      // object-fit: scale-down;
+      // overflow-clip-margin: content-box;
+      // overflow: clip;
     }
+
     h1 {
       padding-top: 12%;
-      padding-left: 10%;
+      margin-top: 5%;
+      // padding-left: 10%;
       padding-right: 10%;
-      position: relative;
-      z-index: 2;
+      margin-bottom: 3%;
+      // position: relative;
+      // z-index: 2;
     }
   }
-  position: relative;
-  height: 100vh;
-  .button-wrapper {
-    padding-top: 5%;
-    padding-bottom: 10%;
+
+  button {
+    // background-color: aquamarine;
+
+    position: absolute;
+    // z-index: 3;
   }
-  .lottie-element {
-    padding-top: 60%;
+  // &-lottie-container {
+  //   display: flex;
+  //   // padding-top: 60%;
+  //   background-color: aqua;
+  //   width: 100%;
+  // }
+}
+
+@media screen and (max-width: 1400px) {
+  .bartlp--block-1 {
+    // padding-top: 50px;
+    article {
+      img {
+        // top: 200px;
+        height: 50%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1150px) {
+  .bartlp--block-1 {
+    // padding-top: 50px;
+    article {
+      img {
+        // top: 200px;
+        height: 40%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 980px) {
+  .bartlp--block-1 {
+    // padding-top: 50px;
+    article {
+      img {
+        // top: 200px;
+        height: 30%;
+      }
+    }
   }
 }
 
 @media screen and (max-width: 835px) {
   .bartlp--block-1 {
     article {
+      // flex-wrap: wrap;
       img {
-        position: relative;
-        top: 50px;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        margin: 0;
-        padding: 0;
-        width: 100%;
-        max-width: none;
-        max-height: none;
-        object-fit: fill;
-        outline: none;
-        border: none;
-        box-shadow: none;
+        //   position: absolute;
+        //   top: 50px;
+        //   left: 0;
+        //   right: 0;
+        //   bottom: 0;
+        //   margin: 0;
+        //   padding: 0;
+        //   width: 100%;
+        //   max-width: none;
+        //   max-height: none;
+        //   object-fit: fill;
+        //   outline: none;
+        //   border: none;
+        //   box-shadow: none;
+        height: 40%;
       }
       h1 {
         padding-top: 0%;
@@ -73,16 +136,30 @@
         .medium {
         }
       }
+      // .bartlp--block-1-lottie-container{
+      // }
+      button {
+
+        position: relative;
+        // z-index: 3;
+      }
+
+    }
+    &-lottie-wrapper{
+      // background-color: aqua;
+      margin-top: 3%;
+      width: 214px;
     }
   }
 }
 
-@media (min-width: 391px) and (max-width: 520px) {
+@media screen and (max-width: 620px) {
   .bartlp--block-1 {
-    padding-top: 50px;
+    // padding-top: 50px;
     article {
       img {
-        top: 200px;
+        // top: 200px;
+        height: 30%;
       }
     }
   }
@@ -90,13 +167,16 @@
 
 @media screen and (max-width: 390px) {
   .bartlp--block-1 {
-    justify-content: flex-start;
-    padding-top: 25%;
+    // padding-top: 25%;
     article {
       padding-left: 1%;
       padding-right: 1%;
+      text-align: center;
+      align-items: center;
       img {
-        top: 79px;
+        // top: 79px;
+        // bottom: 0;
+        height: 30%;
       }
       h1 {
         padding-top: 15%;
@@ -105,6 +185,15 @@
         padding-left: 1%;
         padding-right: 1%;
       }
+      button {
+        position: relative;
+      }
+    }
+
+    &-lottie-wrapper{
+      // background-color: aqua;
+      margin-top: auto;
+      // width: 214px;
     }
   }
 }

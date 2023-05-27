@@ -10,10 +10,11 @@ const Block3Explanation = () => {
           data-aos="fade-down"
           data-aos-duration="1500"
         >
-          <h2>Comment fonctionne votre cantine d'entreprise 2.0&nbsp;?</h2>
+          <h2>Comment fonctionne cette cantine d'entreprise 2.0&nbsp;?</h2>
           <p>
             Chez Bart Cantine digitale, nous misons sur la qualité et le goût !
-            Commandez ou Pré commandez vos repas de la semaine en 3
+            <br />
+            Commandez ou pré-commandez vos repas de la semaine en 3
             clics&nbsp;😍
           </p>
         </div>
@@ -27,7 +28,7 @@ const Block3Explanation = () => {
                 une livraison à 13h30.
               </p>
               <a href="#form">
-                <button className="submit-button">Essayez Bart Cantine</button>
+                <button className="submit-button">Une démo ?</button>
               </a>
             </div>
             <div className="bartlp--block-3-mosaic-block-1-container-2">
@@ -153,7 +154,7 @@ const Block3Explanation = () => {
             <div className="bartlp--block-3-mosaic-block-2-container-1">
               <h3>Étape 2</h3>
               <p>
-                Composez votre déjeuner en ajoutant des entrées et des desserts
+                Composez votre déjeuner en ajoutant les entrées et les desserts
                 de votre choix.
               </p>
             </div>
@@ -223,7 +224,7 @@ const Block3Explanation = () => {
                 Savourez votre déjeuner en compagnie de tous vos collègues.
               </p>
               <a href="#form">
-                <button className="submit-button">Essayez Bart Cantine</button>
+                <button className="submit-button">Une démo ?</button>
               </a>
             </div>
             <div className="bartlp--block-3-mosaic-block-4-container-2">

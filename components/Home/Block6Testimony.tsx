@@ -160,7 +160,7 @@ const Block6Testimony = () => {
         <div className="bartlp--block-6-wrapper">
           <div className="button-wrapper">
             <a href="#form">
-              <button className="submit-button">Essayer Bart Cantine</button>
+              <button className="submit-button">Une démo ?</button>
             </a>
           </div>
         </div>
