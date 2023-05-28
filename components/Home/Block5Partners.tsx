@@ -69,6 +69,14 @@ const data = [
     image: "../assets/images/logo-actifdigital.png",
     alt: "Actif Digital",
   },
+  {
+    image: "../assets/images/logo-laboucle.png",
+    alt: "La Boucle",
+  },
+  {
+    image: "../assets/images/logo-agence2web.png",
+    alt: "Agence 2 Web",
+  },
 ];
 
 const Block5Partners = () => {

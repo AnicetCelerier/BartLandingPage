@@ -1,95 +1,63 @@
 .bartlp--block-1 {
-  // align-self: center;
-  // display: flex;
-  // flex-direction: column;
-  // justify-content: center;
-  // align-items: center;
-  // height: 100%;
   transition: all 0.5s linear;
   position: relative;
   height: 100vh;
   z-index: 1;
+
+  &-lottie-wrapper {
+    margin-top: auto;
+    padding-top: 8%;
+  }
   article {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    // align-items: flex-start;
     text-align: start;
-
-    // padding-top: 12%;
     padding-left: 10%;
     padding-right: 10%;
     img {
       position: absolute;
-      // top: 0;
-      // left: 0;
       right: 0;
       bottom: 0;
-      // z-index: 0;
-
-      // margin: 0;
-      // padding: 0;
-      // width: 100%;
-      // height: 100%;
-      // max-width: none;
-      // max-height: none;
-      // object-fit: contain;
-      // max-width: 100%;
       max-width: none;
-      // max-height: 100vh;
-      // height: auto;
       outline: none;
       border: none;
       box-shadow: none;
       transition: all 0.5s linear;
-      // object-fit: scale-down;
-      // overflow-clip-margin: content-box;
-      // overflow: clip;
     }
 
     h1 {
       padding-top: 12%;
       margin-top: 5%;
-      // padding-left: 10%;
       padding-right: 10%;
       margin-bottom: 3%;
-      // position: relative;
-      // z-index: 2;
     }
   }
 
   button {
-    // background-color: aquamarine;
-
+    margin-top: 2%;
     position: absolute;
-    // z-index: 3;
   }
-  // &-lottie-container {
-  //   display: flex;
-  //   // padding-top: 60%;
-  //   background-color: aqua;
-  //   width: 100%;
-  // }
 }
 
 @media screen and (max-width: 1400px) {
   .bartlp--block-1 {
-    // padding-top: 50px;
     article {
       img {
-        // top: 200px;
         height: 50%;
       }
+    }
+    &-lottie-wrapper {
+      margin-top: auto;
+      padding-top: 5%;
     }
   }
 }
 
 @media screen and (max-width: 1150px) {
   .bartlp--block-1 {
-    // padding-top: 50px;
     article {
       img {
-        // top: 200px;
         height: 40%;
       }
     }
@@ -98,12 +66,25 @@
 
 @media screen and (max-width: 980px) {
   .bartlp--block-1 {
-    // padding-top: 50px;
     article {
+      h1 {
+        font-family: var(--font-black-satoshi);
+        font-size: 74px;
+        line-height: 99.9px;
+
+        .medium {
+          font-family: var(--font-medium-satoshi);
+          font-size: 74px;
+          line-height: 99.9px;
+        }
+      }
       img {
-        // top: 200px;
         height: 30%;
       }
+    }
+    &-lottie-wrapper {
+      margin-top: auto;
+      padding-top: 20%;
     }
   }
 }
@@ -111,22 +92,8 @@
 @media screen and (max-width: 835px) {
   .bartlp--block-1 {
     article {
-      // flex-wrap: wrap;
+      padding-top: 12%;
       img {
-        //   position: absolute;
-        //   top: 50px;
-        //   left: 0;
-        //   right: 0;
-        //   bottom: 0;
-        //   margin: 0;
-        //   padding: 0;
-        //   width: 100%;
-        //   max-width: none;
-        //   max-height: none;
-        //   object-fit: fill;
-        //   outline: none;
-        //   border: none;
-        //   box-shadow: none;
         height: 40%;
       }
       h1 {
@@ -136,29 +103,46 @@
         .medium {
         }
       }
-      // .bartlp--block-1-lottie-container{
-      // }
       button {
-
         position: relative;
-        // z-index: 3;
       }
-
     }
-    &-lottie-wrapper{
-      // background-color: aqua;
+    &-lottie-wrapper {
+      padding-top: 3%;
       margin-top: 3%;
       width: 214px;
     }
   }
 }
 
-@media screen and (max-width: 620px) {
+@media screen and (max-width: 650px) {
   .bartlp--block-1 {
-    // padding-top: 50px;
     article {
       img {
-        // top: 200px;
+        height: 30%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 620px) {
+  .bartlp--block-1 {
+    article {
+      padding-top: 12%;
+      text-align: center;
+      align-items: center;
+      h1 {
+        font-family: var(--font-black-satoshi);
+        font-size: 54px;
+        line-height: 72.9px;
+
+        .medium {
+          font-family: var(--font-medium-satoshi);
+          font-size: 54px;
+          line-height: 72.9px;
+        }
+      }
+      img {
         height: 30%;
       }
     }
@@ -167,15 +151,14 @@
 
 @media screen and (max-width: 390px) {
   .bartlp--block-1 {
-    // padding-top: 25%;
+    height: 125vh;
     article {
+      padding-top: 15%;
       padding-left: 1%;
       padding-right: 1%;
       text-align: center;
       align-items: center;
       img {
-        // top: 79px;
-        // bottom: 0;
         height: 30%;
       }
       h1 {
@@ -190,10 +173,8 @@
       }
     }
 
-    &-lottie-wrapper{
-      // background-color: aqua;
+    &-lottie-wrapper {
       margin-top: auto;
-      // width: 214px;
     }
   }
 }

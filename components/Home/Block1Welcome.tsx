@@ -38,18 +38,18 @@ const Block1Welcome = () => {
           <button className="submit-button-black">Une démo ?</button>
         </a>
         <div className="bartlp--block-1-lottie-wrapper">
-        <Player
-          autoplay
-          loop
-          src={LottieScroll}
-          style={{ height: "68px", width: "68px" }}
-          className="lottie-element"
-        >
-          <Controls
-            visible={false}
-            buttons={["play", "repeat", "frame", "debug"]}
-          />
-        </Player>
+          <Player
+            autoplay
+            loop
+            src={LottieScroll}
+            style={{ height: "68px", width: "68px" }}
+            className="lottie-element"
+          >
+            <Controls
+              visible={false}
+              buttons={["play", "repeat", "frame", "debug"]}
+            />
+          </Player>
         </div>
       </article>
     </section>

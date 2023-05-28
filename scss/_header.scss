@@ -9,10 +9,9 @@
   .bartlp--header-navbar {
     display: flex;
     align-items: center;
-    // flex-wrap: wrap;
     width: 100%;
     justify-content: flex-end;
-    height: 70px;
+    height: 80px;
     .bartlp--header-navbar-left {
       a {
         cursor: pointer;
@@ -41,7 +40,6 @@
     }
     .bartlp--header-navbar-right {
       margin-right: 2%;
-      // position: absolute;
     }
   }
   @media screen and (max-width: 835px) {
