@@ -69,6 +69,14 @@ const data = [
     image: "../assets/images/logo-actifdigital.png",
     alt: "Actif Digital",
   },
+  {
+    image: "../assets/images/logo-laboucle.png",
+    alt: "La Boucle",
+  },
+  {
+    image: "../assets/images/logo-agence2web.png",
+    alt: "Agence 2 Web",
+  },
 ];
 
 const Block5Partners = () => {
@@ -104,7 +112,7 @@ const Block5Partners = () => {
         </Carousel>
         <div className="button-wrapper">
           <a href="#form">
-            <button className="submit-button">Essayez Bart Cantine</button>
+            <button className="submit-button">Une démo ?</button>
           </a>
         </div>
       </article>

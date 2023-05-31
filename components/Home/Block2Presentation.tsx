@@ -9,12 +9,12 @@ const Block2Presentation = () => {
           data-aos="fade-down"
           data-aos-duration="1500"
         >
-          <h2>Bart, la cantine 2.0 en quelques clics&nbsp;!</h2>
+          <h2>Bart : une cantine&nbsp;2.0</h2>
           <p>
-            Offrez à vos collaborateurs une expérience culinaire variée tout en
-            respectant vos engagements environnementaux et sociaux avec notre
+            Offrez à vos collaborateurs une expérience culinaire variée, tout en
+            respectant vos engagements environnementaux et sociaux, avec notre
             offre clés en main et sans engagement. Notre cantine d'entreprise
-            2.0 attractive vous permet de commander facilement des plats
+            2.0 attractive vous permet de commander facilement les plats
             signatures des meilleurs restaurants pour tous vos collaborateurs.
           </p>
         </div>
@@ -36,7 +36,7 @@ const Block2Presentation = () => {
         </div>
         <div className="button-wrapper">
           <a href="#form">
-            <button className="submit-button">Essayez Bart Cantine</button>
+            <button className="submit-button">Une démo ?</button>
           </a>
         </div>
       </article>

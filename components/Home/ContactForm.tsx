@@ -83,8 +83,9 @@ const ContactForm = () => {
   });
 
   return (
-    <section className="bartlp--contactForm" id="contact">
-      <article id="form">
+    <section className="bartlp--contactForm">
+      <a className="anchor" id="form"></a>
+      <article>
         <div
           className="head-container"
           data-aos="fade-down"

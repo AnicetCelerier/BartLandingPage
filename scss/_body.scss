@@ -19,6 +19,8 @@
 }
 html {
   scroll-behavior: smooth;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 body {
@@ -208,12 +210,12 @@ img {
 
 .submit-button {
   background: var(--color-primary);
-  height: 40.72877502441406px;
-  width: 194px;
-  left: 20px;
-  top: 20px;
+  height: 54px;
+  width: 214px;
   border-radius: 24px;
-  padding: 11px 16px 11px 16px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
   color: #ffffff;
   border: none;
   cursor: pointer;
@@ -222,14 +224,31 @@ img {
   }
 }
 
+.submit-button-black {
+  background: var(--color-font-primary);
+  height: 54px;
+  width: 214px;
+  border-radius: 24px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  // padding: 0px, 24px, 0px, 24px;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+  &:hover {
+    background: #414141;
+  }
+}
+
 .access-button {
   background: var(--color-secondary);
-  height: 40.72877502441406px;
-  width: 194px;
-  left: 20px;
-  top: 20px;
+  height: 54px;
+  width: 214px;
   border-radius: 24px;
-  padding: 11px 16px 11px 16px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
   color: #0b2817;
   border: none;
   cursor: pointer;

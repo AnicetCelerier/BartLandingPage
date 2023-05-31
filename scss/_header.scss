@@ -9,153 +9,51 @@
   .bartlp--header-navbar {
     display: flex;
     align-items: center;
-    flex-wrap: wrap;
     width: 100%;
     justify-content: flex-end;
+    height: 80px;
     .bartlp--header-navbar-left {
-      cursor: pointer;
-      width: 100px;
-      height: 100px;
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      margin: auto;
-      display: flex;
-      img {
-        justify-content: center;
-        align-items: center;
+      a {
+        cursor: pointer;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
         margin: auto;
+        display: flex;
+        width: 99px;
+        height: 44px;
+        img {
+          margin: auto;
+        }
+      }
+      a img:last-child {
+        display: none;
+      }
+      a:hover img:last-child {
+        display: block;
+      }
+      a:hover img:first-child {
+        display: none;
       }
     }
     .bartlp--header-navbar-right {
-      .access-button-wrapper-s {
-        display: none;
-      }
-      .access-button-wrapper-l {
-        display: inline;
-      }
-      ul {
-        display: flex;
-        list-style: none;
-        li {
-          flex-grow: 1;
-          margin-right: 20px;
-          text-decoration: none;
-        }
-      }
+      margin-right: 2%;
     }
   }
-  @media screen and (max-width: 1050px) {
+  @media screen and (max-width: 835px) {
     .bartlp--header-navbar {
       display: flex;
-      align-items: center;
-      flex-wrap: wrap;
-      width: 100%;
-      justify-content: flex-end;
-      background-color: #ffffff;
+      justify-content: space-between;
       .bartlp--header-navbar-left {
-        cursor: pointer;
-        width: 100px;
-        height: 100px;
-        position: relative;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        padding-right: 10%;
-        margin: auto;
-        display: flex;
-
-        img {
-          justify-content: center;
-          align-items: center;
-          margin: auto;
+        margin-left: 5%;
+        a {
+          position: static;
         }
       }
       .bartlp--header-navbar-right {
-        ul {
-          display: flex;
-          list-style: none;
-          li {
-            flex-grow: 1;
-            margin-right: 20px;
-            text-decoration: none;
-          }
-        }
-      }
-    }
-  }
-  @media screen and (max-width: 660px) {
-    .bartlp--header-navbar {
-      display: flex;
-      align-items: center;
-      flex-wrap: wrap;
-      width: 100%;
-      justify-content: center;
-      height: 100px;
-      .bartlp--header-navbar-left {
-        cursor: pointer;
-        width: 100px;
-        height: 100px;
-        position: static;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        padding-right: 0%;
-        margin: auto;
-        display: flex;
-        &.active {
-          display: none;
-        }
-        img {
-          justify-content: center;
-          align-items: center;
-          margin: auto;
-        }
-      }
-      .bartlp--header-navbar-right {
-        display: flex;
-        top: 0;
-        width: 100vh;
-        justify-content: center;
-        background-color: rgb(255, 255, 255);
-        &-button-1 {
-          padding-right: 5%;
-        }
-        .access-button {
-          background: var(--color-secondary);
-          height: 40.72877502441406px;
-          width: 100px;
-          left: 20px;
-          top: 20px;
-          border-radius: 24px;
-          padding: 11px 16px 11px 16px;
-          border: none;
-          cursor: pointer;
-          &:hover {
-            background: var(--color-secondary-shade);
-          }
-        }
-        .access-button-wrapper-l {
-          display: none;
-        }
-        .access-button-wrapper-s {
-          display: inline;
-        }
-        ul {
-          display: flex;
-          list-style: none;
-          padding-inline-start: 0px;
-
-          li {
-            flex-grow: 1;
-            margin-right: 0px;
-            text-decoration: none;
-          }
-        }
+        margin-right: 5%;
       }
     }
   }
