@@ -5,7 +5,6 @@ variables:
   IMAGE_TAG: latest
 
 publish:
-  stage: publish
   only:
     - develop
   image:
