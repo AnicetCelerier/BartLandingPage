@@ -3,6 +3,7 @@ variables:
   AWS_DEFAULT_REGION: eu-west-3
   IMAGE_NAME: cantinelanding
   IMAGE_TAG: latest
+  DOCKER_HOST: tcp://docker:2375
 
 publish:
   only:
