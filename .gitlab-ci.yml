@@ -21,7 +21,8 @@ build-image:
     - docker build -t $IMAGE_NAME .
     - docker save $IMAGE_NAME > $IMAGE_NAME.tar
   artifacts:
-    name: $IMAGE_NAME.tar
+    paths: 
+      - $IMAGE_NAME.tar
 
 test-image:
   stage: test
