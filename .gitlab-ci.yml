@@ -6,20 +6,46 @@ variables:
   DOCKER_HOST: tcp://docker:2375
   APP_VERSION: bartcantinelanding-source
 
+stages:
+  - build
+  - test
+  - deploy
+
+services:
+  - docker:dind
+
+build-image:
+  stage: build
+  image: docker:latest
+  script:
+    - docker build -t $DOCKER_REGISTRY/$IMAGE_NAME:$IMAGE_TAG .
+    - docker save $DOCKER_REGISTRY/$IMAGE_NAME:$IMAGE_TAG > $DOCKER_REGISTRY/$IMAGE_NAME:$IMAGE_TAG.tar
+  artifacts:
+    name: $DOCKER_REGISTRY/$IMAGE_NAME:$IMAGE_TAG.tar
+
+test-image:
+  stage: test
+  image: docker:latest
+  script:
+    - docker load < $DOCKER_REGISTRY/$IMAGE_NAME:$IMAGE_TAG.tar
+    - docker run -d -p 80:3000 $DOCKER_REGISTRY/$IMAGE_NAME:$IMAGE_TAG
+    - sleep 10
+    - apk --no-cache add curl
+    - curl "http://docker" | grep -q "cantine"
+    
 publish:
+  stage: deploy
   only:
     - develop
   image:
     name: amazon/aws-cli
     entrypoint: [""]
-  services:
-    - docker:dind
   before_script:
     - amazon-linux-extras install docker
     - aws --version
     - docker --version
   script:
-    - docker build -t $DOCKER_REGISTRY/$IMAGE_NAME:$IMAGE_TAG .
+    - docker load < $DOCKER_REGISTRY/$IMAGE_NAME:$IMAGE_TAG.tar
     - aws ecr get-login-password | docker login --username AWS --password-stdin $DOCKER_REGISTRY
     - docker push $DOCKER_REGISTRY/$IMAGE_NAME:$IMAGE_TAG
     - aws elasticbeanstalk update-environment --application-name "bartcantinelanding" --environment-name "Bartcantinelanding-env" --version-label=$APP_VERSION
