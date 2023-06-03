@@ -18,17 +18,17 @@ build-image:
   stage: build
   image: docker:latest
   script:
-    - docker build -t $DOCKER_REGISTRY/$IMAGE_NAME:$IMAGE_TAG .
-    - docker save $DOCKER_REGISTRY/$IMAGE_NAME:$IMAGE_TAG > $DOCKER_REGISTRY/$IMAGE_NAME:$IMAGE_TAG.tar
+    - docker build -t $IMAGE_NAME .
+    - docker save $IMAGE_NAME > $IMAGE_NAME.tar
   artifacts:
-    name: $DOCKER_REGISTRY/$IMAGE_NAME:$IMAGE_TAG.tar
+    name: $IMAGE_NAME.tar
 
 test-image:
   stage: test
   image: docker:latest
   script:
-    - docker load < $DOCKER_REGISTRY/$IMAGE_NAME:$IMAGE_TAG.tar
-    - docker run -d -p 80:3000 $DOCKER_REGISTRY/$IMAGE_NAME:$IMAGE_TAG
+    - docker load < $IMAGE_NAME.tar
+    - docker run -d -p 80:3000 $IMAGE_NAME
     - sleep 10
     - apk --no-cache add curl
     - curl "http://docker" | grep -q "cantine"
@@ -45,7 +45,8 @@ publish:
     - aws --version
     - docker --version
   script:
-    - docker load < $DOCKER_REGISTRY/$IMAGE_NAME:$IMAGE_TAG.tar
+    - docker load < $IMAGE_NAME.tar
+    - docker tag $IMAGE_NAME $DOCKER_REGISTRY/$IMAGE_NAME:$IMAGE_TAG
     - aws ecr get-login-password | docker login --username AWS --password-stdin $DOCKER_REGISTRY
     - docker push $DOCKER_REGISTRY/$IMAGE_NAME:$IMAGE_TAG
     - aws elasticbeanstalk update-environment --application-name "bartcantinelanding" --environment-name "Bartcantinelanding-env" --version-label=$APP_VERSION
