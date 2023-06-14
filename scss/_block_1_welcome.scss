@@ -31,6 +31,11 @@
       margin-top: 5%;
       padding-right: 10%;
       margin-bottom: 3%;
+      // font-weight: 900;
+      // font-size: 80px;
+      line-height: 84px;
+      color: #000000
+
     }
   }
 
@@ -118,6 +123,7 @@
 @media screen and (max-width: 650px) {
   .bartlp--block-1 {
     article {
+      padding-top: 18%;
       img {
         height: 30%;
       }
@@ -128,7 +134,7 @@
 @media screen and (max-width: 620px) {
   .bartlp--block-1 {
     article {
-      padding-top: 12%;
+      padding-top: 30%;
       text-align: center;
       align-items: center;
       h1 {
@@ -151,9 +157,9 @@
 
 @media screen and (max-width: 390px) {
   .bartlp--block-1 {
-    height: 125vh;
+    height: 150vh;
     article {
-      padding-top: 15%;
+      padding-top: 25%;
       padding-left: 1%;
       padding-right: 1%;
       text-align: center;
@@ -174,7 +180,7 @@
     }
 
     &-lottie-wrapper {
-      margin-top: auto;
+      margin-top: 10%;
     }
   }
 }

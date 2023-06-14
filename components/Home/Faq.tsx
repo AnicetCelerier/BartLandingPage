@@ -63,16 +63,18 @@ const Faq = () => {
               </Accordion.Control>
               <Accordion.Panel className={classes.answer}>
                 1 - Sélectionnez votre plat parmi une offre variée. 🐟🌯🥗{" "}
-                <br /> 2 - Complétez votre panier avec les entrées et desserts
-                proposés par le restaurant choisi. <br />
-                3 - Choisissez votre créneau de livraison : commandez avant 11
-                pour être livré à 12h30 ou commander avant 12h pour une
+                <br />
+                2 - Complétez votre panier avec les entrées et desserts proposés
+                par le restaurant choisi.
+                <br />
+                3 - Choisissez votre créneau de livraison : commandez avant 11h
+                pour être livré à 12h30 ou commandez avant 12h pour une
                 livraison à 13h30.
-                <br />4 - Valider votre panier. Vous y trouverez le
+                <br />4 - Validez votre panier. Vous y trouverez le
                 récapitulatif de votre commande avec la date, le créneau horaire
                 et l’adresse de livraison. Pour le paiement, tout se passe à
                 cette dernière étape en choisissant le mode de règlement
-                désiré&nbsp;: par carte bancaire ou ticket restaurant.
+                désiré&nbsp;: par carte bancaire ou Ticket Restaurant.
               </Accordion.Panel>
             </Accordion.Item>
 
@@ -99,11 +101,51 @@ const Faq = () => {
               </Accordion.Control>
               <Accordion.Panel className={classes.answer}>
                 Chez Bart, vous pouvez payer par CB ou en Ticket restaurant.
-                Nous acceptons la majorité des cartes TR: Swile, Edenred, Bimpl,
-                Appetiz. Lors de votre commande, assurez vous que le restaurant
-                proposant le plat accepte votre carte Ticket restaurant. Vous
-                retrouverez cette information à la page de sélection de votre
-                plat&nbsp;!
+                Nous acceptons la majorité des cartes TR&nbsp;: Swile, Edenred,
+                Bimpl, Appetiz. Lors de votre commande, assurez vous que le
+                restaurant proposant le plat accepte votre carte Ticket
+                restaurant. Vous retrouverez cette information à la page de
+                sélection de votre plat&nbsp;!
+              </Accordion.Panel>
+            </Accordion.Item>
+
+            <Accordion.Item
+              className={classes.item}
+              value="Comment ajouter ma carte Ticket restaurant ?"
+            >
+              <Accordion.Control className={classes.question}>
+                Comment ajouter ma carte Ticket restaurant&nbsp;?
+              </Accordion.Control>
+              <Accordion.Panel className={classes.answer}>
+                Pour ajouter votre carte Ticket restaurant, il vous suffit de
+                sélectionner le mode de paiement depuis le panier, puis cliquez
+                sur "Ajouter un titre restaurant" dans la section
+                "Titres-restaurant". <br />
+                <br />
+                Ou suivez les étapes suivantes&nbsp;:
+                <br />
+                <br />
+                1 - Connectez-vous à votre compte sur Bart cantine.
+                <br />
+                2 - Allez dans la section "Moyens de paiement" de votre profil.
+                <br />
+                3 - Cliquez sur "Ajouter un titre restaurant" dans la section
+                "Titres-restaurant".
+                <br />
+                4 - Entrez les informations requises pour votre carte Ticket
+                restaurant.
+                <br />
+                <br />
+                Veuillez noter que les cartes Ticket restaurant doivent être
+                ajoutées depuis l'espace dédié à cet effet et non comme une
+                simple carte bancaire. Pour ce faire, nous vous demandons
+                d'abord d'ajouter une carte bancaire pour pouvoir payer les
+                frais de livraison qui sont directement prélevés sur celle-ci.
+                <br />
+                <br />
+                Si vous avez des questions supplémentaires sur l'ajout de votre
+                carte Ticket restaurant, n'hésitez pas à contacter notre service
+                client qui se fera un plaisir de vous aider.
               </Accordion.Panel>
             </Accordion.Item>
 
@@ -173,7 +215,7 @@ const Faq = () => {
                 Existe-t-il un montant minimum de commande&nbsp;?
               </Accordion.Control>
               <Accordion.Panel className={classes.answer}>
-                Pas de minimum de commande! Chez Bart, on sert tous les
+                Pas de minimum de commande ! Chez Bart, on sert tous les
                 gourmands&nbsp;!
               </Accordion.Panel>
             </Accordion.Item>
@@ -188,7 +230,7 @@ const Faq = () => {
               <Accordion.Panel className={classes.answer}>
                 Votre reçu de paiement vous est envoyé par mail lors de votre
                 commande. Il est également disponible, sur votre compte client
-                dans “ Commandes ”&nbsp;.
+                dans "Commandes"&nbsp;.
               </Accordion.Panel>
             </Accordion.Item>
           </Accordion>
